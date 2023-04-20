@@ -27,7 +27,11 @@
 		- **Finish (FIN)** is used to request a graceful connection termination. This is the last packet sent.
 		  id:: 64411fb2-0438-48ae-94a1-53f821a4fa28
 	- ### (Receive) Window (16 bits)
-		-
+		- Specifies how many the sender of this segment is currently willing to receive
+	- ### Checksum (16 bits)
+		- This is used to verify the integrity of the TCP segment during transmission. The checksum is computed over the entire segment, including the header and data fields, and is recalculated at each hop along the network path
+	- ### Urgent Pointer (16 bits)
+		- If the URG flag is set, then this 16-bit field is an offset from the sequence number indicating the last urgent data byte
 	- TCP is using a **three-way-handshake** before sharing any application data
 		- Client picks a random sequence number `x` and sends a **SYN** packet, which may also include additional TCP flags and options.
 		- Server increments `x` by one, picks own random sequence number `y`, appends its own set of flags and options, and dispatches the response in a **SYN ACK** packet.
@@ -37,7 +41,7 @@
 - ## Congestion Avoidance and Control
 	- When network traffic exceeds beyond the capacity of the network and causes increased delays, packet loss and decreased network performance it is called congestion. To address these issues, multiple mechanisms were implemented in TCP to govern the rate with which the data can be sent in both directions: flow control, congestion control, and congestion avoidance.
 	- ### Flow control
-		- A mechanism to prevent the sender from overwhelming the receiver with data it may not be able to process as the receiver may be busy, under heavy load or may only allocate a fixed amount of buffer space. For this the Window flag is used when the first connection is established for both sender and receiver.
+		- A mechanism to prevent the sender from overwhelming the receiver with data it may not be able to process as the receiver may be busy, under heavy load or may only allocate a fixed amount of buffer space. For this the Window segment is used when the first connection is established for both sender and receiver.
 		- Each ACK packet carries the latest WND value for each side, allowing both sides to dynamically adjust the data flow rate to the capacity and processing speed of the sender and receiver.
 	- ### Slow start
 	- ### Congestion Avoidance
