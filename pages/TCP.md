@@ -2,19 +2,27 @@
   collapsed:: true
 	- TCP streams guarantee that all bytes sent will be identical with bytes received and that they will arrive in the same order to the client. TCP is optimised for accurate delivery rather than a timely one.
 - ## TCP Header
+  collapsed:: true
 	- ### Source Port (16 bits)
+	  collapsed:: true
 		- Specifies the port number of the sender
 	- ### Destination Port (16 bits)
+	  collapsed:: true
 		- Specifies the port number of the receiver
 	- ### Sequence Number (32 bits)
+	  collapsed:: true
 		- This is a unique number assigned to each packet by the sender to identify the order in which packets should be received by the receiver. The sequence number is used in conjunction with the acknowledgement number to ensure reliable data transfer and to prevent duplicate packets. It is initialized when a connection is first established
 	- ### Acknowledgement Number (32 bits)
+	  collapsed:: true
 		- This is used to acknowledge the receipt of a TCP segment and to communicate the next expected sequence number to the sender. The acknowledgement number field contains the sequence number of the next expected segment when the ACK control flag is set.
 	- ### Data Offset (4 bits)
+	  collapsed:: true
 		- This is used to tell the receiver how many 32-bit words (4 bytes each) are in the header, so it knows where the header ends and the data begins.
 	- ### Reserved (4 bits)
+	  collapsed:: true
 		- For future use and should be set to zero.
 	- ### Control Flags (8 bits, 1 bit each)
+	  collapsed:: true
 		- **Congestion window reduced (CWR)**: is set by the sending host to indicate that it received a TCP segment with the *ECE* flag set and had responded in congestion control mechanism
 		- **Explicit Congestion Notification Echo (ECE)**: has two usages depending on the *SYN* flag
 			- if *SYN = 0* the flag indicates that a packet with Congestion Experienced flag set (ECN=11) in the IP header was received during normal transmission
@@ -27,11 +35,20 @@
 		- **Finish (FIN)** is used to request a graceful connection termination. This is the last packet sent.
 		  id:: 64411fb2-0438-48ae-94a1-53f821a4fa28
 	- ### (Receive) Window (16 bits)
+	  collapsed:: true
 		- Specifies how many the sender of this segment is currently willing to receive
 	- ### Checksum (16 bits)
+	  collapsed:: true
 		- This is used to verify the integrity of the TCP segment during transmission. The checksum is computed over the entire segment, including the header and data fields, and is recalculated at each hop along the network path
 	- ### Urgent Pointer (16 bits)
+	  collapsed:: true
 		- If the URG flag is set, then this 16-bit field is an offset from the sequence number indicating the last urgent data byte
+	- ### Options (Variable 0–320 bits, in units of 32 bits)
+	  collapsed:: true
+		-
+	- ### Padding (32 bit)
+		- The TCP header padding is used to ensure that the TCP header ends, and data begins, on a 32-bit boundary. The padding is composed of zeros
+		-
 	- TCP is using a **three-way-handshake** before sharing any application data
 		- Client picks a random sequence number `x` and sends a **SYN** packet, which may also include additional TCP flags and options.
 		- Server increments `x` by one, picks own random sequence number `y`, appends its own set of flags and options, and dispatches the response in a **SYN ACK** packet.
@@ -39,6 +56,7 @@
 		- ![three-way-handshake](../assets/three-way-handshake_1681984421287_0.png)
 		- It is important to understand that when using TCP this handshake is made every time a new connection establishes and causes a full roundtrip of #latency before any application data can be transferred
 - ## Congestion Avoidance and Control
+  collapsed:: true
 	- When network traffic exceeds beyond the capacity of the network and causes increased delays, packet loss and decreased network performance it is called congestion. To address these issues, multiple mechanisms were implemented in TCP to govern the rate with which the data can be sent in both directions: flow control, congestion control, and congestion avoidance.
 	- ### Flow control
 		- A mechanism to prevent the sender from overwhelming the receiver with data it may not be able to process as the receiver may be busy, under heavy load or may only allocate a fixed amount of buffer space. For this the Window segment is used when the first connection is established for both sender and receiver.
