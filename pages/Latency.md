@@ -1,0 +1,3 @@
+- #Latency is the time it takes for a message, or a packet, to travel from its point of origin to the point of destination.
+- Common types of delays that causes the packet to slow down are
+	- Propagation delay which is the amount of time for a message to travel from the sender to the receiver. This equals to $distance / speed$
