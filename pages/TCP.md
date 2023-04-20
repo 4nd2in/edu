@@ -6,9 +6,14 @@
 		- Specifies the port number of the sender
 	- ### Destination Port (16 Bit)
 		- Specifies the port number of the receiver
+	- ### Sequence Number (32 Bit)
+		- This is a unique number assigned to each packet by the sender to identify the order in which packets should be received by the receiver. The sequence number is used in conjunction with the acknowledgement number to ensure reliable data transfer and to prevent duplicate packets. It is initialized when a connection is first established
+	- ### Acknowledgement Number (32 Bit)
+		- This is used to acknowledge the receipt of a TCP segment and to communicate the next expected sequence number to the sender. The acknowledgement number field contains the sequence number of the next expected segment when the ACK control flag is set.
+	- ### Data Offset (4 Bit)
+		- This is used to tell the receiver how many 32-bit words are in the header, so it knows where the header ends and the data begins.
 	- ### Control Flags (8 Bit)
 		- **Synchronization (SYN)** is used to establish the three-way-handshake. This is the first packet sent.
-		- **Acknowledgement Number (ACK)** s used to acknowledge the receipt of a TCP segment and to communicate the next expected sequence number to the sender. The acknowledgement number field contains the sequence number of the next expected segment, rather than the number of the last received segment
 		- **Acknowledgement (ACK)** is used to acknowledge packets which are successful received by the host. The flag is set if the acknowledgement number field contains a valid acknowledgement number
 		- **Finish (FIN)** is used to request a connection termination. This is the last packet sent.
 		- **Reset (RST)** is used to terminate the connection if the sender feels something is wrong with the TCP connection or that the conversation should not exist
@@ -17,7 +22,6 @@
 		- **Window (WND)** is used to communicate the size of the receive window to the sender. The window size is the amount of data that the receiving host is capable of accepting at any given time. The sender should limit the amount of data it sends based on the size of the window advertised by the receiver
 		  id:: 64411fb2-0438-48ae-94a1-53f821a4fa28
 		- **Checksum (CHK)** is used to verify the integrity of the TCP segment during transmission. The checksum is computed over the entire segment, including the header and data fields, and is recalculated at each hop along the network path
-		- **Sequence Number (SEQ)** is a unique number assigned to each segment by the sender to identify the order in which packets should be received by the receiver. The sequence number is used in conjunction with the acknowledgement number to ensure reliable data transfer and to prevent duplicate packets
 	- TCP is using a **three-way-handshake** before sharing any application data
 		- Client picks a random sequence number `x` and sends a **SYN** packet, which may also include additional TCP flags and options.
 		- Server increments `x` by one, picks own random sequence number `y`, appends its own set of flags and options, and dispatches the response in a **SYN ACK** packet.
