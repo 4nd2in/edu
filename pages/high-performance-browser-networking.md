@@ -2,4 +2,4 @@
 	- [[Latency]] is the time from the source sending a packet to the destination receiving it
 	- [[Bandwidth]] is the maximum throughput of a logical or physical communication path
 - Building Blocks of TCP
-	- [[TCP/IP]] are two protocols used to reliable connect two hosts
+	- [[TCP]] and [[IP]] are two protocols used to reliable connect two hosts
