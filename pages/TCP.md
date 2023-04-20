@@ -2,17 +2,23 @@
   collapsed:: true
 	- TCP streams guarantee that all bytes sent will be identical with bytes received and that they will arrive in the same order to the client. TCP is optimised for accurate delivery rather than a timely one.
 - ## TCP Header
-	- ### Source Port (16 Bit)
+	- ### Source Port (16 bits)
 		- Specifies the port number of the sender
-	- ### Destination Port (16 Bit)
+	- ### Destination Port (16 bits)
 		- Specifies the port number of the receiver
-	- ### Sequence Number (32 Bit)
+	- ### Sequence Number (32 bits)
 		- This is a unique number assigned to each packet by the sender to identify the order in which packets should be received by the receiver. The sequence number is used in conjunction with the acknowledgement number to ensure reliable data transfer and to prevent duplicate packets. It is initialized when a connection is first established
-	- ### Acknowledgement Number (32 Bit)
+	- ### Acknowledgement Number (32 bits)
 		- This is used to acknowledge the receipt of a TCP segment and to communicate the next expected sequence number to the sender. The acknowledgement number field contains the sequence number of the next expected segment when the ACK control flag is set.
-	- ### Data Offset (4 Bit)
-		- This is used to tell the receiver how many 32-bit words are in the header, so it knows where the header ends and the data begins.
-	- ### Control Flags (8 Bit)
+	- ### Data Offset (4 bits)
+		- This is used to tell the receiver how many 32-bit words (4 bytes each) are in the header, so it knows where the header ends and the data begins.
+	- ### Reserved (4 bits)
+		- For future use and should be set to zero.
+	- ### Control Flags (8 bits)
+		- **Congestion window reduced (CWR)** (1 bit): is set by the sending host to indicate that it received a TCP segment with the *ECE* flag set and had responded in congestion control mechanism
+		- **Explicit Congestion Notification Echo (ECE)** (1 bit): has two usages depending on the *SYN* flag
+			- if *SYN = 0* the flag indicates that a packet with Congestion Experienced flag set (ECN=11) in the IP header was received during normal transmission.
+			- if *SYN = 1* the flag indicates that the TCP peer is [[ECN]] capable
 		- **Synchronization (SYN)** is used to establish the three-way-handshake. This is the first packet sent.
 		- **Acknowledgement (ACK)** is used to acknowledge packets which are successful received by the host. The flag is set if the acknowledgement number field contains a valid acknowledgement number
 		- **Finish (FIN)** is used to request a connection termination. This is the last packet sent.
