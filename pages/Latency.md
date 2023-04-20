@@ -1,4 +1,6 @@
 - #Latency is the time it takes for a message, or a packet, to travel from its point of origin to the point of destination.
-- Common types of delays that causes the packet to slow down are
-	- **Propagation delay** which is the amount of time for a message to travel from the sender to the receiver. This equals to $distance / propagation speed$
-	- **Transmission delay** is the amount of time required to push all packet's bits into the link. Here the packet's length and data rate
+- The total latency between two machines is the sum of all the following delays
+	- **Propagation delay** is the amount of time required for a message to travel from the sender to the receiver. This equals to distance between two machines over propagation speed of the signal (data-rate).
+	- **Transmission delay** is the amount of time required to push all packet's bits into the link. Here the packet's length and data rate comes into play
+	- **Processing delay** is the amount of time required to process the packet header, check for bit-level errors, and determine the packet's destination
+	- **Queuing delay** is the amount of time the packet is waiting in the queue until it can be processed
