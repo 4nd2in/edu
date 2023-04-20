@@ -1,9 +1,12 @@
-- ## TCP (Transmission Control Protocol)
+- ## RFC 793 - Transmission Control Protocol (TCP)
   collapsed:: true
 	- TCP streams guarantee that all bytes sent will be identical with bytes received and that they will arrive in the same order to the client. TCP is optimised for accurate delivery rather than a timely one.
-- ## Flags and Connectivity
-  collapsed:: true
-	- TCP uses flags to indicate different states of connectivity
+- ## TCP Header
+	- ### Source Port (16 Bit)
+		- Specifies the port number of the sender
+	- ### Destination Port (16 Bit)
+		- Specifies the port number of the receiver
+	- ### Control Flags (8 Bit)
 		- **Synchronization (SYN)** is used to establish the three-way-handshake. This is the first packet sent.
 		- **Acknowledgement Number (ACK)** s used to acknowledge the receipt of a TCP segment and to communicate the next expected sequence number to the sender. The acknowledgement number field contains the sequence number of the next expected segment, rather than the number of the last received segment
 		- **Acknowledgement (ACK)** is used to acknowledge packets which are successful received by the host. The flag is set if the acknowledgement number field contains a valid acknowledgement number
@@ -12,6 +15,7 @@
 		- **Urgent (URG)** s used to indicate that the data contained in the packet should be prioritized and handled urgently by the receiver. This flag is used in combination with the Urgent Pointer field to identify the location of the urgent data in the packet
 		- **Push (PSH)** is used to request immediate data delivery to the receiving host, without waiting for additional data to be buffered on the sender’s side. This flag is commonly used in applications such as real-time audio or video streaming
 		- **Window (WND)** is used to communicate the size of the receive window to the sender. The window size is the amount of data that the receiving host is capable of accepting at any given time. The sender should limit the amount of data it sends based on the size of the window advertised by the receiver
+		  id:: 64411fb2-0438-48ae-94a1-53f821a4fa28
 		- **Checksum (CHK)** is used to verify the integrity of the TCP segment during transmission. The checksum is computed over the entire segment, including the header and data fields, and is recalculated at each hop along the network path
 		- **Sequence Number (SEQ)** is a unique number assigned to each segment by the sender to identify the order in which packets should be received by the receiver. The sequence number is used in conjunction with the acknowledgement number to ensure reliable data transfer and to prevent duplicate packets
 	- TCP is using a **three-way-handshake** before sharing any application data
@@ -23,7 +27,7 @@
 - ## Congestion Avoidance and Control
 	- When network traffic exceeds beyond the capacity of the network and causes increased delays, packet loss and decreased network performance it is called congestion. To address these issues, multiple mechanisms were implemented in TCP to govern the rate with which the data can be sent in both directions: flow control, congestion control, and congestion avoidance.
 	- ### Flow control
-		- A mechanism to prevent the sender from overwhelming the receiver with data it may not be able to process as the receiver may be busy, under heavy load or may only allocate a fixed amount of buffer space. For this the **WND** flag is used when the first connection is established for both sender and receiver.
-		- Each ACK packet carries the latest **WND** value for each side, allowing both sides to dynamically adjust the data flow rate to the capacity and processing speed of the sender and receiver.
+		- A mechanism to prevent the sender from overwhelming the receiver with data it may not be able to process as the receiver may be busy, under heavy load or may only allocate a fixed amount of buffer space. For this the [WND](((64411fb2-0438-48ae-94a1-53f821a4fa28))) flag is used when the first connection is established for both sender and receiver.
+		- Each ACK packet carries the latest WND value for each side, allowing both sides to dynamically adjust the data flow rate to the capacity and processing speed of the sender and receiver.
 	- ### Slow start
 	- ### Congestion Avoidance
