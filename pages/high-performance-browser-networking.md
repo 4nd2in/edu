@@ -1,4 +1,4 @@
 - Primer on Latency and Bandwith
 	- [[Latency]] is the time from the source sending a packet to the destination receiving it
-	- Bandwidth is the maximum throughput of a logical or physical communication path
+	- [[Bandwidth]] is the maximum throughput of a logical or physical communication path
 -
