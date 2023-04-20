@@ -14,20 +14,20 @@
 		- This is used to tell the receiver how many 32-bit words (4 bytes each) are in the header, so it knows where the header ends and the data begins.
 	- ### Reserved (4 bits)
 		- For future use and should be set to zero.
-	- ### Control Flags (8 bits)
-		- **Congestion window reduced (CWR)** (1 bit): is set by the sending host to indicate that it received a TCP segment with the *ECE* flag set and had responded in congestion control mechanism
-		- **Explicit Congestion Notification Echo (ECE)** (1 bit): has two usages depending on the *SYN* flag
-			- if *SYN = 0* the flag indicates that a packet with Congestion Experienced flag set (ECN=11) in the IP header was received during normal transmission.
-			- if *SYN = 1* the flag indicates that the TCP peer is [[ECN]] capable
-		- **Synchronization (SYN)** is used to establish the three-way-handshake. This is the first packet sent.
-		- **Acknowledgement (ACK)** is used to acknowledge packets which are successful received by the host. The flag is set if the acknowledgement number field contains a valid acknowledgement number
-		- **Finish (FIN)** is used to request a connection termination. This is the last packet sent.
-		- **Reset (RST)** is used to terminate the connection if the sender feels something is wrong with the TCP connection or that the conversation should not exist
-		- **Urgent (URG)** s used to indicate that the data contained in the packet should be prioritized and handled urgently by the receiver. This flag is used in combination with the Urgent Pointer field to identify the location of the urgent data in the packet
+	- ### Control Flags (8 bits, 1 bit each)
+		- **Congestion window reduced (CWR)**: is set by the sending host to indicate that it received a TCP segment with the *ECE* flag set and had responded in congestion control mechanism
+		- **Explicit Congestion Notification Echo (ECE)**: has two usages depending on the *SYN* flag
+			- if *SYN = 0* the flag indicates that a packet with Congestion Experienced flag set (ECN=11) in the IP header was received during normal transmission
+			- if *SYN = 1* the flag indicates that the TCP peer is #ECN capable
+		- **Urgent (URG)** is used to indicate that the data contained in the Urgent Pointer field is significant and should be processed prioritized
+		- **Acknowledgement (ACK)** is used to acknowledge packets which are successful received by the host. It indicates that the *Acknowledgement number* field is set.
 		- **Push (PSH)** is used to request immediate data delivery to the receiving host, without waiting for additional data to be buffered on the sender’s side. This flag is commonly used in applications such as real-time audio or video streaming
-		- **Window (WND)** is used to communicate the size of the receive window to the sender. The window size is the amount of data that the receiving host is capable of accepting at any given time. The sender should limit the amount of data it sends based on the size of the window advertised by the receiver
+		- **Reset (RST)** is used to terminate the connection if the sender feels something is wrong with the TCP connection or that the conversation should not exist
+		- **Synchronization (SYN)** is used to establish the three-way-handshake. This is the first packet sent by each and synchronizes the sequence numbers
+		- **Finish (FIN)** is used to request a graceful connection termination. This is the last packet sent.
 		  id:: 64411fb2-0438-48ae-94a1-53f821a4fa28
-		- **Checksum (CHK)** is used to verify the integrity of the TCP segment during transmission. The checksum is computed over the entire segment, including the header and data fields, and is recalculated at each hop along the network path
+	- ### (Receive) Window (16 bits)
+		-
 	- TCP is using a **three-way-handshake** before sharing any application data
 		- Client picks a random sequence number `x` and sends a **SYN** packet, which may also include additional TCP flags and options.
 		- Server increments `x` by one, picks own random sequence number `y`, appends its own set of flags and options, and dispatches the response in a **SYN ACK** packet.
@@ -37,7 +37,7 @@
 - ## Congestion Avoidance and Control
 	- When network traffic exceeds beyond the capacity of the network and causes increased delays, packet loss and decreased network performance it is called congestion. To address these issues, multiple mechanisms were implemented in TCP to govern the rate with which the data can be sent in both directions: flow control, congestion control, and congestion avoidance.
 	- ### Flow control
-		- A mechanism to prevent the sender from overwhelming the receiver with data it may not be able to process as the receiver may be busy, under heavy load or may only allocate a fixed amount of buffer space. For this the [WND](((64411fb2-0438-48ae-94a1-53f821a4fa28))) flag is used when the first connection is established for both sender and receiver.
+		- A mechanism to prevent the sender from overwhelming the receiver with data it may not be able to process as the receiver may be busy, under heavy load or may only allocate a fixed amount of buffer space. For this the Window flag is used when the first connection is established for both sender and receiver.
 		- Each ACK packet carries the latest WND value for each side, allowing both sides to dynamically adjust the data flow rate to the capacity and processing speed of the sender and receiver.
 	- ### Slow start
 	- ### Congestion Avoidance
