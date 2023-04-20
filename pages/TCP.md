@@ -1,4 +1,6 @@
-- TCP (Transmission Control Protocol) streams guarantee that all bytes sent will be identical with bytes received and that they will arrive in the same order to the client. TCP is optimised for accurate delivery rather than a timely one.
+- ## TCP (Transmission Control Protocol)
+  collapsed:: true
+	- TCP streams guarantee that all bytes sent will be identical with bytes received and that they will arrive in the same order to the client. TCP is optimised for accurate delivery rather than a timely one.
 - ## Flags and Connectivity
   collapsed:: true
 	- TCP uses flags to indicate different states of connectivity
@@ -19,7 +21,9 @@
 		- ![three-way-handshake](../assets/three-way-handshake_1681984421287_0.png)
 		- It is important to understand that when using TCP this handshake is made every time a new connection establishes and causes a full roundtrip of #latency before any application data can be transferred
 - ## Congestion Avoidance and Control
+	- When network traffic exceeds beyond the capacity of the network and causes increased delays, packet loss and decreased network performance it is called congestion. To address these issues, multiple mechanisms were implemented in TCP to govern the rate with which the data can be sent in both directions: flow control, congestion control, and congestion avoidance.
 	- ### Flow control
-		- A mechanism to prevent the sender from overwhelming the receiver with data it may not be able to process as the receiver may be busy, under heavy load or may only allocate a fixed amount of buffer space
+		- A mechanism to prevent the sender from overwhelming the receiver with data it may not be able to process as the receiver may be busy, under heavy load or may only allocate a fixed amount of buffer space. For this the **WND** flag is used when the first connection is established for both sender and receiver.
+		- Each ACK packet carries the latest **WND** value for each side, allowing both sides to dynamically adjust the data flow rate to the capacity and processing speed of the sender and receiver.
 	- ### Slow start
 	- ### Congestion Avoidance
