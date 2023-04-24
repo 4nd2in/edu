@@ -61,4 +61,7 @@
 		- A mechanism to prevent the sender from overwhelming the receiver with data it may not be able to process as the receiver may be busy, under heavy load or may only allocate a fixed amount of buffer space. For this the Window segment is used when the first connection is established for both sender and receiver.
 		- Each ACK packet carries the latest WND value for each side, allowing both sides to dynamically adjust the data flow rate to the capacity and processing speed of the sender and receiver.
 	- ### Slow start
+		-
 	- ### Congestion Avoidance
+	- ### Fast retransmit
+	- ### Fast recovery
