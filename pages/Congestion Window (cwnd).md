@@ -1,0 +1,2 @@
+-
+- The Congestion Window size is a Sender-side limit on the amount of data the sender can have in flight before receiving an acknowledgment from the client
