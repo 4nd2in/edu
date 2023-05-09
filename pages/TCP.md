@@ -2,7 +2,6 @@
   collapsed:: true
 	- TCP streams guarantee that all bytes sent will be identical with bytes received and that they will arrive in the same order to the client. TCP is optimised for accurate delivery rather than a timely one.
 - ## TCP Header
-  collapsed:: true
 	- ### Source Port (16 bits)
 	  collapsed:: true
 		- Specifies the port number of the sender
@@ -35,8 +34,7 @@
 		- **Finish (FIN)** is used to request a graceful connection termination. This is the last packet sent.
 		  id:: 64411fb2-0438-48ae-94a1-53f821a4fa28
 	- ### (Receive) Window (16 bits)
-	  collapsed:: true
-		- Specifies how many the sender of this segment is currently willing to receive
+		- Specifies how many window size units that the sender of this segment is currently willing to receive. The [[Receive Window (rwnd)]] and the [[Congestion Window (cwnd)]] are used to regulate data flow.
 	- ### Checksum (16 bits)
 	  collapsed:: true
 		- This is used to verify the integrity of the TCP segment during transmission. The checksum is computed over the entire segment, including the header and data fields, and is recalculated at each hop along the network path
@@ -62,7 +60,7 @@
 		- Each ACK packet carries the latest WND value for each side, allowing both sides to dynamically adjust the data flow rate to the capacity and processing speed of the sender and receiver.
 	- ### Slow start
 		- Even though flow control prevents the sender from overwhelming the receiver, it does not consider that the underlying network might be overloaded. This is the reason the slow start was added to TCP.
-		- Slow start estimated the capacity of the network by exchanging data.
+		- Slow start estimated the capacity of the network by exchanging data and start (what to expect) slowly.
 		-
 	- ### Congestion Avoidance
 	- ### Fast retransmit
