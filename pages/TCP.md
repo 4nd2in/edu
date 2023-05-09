@@ -62,7 +62,7 @@
 		- Each ACK packet carries the latest WND value for each side, allowing both sides to dynamically adjust the data flow rate to the capacity and processing speed of the sender and receiver.
 	- ### Slow start
 		- Even though flow control prevents the sender from overwhelming the receiver, it does not consider that the underlying network might be overloaded. This is the reason the slow start was added to TCP.
-		- Slow start
+		- Slow start estimated the capacity of the network by exchanging data.
 		-
 	- ### Congestion Avoidance
 	- ### Fast retransmit
