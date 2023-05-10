@@ -9,6 +9,7 @@
 			- ![three-way-handshake](../assets/three-way-handshake_1681984421287_0.png)
 			- It is important to understand that when using TCP this handshake is made every time a new connection establishes and causes a full roundtrip of #latency before any application data can be transferred
 	- ## TCP Header
+	  collapsed:: true
 		- ### Source Port (16 bits)
 			- Specifies the port number of the sender
 		- ### Destination Port (16 bits)
@@ -47,12 +48,16 @@
 			-
 	- ## Congestion handling
 	  id:: 644125f5-6bd7-427e-b73d-e1fa640d0d88
+	  collapsed:: true
 		- When network traffic exceeds beyond the capacity of the network and causes increased delays, packet loss and decreased network performance it is called congestion. To address these issues, multiple mechanisms were implemented in TCP to govern the rate with which the data can be sent in both directions: flow control, congestion control, and congestion avoidance.
+		- The maximum amount of unacknowledged, in-flight data between the sender and receiver is defined as the minimum of the receive and congestion window sizes: the current receive windows are communicated in every ACK, and the congestion window is dynamically adjusted by the sender based on the congestion control and avoidance algorithms.
 		- ### Flow control
+		  collapsed:: true
 			- A mechanism to prevent the sender from overwhelming the receiver with data it may not be able to process as the receiver may be busy, under heavy load or may only allocate a fixed amount of buffer space. For this the Window segment is used when the first connection is established for both sender and receiver.
 			- Each ACK packet carries the latest WND value for each side, allowing both sides to dynamically adjust the data flow rate to the capacity and processing speed of the sender and receiver.
 		- ### Slow-start
 		  id:: 64412696-09fb-49b5-b5de-f3d48f03232d
+		  collapsed:: true
 			- Even though flow control prevents the sender from overwhelming the receiver, it does not consider that the underlying network might be overloaded. This is the reason the slow start was added to TCP.
 			- Slow start estimated the capacity of the network by exchanging data and start (what to expect) slowly. The maximum amount of data in flight (not ACKed) is the minimum of of the #[[RWND]] and #[[CWND]] variables. For every received **ACK**, the slow-start algorythm indicates that the server can increment its #[[CWND]] by one segment.
 			- This image is a representation of the #[[AIMD]] algorythm.
@@ -62,11 +67,12 @@
 				-
 			- Slow start is not as big of an issue for large, streaming downloads, as the client and the server will arrive at their maximum window sizes after few hundred milliseconds. For short and burst connections such as #HTTP, it is not unusual for the data transfer to finish before reaching the maximum size. Here performance can be increase by reducing the #RTT between the server and the client.
 		- ### Slow-start Restart
+		  collapsed:: true
 			- This is a mechanism that will reset the #[[CWND]] size of a connection after it has been idle for a defined period of time. This is due to the fact that the condition of the underlying network might have changed while the connection has been idle.
 			- This mechanism is a "safe" default. However, disabling this can gain performance on long-lived #HTTP connections.
 		- ### Congestion Avoidance
+		  collapsed:: true
 			- Slow-start initializes the connection with a conservative window and, for every roundtrip, doubles the amount of data in flight until it exceeds the receiver’s flow-control window, a system-configured congestion threshold (ssthresh) window, or until a packet is lost, at which point the congestion avoidance algorithm takes over.
 			- Once the congestion window is reset, congestion avoidance specifies its own [algorithms]( [[CCA]] ) for how to grow the window to minimize further loss. At a certain point, another packet loss event will occur, and the process will repeat once over.
-			-
-		- ### Fast retransmit
-			-
+	- ## Bandwidth-Delay Product
+		-
