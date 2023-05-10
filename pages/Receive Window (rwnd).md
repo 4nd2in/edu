@@ -1,2 +1,0 @@
-- The Receive Window is a variable in #TCP that advertises the amount of data that the destination side can receive
-- The Receive Window Size is set by the sender in the specified TCP header section
