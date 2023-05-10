@@ -98,7 +98,6 @@
 		- To increase the optimal window size there needs to be an increase in either the roundtrip time or the window size. Assuming the underlying network is capable of a 10 Mbps bandwidth:
 		  ![ezgif.com-gif-maker(2).png](../assets/ezgif.com-gif-maker(2)_1683725383195_0.png)
 	- ## Head-of-Line Blocking
-	  collapsed:: true
 		- When one packet is lost during transmission, a receiver has to hold all subsequent packets in the TCP buffer until the lost packet is retransmitted. This is because TCP allows in-order and reliable packet delivery.
 		- This all happens on the TCP layer, hence the application cannot access the data until all segments were received.
 	- ## Maximum Segment Size

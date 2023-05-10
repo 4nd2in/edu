@@ -5,3 +5,5 @@
 	- **Processing delay** is the amount of time required to process the packet header, check for bit-level errors, and determine the packet's destination. once the packet arrives at the router, the router must examine the packet header to determine the outgoing route and may run other checks on the data.
 	- **Queuing delay** is the amount of time the packet is waiting in the queue until it can be processed. This occurs when a router does not have the capacity to process all incoming packets. Each packet not being processed is getting queued inside an incoming buffer.
 - Last-Mile latency describes the fact that not long distances causes significant latencies but the last mile does. The reason why this happens is because the thousands of other signals around the sender and/or receiver have to be aggregated and routed by a local routing node provided by a local ISP. This can take tens of milliseconds.
+- Source
+	- https://hpbn.co/
