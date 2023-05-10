@@ -59,7 +59,8 @@
 		- ### Padding (32 bit)
 			- The TCP header padding is used to ensure that the TCP header ends, and data begins, on a 32-bit boundary. The padding is composed of zeros
 	- ## Head-of-Line Blocking
-		- Because the
+		- When one packet is lost during transmission, a receiver has to hold all subsequent packets in the TCP buffer until the lost packet is retransmitted. This is because TCP allows in-order and reliable packet delivery.
+		- This all happens on the TCP layer, hence the application cannot process the data until all segments were received.
 	- ## Maximum Segment Size
 	  collapsed:: true
 		- #WIP
