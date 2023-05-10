@@ -66,7 +66,9 @@
 	- ### Slow start
 	  id:: 64412696-09fb-49b5-b5de-f3d48f03232d
 		- Even though flow control prevents the sender from overwhelming the receiver, it does not consider that the underlying network might be overloaded. This is the reason the slow start was added to TCP.
-		- Slow start estimated the capacity of the network by exchanging data and start (what to expect) slowly. The maximum amount of data in flight (not ACKed) is the minimum of of the #[[Receive Window (rwnd)]] and #[[Congestion Window (cwnd)]] variables. For every received **ACK**, the slow-start algorythm indicates that the server can increment its #[[Congestion Window (cwnd)]] by one.
+		- Slow start estimated the capacity of the network by exchanging data and start (what to expect) slowly. The maximum amount of data in flight (not ACKed) is the minimum of of the #[[Receive Window (rwnd)]] and #[[Congestion Window (cwnd)]] variables. For every received **ACK**, the slow-start algorythm indicates that the server can increment its #[[Congestion Window (cwnd)]] by one segment.
+		- ![ezgif.com-gif-maker.png](../assets/ezgif.com-gif-maker_1683710160754_0.png)
+		- Time to reach the cwnd size
 		-
 	- ### Congestion Avoidance
 	- ### Fast retransmit
