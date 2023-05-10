@@ -1,7 +1,16 @@
 - ## RFC 793 - Transmission Control Protocol (TCP)
   collapsed:: true
 	- TCP streams guarantee that all bytes sent will be identical with bytes received and that they will arrive in the same order to the client. TCP is optimised for accurate delivery rather than a timely one.
+- ## Handshake
+  collapsed:: true
+	- TCP is using a three-way-handshake before sharing any application data
+		- Client picks a random sequence number `x` and sends a **SYN** packet, which may also include additional TCP flags and options.
+		- Server increments `x` by one, picks own random sequence number `y`, appends its own set of flags and options, and dispatches the response in a **SYN ACK** packet.
+		- Client increments both `x` and `y` by one and completes the handshake by dispatching the last **ACK** packet in the handshake.
+		- ![three-way-handshake](../assets/three-way-handshake_1681984421287_0.png)
+		- It is important to understand that when using TCP this handshake is made every time a new connection establishes and causes a full roundtrip of #latency before any application data can be transferred
 - ## TCP Header
+  collapsed:: true
 	- ### Source Port (16 bits)
 	  collapsed:: true
 		- Specifies the port number of the sender
@@ -46,14 +55,9 @@
 	  collapsed:: true
 		-
 	- ### Padding (32 bit)
+	  collapsed:: true
 		- The TCP header padding is used to ensure that the TCP header ends, and data begins, on a 32-bit boundary. The padding is composed of zeros
 		-
-	- TCP is using a **three-way-handshake** before sharing any application data
-		- Client picks a random sequence number `x` and sends a **SYN** packet, which may also include additional TCP flags and options.
-		- Server increments `x` by one, picks own random sequence number `y`, appends its own set of flags and options, and dispatches the response in a **SYN ACK** packet.
-		- Client increments both `x` and `y` by one and completes the handshake by dispatching the last **ACK** packet in the handshake.
-		- ![three-way-handshake](../assets/three-way-handshake_1681984421287_0.png)
-		- It is important to understand that when using TCP this handshake is made every time a new connection establishes and causes a full roundtrip of #latency before any application data can be transferred
 - ## Congestion Avoidance and Control
 	- When network traffic exceeds beyond the capacity of the network and causes increased delays, packet loss and decreased network performance it is called congestion. To address these issues, multiple mechanisms were implemented in TCP to govern the rate with which the data can be sent in both directions: flow control, congestion control, and congestion avoidance.
 	- ### Flow control
@@ -62,7 +66,7 @@
 	- ### Slow start
 	  id:: 64412696-09fb-49b5-b5de-f3d48f03232d
 		- Even though flow control prevents the sender from overwhelming the receiver, it does not consider that the underlying network might be overloaded. This is the reason the slow start was added to TCP.
-		- Slow start estimated the capacity of the network by exchanging data and start (what to expect) slowly.
+		- Slow start estimated the capacity of the network by exchanging data and start (what to expect) slowly. The maximum amount of data in flight (not ACKed) is the minimum of of the #[[Receive Window (rwnd)]] and #[[Congestion Window (cwnd)]] variables. For every received **ACK**, the slow-start algorythm indicates that the server can increment its #[[Congestion Window (cwnd)]] by one.
 		-
 	- ### Congestion Avoidance
 	- ### Fast retransmit
