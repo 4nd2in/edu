@@ -2,6 +2,7 @@
 	- TCP streams guarantee that all bytes sent will be identical with bytes received and that they will arrive in the same order to the client. TCP is optimised for accurate delivery rather than a timely one.
 	- TCP is specifically designed to use packet loss as a feedback mechanism to help regulate its performance.
 	- ## Handshake
+	  collapsed:: true
 		- TCP is using a three-way-handshake before sharing any application data
 			- Client picks a random sequence number `x` and sends a **SYN** packet, which may also include additional TCP flags and options.
 			- Server increments `x` by one, picks own random sequence number `y`, appends its own set of flags and options, and dispatches the response in a **SYN ACK** packet.
@@ -75,4 +76,8 @@
 			- Slow-start initializes the connection with a conservative window and, for every roundtrip, doubles the amount of data in flight until it exceeds the receiver’s flow-control window, a system-configured congestion threshold (ssthresh) window, or until a packet is lost, at which point the congestion avoidance algorithm takes over.
 			- Once the congestion window is reset, congestion avoidance specifies its own [algorithms]( [[CCA]] ) for how to grow the window to minimize further loss. At a certain point, another packet loss event will occur, and the process will repeat once over.
 	- ## Bandwidth-Delay Product
+		- Product of data link’s capacity and its end-to-end delay. The result is the maximum amount of unacknowledged data that can be in flight at any point in time.
+		- The built-in congestion control and avoidance mechanisms force the sender to stop after sending more than the amount of unacknowledged data there is defined. The sender then has to wait for an ACK some of the packets before proceeding. If the sender has frequently has to wait for the other end to send ACKs, this would create gaps in the data flow. That is why the receiver window sizes must vary based on the #RTT and the target data rate between the two ends.
+		  ![ezgif.com-gif-maker.png](../assets/ezgif.com-gif-maker_1683724808404_0.png)
 		-
+		- $(x bits )$
