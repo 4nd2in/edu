@@ -34,6 +34,7 @@
 		- **Finish (FIN)** is used to request a graceful connection termination. This is the last packet sent.
 		  id:: 64411fb2-0438-48ae-94a1-53f821a4fa28
 	- ### (Receive) Window (16 bits)
+	  collapsed:: true
 		- Specifies how many window size units that the sender of this segment is currently willing to receive. The [[Receive Window (rwnd)]] and the [[Congestion Window (cwnd)]] are used to regulate data flow.
 	- ### Checksum (16 bits)
 	  collapsed:: true
