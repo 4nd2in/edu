@@ -59,8 +59,11 @@
 		- ### Padding (32 bit)
 			- The TCP header padding is used to ensure that the TCP header ends, and data begins, on a 32-bit boundary. The padding is composed of zeros
 	- ## Maximum Segment Size
+		- #WIP
 	- ## Selective Acknowledgments (SACK)
-	- ##
+		- #WIP
+	- ## Window Scaling
+		- #WIP
 	- ## Congestion handling
 	  id:: 644125f5-6bd7-427e-b73d-e1fa640d0d88
 	  collapsed:: true
