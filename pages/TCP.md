@@ -7,7 +7,7 @@
 			- Client picks a random sequence number `x` and sends a **SYN** packet, which may also include additional TCP flags and options.
 			- Server increments `x` by one, picks own random sequence number `y`, appends its own set of flags and options, and dispatches the response in a **SYN ACK** packet.
 			- Client increments both `x` and `y` by one and completes the handshake by dispatching the last **ACK** packet in the handshake.
-			- ![three-way-handshake](../assets/three-way-handshake_1681984421287_0.png)
+			- ![tcp-three-way-handshake.png](../assets/tcp-three-way-handshake_1683731643463_0.png)
 			- It is important to understand that when using TCP this handshake is made every time a new connection establishes and causes a full roundtrip of #latency before any application data can be transferred
 	- ## TCP Header
 		- ### Source Port (16 bits)
@@ -69,13 +69,13 @@
 			- Each ACK packet carries the latest WND value for each side, allowing both sides to dynamically adjust the data flow rate to the capacity and processing speed of the sender and receiver.
 		- ### Slow-start
 		  id:: 64412696-09fb-49b5-b5de-f3d48f03232d
-		  collapsed:: true
 			- Even though flow control prevents the sender from overwhelming the receiver, it does not consider that the underlying network might be overloaded. This is the reason the slow start was added to TCP.
 			- Slow start estimated the capacity of the network by exchanging data and start (what to expect) slowly. The maximum amount of data in flight (not ACKed) is the minimum of of the #[[RWND]] and #[[CWND]] variables. For every received **ACK**, the slow-start algorythm indicates that the server can increment its #[[CWND]] by one segment.
 			- This image is a representation of the #[[AIMD]] algorythm.
-			  ![ezgif.com-gif-maker.png](../assets/ezgif.com-gif-maker_1683710160754_0.png)
+			  ![tcp-congestion-avoidance-aimd.png](../assets/tcp-congestion-avoidance-aimd_1683731616959_0.png)
+				-
 			- Time to reach the cwnd size of size N
-			  ![ezgif.com-gif-maker.jpeg](../assets/ezgif.com-gif-maker_1683720204195_0.jpeg)
+			  ![tcp-time-to-reach-cwnd-size.jpeg](../assets/tcp-time-to-reach-cwnd-size_1683731694330_0.jpeg)
 				-
 			- Slow start is not as big of an issue for large, streaming downloads, as the client and the server will arrive at their maximum window sizes after few hundred milliseconds. For short and burst connections such as #HTTP, it is not unusual for the data transfer to finish before reaching the maximum size. Here performance can be increase by reducing the #RTT between the server and the client.
 		- ### Slow-start Restart
@@ -87,16 +87,17 @@
 			- Slow-start initializes the connection with a conservative window and, for every roundtrip, doubles the amount of data in flight until it exceeds the receiver’s flow-control window, a system-configured congestion threshold (ssthresh) window, or until a packet is lost, at which point the congestion avoidance algorithm takes over.
 			- Once the congestion window is reset, congestion avoidance specifies its own [algorithms]( [[CCA]] ) for how to grow the window to minimize further loss. At a certain point, another packet loss event will occur, and the process will repeat once over.
 	- ## Bandwidth-Delay Product
-	  collapsed:: true
 		- Product of data link’s capacity and its end-to-end delay. The result is the maximum amount of unacknowledged data that can be in flight at any point in time.
 		- The built-in congestion control and avoidance mechanisms force the sender to stop after sending more than the amount of unacknowledged data there is defined. The sender then has to wait for an ACK some of the packets before proceeding. If the sender has frequently has to wait for the other end to send ACKs, this would create gaps in the data flow. That is why the receiver window sizes must vary based on the #RTT and the target data rate between the two ends.
-		  ![ezgif.com-gif-maker.png](../assets/ezgif.com-gif-maker_1683724808404_0.png)
+		  ![tcp-head-of-line-blocking.png](../assets/tcp-head-of-line-blocking_1683731738295_0.png)
 		-
 		- Here is how to calculate the maximum data rate of a connection given the #RTT and minimum window size. In this example the window size is 16 KB and the roundtrip time is 100 ms
-		  ![ezgif.com-gif-maker(1).png](../assets/ezgif.com-gif-maker(1)_1683725142032_0.png)
+		  ![tcp-calculate-data-rate.png](../assets/tcp-calculate-data-rate_1683731758619_0.png)
 		  Even if the bandwidth is higher than 1.3 Mbps this connection would never exceed this data rate
+			-
 		- To increase the optimal window size there needs to be an increase in either the roundtrip time or the window size. Assuming the underlying network is capable of a 10 Mbps bandwidth:
-		  ![ezgif.com-gif-maker(2).png](../assets/ezgif.com-gif-maker(2)_1683725383195_0.png)
+		  ![tcp-calculate-optimized-window-size-for-bandwidth.png](../assets/tcp-calculate-optimized-window-size-for-bandwidth_1683731787786_0.png)
+			-
 	- ## Head-of-Line Blocking
 		- When one packet is lost during transmission, a receiver has to hold all subsequent packets in the TCP buffer until the lost packet is retransmitted. This is because TCP allows in-order and reliable packet delivery.
 		- This all happens on the TCP layer, hence the application cannot access the data until all segments were received.
