@@ -4,3 +4,6 @@
 	- In [slow start congestion control]( ((64412696-09fb-49b5-b5de-f3d48f03232d)) ) #TCP increases the window's size rapidly to reach the maximum transfer rate as fast as possible. This self-imposed window size increases as #TCP confirms the network's ability to transmit the data without errors.
 	- The maximum window size can not exceed the size of the #[[RWND]]
 	- Originally, the start value was set to 1 network segment; RFC 2581 updated this value to 4 segments in April 1999; most recently the value was increased once more to 10 segments by RFC 6928 in April 2013.
+- Source
+	- https://www.stackpath.com/edge-academy/what-is-cwnd-and-rwnd/
+	- https://hpbn.co/
