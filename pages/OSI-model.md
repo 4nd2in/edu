@@ -1,4 +1,5 @@
 - # Open Systems Interconecction model (OSI model)
+  title:: OSI-model
 	- ## Application layer
 		- #WIP
 	- ## Presentation layer
