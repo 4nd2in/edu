@@ -1,6 +1,6 @@
 - # RFC 793 - Transmission Control Protocol (TCP)
 	- TCP streams guarantee that all bytes sent will be identical with bytes received and that they will arrive in the same order to the client. TCP is optimised for accurate delivery rather than a timely one.
-	- TCP is specifically designed to use packet loss as a feedback mechanism to help regulate its performance.
+	- TCP is specifically designed to use packet loss and delay as a feedback mechanism to help regulate its performance.
 	- ## Handshake
 	  collapsed:: true
 		- TCP is using a three-way-handshake before sharing any application data
@@ -58,11 +58,16 @@
 			  |                  8 |                       - | TTTT, EEEE.     | timestamp and echo of previous timestamp |                          |
 		- ### Padding (32 bit)
 			- The TCP header padding is used to ensure that the TCP header ends, and data begins, on a 32-bit boundary. The padding is composed of zeros
+	- ## Head-of-Line Blocking
+		- Because the
 	- ## Maximum Segment Size
+	  collapsed:: true
 		- #WIP
 	- ## Selective Acknowledgments (SACK)
+	  collapsed:: true
 		- #WIP
 	- ## Window Scaling
+	  collapsed:: true
 		- #WIP
 	- ## Congestion handling
 	  id:: 644125f5-6bd7-427e-b73d-e1fa640d0d88
