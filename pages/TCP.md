@@ -70,8 +70,11 @@
 		- Slow start estimated the capacity of the network by exchanging data and start (what to expect) slowly. The maximum amount of data in flight (not ACKed) is the minimum of of the #[[Receive Window (rwnd)]] and #[[Congestion Window (cwnd)]] variables. For every received **ACK**, the slow-start algorythm indicates that the server can increment its #[[Congestion Window (cwnd)]] by one segment.
 		- This image is a representation of the #[[additive increase/multuplicative decrease (AIMA)]] algorythm.
 		  ![ezgif.com-gif-maker.png](../assets/ezgif.com-gif-maker_1683710160754_0.png)
-		- Time to reach the cwnd size
-		-
+		- Time to reach the cwnd size of size N
+		  ![ezgif.com-gif-maker.jpeg](../assets/ezgif.com-gif-maker_1683720204195_0.jpeg)
+			-
+		- Slow start is not as big of an issue for large, streaming downloads, as the client and the server will arrive at their maximum window sizes after few hundred milliseconds. For short and burst connections such as #HTTP, it is not unusual for the data transfer to finish before reaching the maximum size. Here performance can be increase by reducing the roundtrip time between the server and the client.
+	-
 	- ### Congestion Avoidance
 	- ### Fast retransmit
 	- ### Fast recovery
