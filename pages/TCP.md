@@ -76,8 +76,13 @@
 			- Slow-start initializes the connection with a conservative window and, for every roundtrip, doubles the amount of data in flight until it exceeds the receiver’s flow-control window, a system-configured congestion threshold (ssthresh) window, or until a packet is lost, at which point the congestion avoidance algorithm takes over.
 			- Once the congestion window is reset, congestion avoidance specifies its own [algorithms]( [[CCA]] ) for how to grow the window to minimize further loss. At a certain point, another packet loss event will occur, and the process will repeat once over.
 	- ## Bandwidth-Delay Product
+	  collapsed:: true
 		- Product of data link’s capacity and its end-to-end delay. The result is the maximum amount of unacknowledged data that can be in flight at any point in time.
 		- The built-in congestion control and avoidance mechanisms force the sender to stop after sending more than the amount of unacknowledged data there is defined. The sender then has to wait for an ACK some of the packets before proceeding. If the sender has frequently has to wait for the other end to send ACKs, this would create gaps in the data flow. That is why the receiver window sizes must vary based on the #RTT and the target data rate between the two ends.
 		  ![ezgif.com-gif-maker.png](../assets/ezgif.com-gif-maker_1683724808404_0.png)
 		-
-		- $(x bits )$
+		- Here is how to calculate the maximum data rate of a connection given the #RTT and minimum window size. In this example the window size is 16 KB and the roundtrip time is 100 ms
+		  ![ezgif.com-gif-maker(1).png](../assets/ezgif.com-gif-maker(1)_1683725142032_0.png)
+		  Even if the bandwidth is higher than 1.3 Mbps this connection would never exceed this data rate
+		- To increase the optimal window size there needs to be an increase in either the roundtrip time or the window size. Assuming the underlying network is capable of a 10 Mbps bandwidth:
+		  ![ezgif.com-gif-maker(2).png](../assets/ezgif.com-gif-maker(2)_1683725383195_0.png)
