@@ -10,7 +10,6 @@
 			- ![three-way-handshake](../assets/three-way-handshake_1681984421287_0.png)
 			- It is important to understand that when using TCP this handshake is made every time a new connection establishes and causes a full roundtrip of #latency before any application data can be transferred
 	- ## TCP Header
-	  collapsed:: true
 		- ### Source Port (16 bits)
 			- Specifies the port number of the sender
 		- ### Destination Port (16 bits)
@@ -20,7 +19,6 @@
 		- ### Acknowledgement Number (32 bits)
 			- This is used to acknowledge the receipt of a TCP segment and to communicate the next expected sequence number to the sender. The acknowledgement number field contains the sequence number of the next expected segment when the ACK control flag is set.
 		- ### Data Offset (4 bits)
-		  collapsed:: true
 			- This is used to tell the receiver how many 32-bit words (4 bytes each) are in the header, so it knows where the header ends and the data begins.
 		- ### Reserved (4 bits)
 			- For future use and should be set to zero.
@@ -43,10 +41,16 @@
 		- ### Urgent Pointer (16 bits)
 			- If the URG flag is set, then this 16-bit field is an offset from the sequence number indicating the last urgent data byte
 		- ### Options (Variable 0–320 bits, in units of 32 bits)
-			-
+			- The length is defined by the *data offset* field
+			- Options can have up to 3 fields of which only the first one is mandatory
+				- **Option-Kind (1 byte)**
+				- **Option-Length (1 byte)**
+				- **Option-Data (variable)**
+			- | Option-Kind | Option-Length | Option-Data | Purpose | Notes |
+			  |---------------|------------------|--------------|-----------|--------|
+			  | 0                   |                         |
 		- ### Padding (32 bit)
 			- The TCP header padding is used to ensure that the TCP header ends, and data begins, on a 32-bit boundary. The padding is composed of zeros
-			-
 	- ## Congestion handling
 	  id:: 644125f5-6bd7-427e-b73d-e1fa640d0d88
 	  collapsed:: true
