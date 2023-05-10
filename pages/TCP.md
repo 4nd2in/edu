@@ -64,7 +64,7 @@
 	- ### Flow control
 		- A mechanism to prevent the sender from overwhelming the receiver with data it may not be able to process as the receiver may be busy, under heavy load or may only allocate a fixed amount of buffer space. For this the Window segment is used when the first connection is established for both sender and receiver.
 		- Each ACK packet carries the latest WND value for each side, allowing both sides to dynamically adjust the data flow rate to the capacity and processing speed of the sender and receiver.
-	- ### Slow start
+	- ### Slow-start
 	  id:: 64412696-09fb-49b5-b5de-f3d48f03232d
 		- Even though flow control prevents the sender from overwhelming the receiver, it does not consider that the underlying network might be overloaded. This is the reason the slow start was added to TCP.
 		- Slow start estimated the capacity of the network by exchanging data and start (what to expect) slowly. The maximum amount of data in flight (not ACKed) is the minimum of of the #[[Receive Window (rwnd)]] and #[[Congestion Window (cwnd)]] variables. For every received **ACK**, the slow-start algorythm indicates that the server can increment its #[[Congestion Window (cwnd)]] by one segment.
@@ -74,7 +74,11 @@
 		  ![ezgif.com-gif-maker.jpeg](../assets/ezgif.com-gif-maker_1683720204195_0.jpeg)
 			-
 		- Slow start is not as big of an issue for large, streaming downloads, as the client and the server will arrive at their maximum window sizes after few hundred milliseconds. For short and burst connections such as #HTTP, it is not unusual for the data transfer to finish before reaching the maximum size. Here performance can be increase by reducing the roundtrip time between the server and the client.
-	-
+	- ### Slow-start Restart
+		- This is a mechanism that will reset the #[[Congestion Window (cwnd)]] size of a connection after it has been idle for a defined period of time. This is due to the fact that the condition of the underlying network might have changed while the connection has been idle.
+		- This mechanism is a "safe" default. However, disabling this can gain performance on long-lived #HTTP connections.
 	- ### Congestion Avoidance
+		- TCP is specifically designed to use packet loss as a feedback mechanism to help regulate its performance.
+		-
 	- ### Fast retransmit
 	- ### Fast recovery
