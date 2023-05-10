@@ -10,6 +10,7 @@
 			- ![three-way-handshake](../assets/three-way-handshake_1681984421287_0.png)
 			- It is important to understand that when using TCP this handshake is made every time a new connection establishes and causes a full roundtrip of #latency before any application data can be transferred
 	- ## TCP Header
+	  collapsed:: true
 		- ### Source Port (16 bits)
 			- Specifies the port number of the sender
 		- ### Destination Port (16 bits)
@@ -46,11 +47,20 @@
 				- **Option-Kind (1 byte)**
 				- **Option-Length (1 byte)**
 				- **Option-Data (variable)**
-			- | Option-Kind | Option-Length | Option-Data | Purpose | Notes |
-			  |---------------|------------------|--------------|-----------|--------|
-			  | 0                   |                         |
+			- | Option-Kind | Option-Length | Option-Data |                                 Purpose |                 only SYN |
+			  |-------------------------------------------------------------------------------------------------------|
+			  |                  0 |                       - |                   - |                  End of options list |                          |
+			  |                  1 |                       0 |                   - |                          No operation |                          |
+			  |                  2 |                       4 |                 SS |         Maximum segment size |             **SYN** |
+			  |                  3 |                       3 |                   S |                        Window Scale |             **SYN** |
+			  |                  4 |                       2 |                   - |         selective ACK permitted |             **SYN** |
+			  |                  5 |  10, 18, 26 or 34 | BBBB, EEEE,... |             selective ACK (SACK) |                          |
+			  |                  8 |                       - | TTTT, EEEE.     | timestamp and echo of previous timestamp |                          |
 		- ### Padding (32 bit)
 			- The TCP header padding is used to ensure that the TCP header ends, and data begins, on a 32-bit boundary. The padding is composed of zeros
+	- ## Maximum Segment Size
+	- ## Selective Acknowledgments (SACK)
+	- ##
 	- ## Congestion handling
 	  id:: 644125f5-6bd7-427e-b73d-e1fa640d0d88
 	  collapsed:: true
