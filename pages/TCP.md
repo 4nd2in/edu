@@ -1,5 +1,6 @@
 - # RFC 793 - Transmission Control Protocol (TCP)
 	- TCP streams guarantee that all bytes sent will be identical with bytes received and that they will arrive in the same order to the client. TCP is optimised for accurate delivery rather than a timely one.
+	- TCP is specifically designed to use packet loss as a feedback mechanism to help regulate its performance.
 	- ## Handshake
 	  collapsed:: true
 		- TCP is using a three-way-handshake before sharing any application data
@@ -56,9 +57,7 @@
 		  collapsed:: true
 			- The TCP header padding is used to ensure that the TCP header ends, and data begins, on a 32-bit boundary. The padding is composed of zeros
 			-
-	- ## Congestion Control
-	-
-	- ## Congestion Avoidance
+	- ## Congestion handling
 	  id:: 644125f5-6bd7-427e-b73d-e1fa640d0d88
 		- When network traffic exceeds beyond the capacity of the network and causes increased delays, packet loss and decreased network performance it is called congestion. To address these issues, multiple mechanisms were implemented in TCP to govern the rate with which the data can be sent in both directions: flow control, congestion control, and congestion avoidance.
 		- ### Flow control
@@ -78,8 +77,8 @@
 			- This is a mechanism that will reset the #[[CWND]] size of a connection after it has been idle for a defined period of time. This is due to the fact that the condition of the underlying network might have changed while the connection has been idle.
 			- This mechanism is a "safe" default. However, disabling this can gain performance on long-lived #HTTP connections.
 		- ### Congestion Avoidance
-			- TCP is specifically designed to use packet loss as a feedback mechanism to help regulate its performance.
 			- Slow-start initializes the connection with a conservative window and, for every roundtrip, doubles the amount of data in flight until it exceeds the receiver’s flow-control window, a system-configured congestion threshold (ssthresh) window, or until a packet is lost, at which point the congestion avoidance algorithm takes over.
+			- Once the congestion window is reset, congestion avoidance specifies its own algorithms for how to grow the window to minimize further loss. At a certain point, another packet loss event will occur, and the process will repeat once over. #CCA
 			-
 		- ### Fast retransmit
 		- ### Fast recovery
