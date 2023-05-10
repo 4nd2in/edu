@@ -59,6 +59,7 @@
 		- A mechanism to prevent the sender from overwhelming the receiver with data it may not be able to process as the receiver may be busy, under heavy load or may only allocate a fixed amount of buffer space. For this the Window segment is used when the first connection is established for both sender and receiver.
 		- Each ACK packet carries the latest WND value for each side, allowing both sides to dynamically adjust the data flow rate to the capacity and processing speed of the sender and receiver.
 	- ### Slow start
+	  id:: 64412696-09fb-49b5-b5de-f3d48f03232d
 		- Even though flow control prevents the sender from overwhelming the receiver, it does not consider that the underlying network might be overloaded. This is the reason the slow start was added to TCP.
 		- Slow start estimated the capacity of the network by exchanging data and start (what to expect) slowly.
 		-

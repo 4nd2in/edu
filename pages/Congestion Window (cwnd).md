@@ -1,2 +1,3 @@
--
-- The Congestion Window size is a Sender-side limit on the amount of data the sender can have in flight before receiving an acknowledgment from the client
+- A #TCP state variable
+- The congestion window size is a sender-side limit on the amount of data the sender can have in flight before receiving an acknowledgment from the client
+- In [slow start congestion control]( ((64412696-09fb-49b5-b5de-f3d48f03232d)) )
