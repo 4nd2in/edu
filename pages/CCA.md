@@ -3,6 +3,10 @@
 		- Original implementations
 	- ## TCP New Reno
 	- ## TCP Vegas
-	- ## T
+	- ## TCP BIC
+	- ## TCP CUBIC
+		- Default on #Linux
+	- ## Compound TCP
+		- default on #Windows
 	- ##
 	- ##

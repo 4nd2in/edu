@@ -2,7 +2,6 @@
 	- TCP streams guarantee that all bytes sent will be identical with bytes received and that they will arrive in the same order to the client. TCP is optimised for accurate delivery rather than a timely one.
 	- TCP is specifically designed to use packet loss as a feedback mechanism to help regulate its performance.
 	- ## Handshake
-	  collapsed:: true
 		- TCP is using a three-way-handshake before sharing any application data
 			- Client picks a random sequence number `x` and sends a **SYN** packet, which may also include additional TCP flags and options.
 			- Server increments `x` by one, picks own random sequence number `y`, appends its own set of flags and options, and dispatches the response in a **SYN ACK** packet.
@@ -11,25 +10,19 @@
 			- It is important to understand that when using TCP this handshake is made every time a new connection establishes and causes a full roundtrip of #latency before any application data can be transferred
 	- ## TCP Header
 		- ### Source Port (16 bits)
-		  collapsed:: true
 			- Specifies the port number of the sender
 		- ### Destination Port (16 bits)
-		  collapsed:: true
 			- Specifies the port number of the receiver
 		- ### Sequence Number (32 bits)
-		  collapsed:: true
 			- This is a unique number assigned to each packet by the sender to identify the order in which packets should be received by the receiver. The sequence number is used in conjunction with the acknowledgement number to ensure reliable data transfer and to prevent duplicate packets. It is initialized when a connection is first established
 		- ### Acknowledgement Number (32 bits)
-		  collapsed:: true
 			- This is used to acknowledge the receipt of a TCP segment and to communicate the next expected sequence number to the sender. The acknowledgement number field contains the sequence number of the next expected segment when the ACK control flag is set.
 		- ### Data Offset (4 bits)
 		  collapsed:: true
 			- This is used to tell the receiver how many 32-bit words (4 bytes each) are in the header, so it knows where the header ends and the data begins.
 		- ### Reserved (4 bits)
-		  collapsed:: true
 			- For future use and should be set to zero.
 		- ### Control Flags (8 bits, 1 bit each)
-		  collapsed:: true
 			- **Congestion window reduced (CWR)**: is set by the sending host to indicate that it received a TCP segment with the *ECE* flag set and had responded in congestion control mechanism
 			- **Explicit Congestion Notification Echo (ECE)**: has two usages depending on the *SYN* flag
 				- if *SYN = 0* the flag indicates that a packet with Congestion Experienced flag set (ECN=11) in the IP header was received during normal transmission
@@ -42,19 +35,14 @@
 			- **Finish (FIN)** is used to request a graceful connection termination. This is the last packet sent.
 			  id:: 64411fb2-0438-48ae-94a1-53f821a4fa28
 		- ### (Receive) Window (16 bits)
-		  collapsed:: true
-			- Specifies how many window size units that the sender of this segment is currently willing to receive. The [[RWND]] and the [[CWND]] are used to regulate data flow.
+			- Specifies how many window size units that the sender of this segment is currently willing to receive. The #RWND and the #CWND are used to regulate data flow.
 		- ### Checksum (16 bits)
-		  collapsed:: true
 			- This is used to verify the integrity of the TCP segment during transmission. The checksum is computed over the entire segment, including the header and data fields, and is recalculated at each hop along the network path
 		- ### Urgent Pointer (16 bits)
-		  collapsed:: true
 			- If the URG flag is set, then this 16-bit field is an offset from the sequence number indicating the last urgent data byte
 		- ### Options (Variable 0–320 bits, in units of 32 bits)
-		  collapsed:: true
 			-
 		- ### Padding (32 bit)
-		  collapsed:: true
 			- The TCP header padding is used to ensure that the TCP header ends, and data begins, on a 32-bit boundary. The padding is composed of zeros
 			-
 	- ## Congestion handling
@@ -72,13 +60,13 @@
 			- Time to reach the cwnd size of size N
 			  ![ezgif.com-gif-maker.jpeg](../assets/ezgif.com-gif-maker_1683720204195_0.jpeg)
 				-
-			- Slow start is not as big of an issue for large, streaming downloads, as the client and the server will arrive at their maximum window sizes after few hundred milliseconds. For short and burst connections such as #HTTP, it is not unusual for the data transfer to finish before reaching the maximum size. Here performance can be increase by reducing the roundtrip time between the server and the client.
+			- Slow start is not as big of an issue for large, streaming downloads, as the client and the server will arrive at their maximum window sizes after few hundred milliseconds. For short and burst connections such as #HTTP, it is not unusual for the data transfer to finish before reaching the maximum size. Here performance can be increase by reducing the #RTT between the server and the client.
 		- ### Slow-start Restart
 			- This is a mechanism that will reset the #[[CWND]] size of a connection after it has been idle for a defined period of time. This is due to the fact that the condition of the underlying network might have changed while the connection has been idle.
 			- This mechanism is a "safe" default. However, disabling this can gain performance on long-lived #HTTP connections.
 		- ### Congestion Avoidance
 			- Slow-start initializes the connection with a conservative window and, for every roundtrip, doubles the amount of data in flight until it exceeds the receiver’s flow-control window, a system-configured congestion threshold (ssthresh) window, or until a packet is lost, at which point the congestion avoidance algorithm takes over.
-			- Once the congestion window is reset, congestion avoidance specifies its own algorithms for how to grow the window to minimize further loss. At a certain point, another packet loss event will occur, and the process will repeat once over. #CCA
+			- Once the congestion window is reset, congestion avoidance specifies its own [algorithms]( [[CCA]] ) for how to grow the window to minimize further loss. At a certain point, another packet loss event will occur, and the process will repeat once over.
 			-
 		- ### Fast retransmit
-		- ### Fast recovery
+			-
