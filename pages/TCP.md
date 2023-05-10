@@ -9,7 +9,6 @@
 			- ![three-way-handshake](../assets/three-way-handshake_1681984421287_0.png)
 			- It is important to understand that when using TCP this handshake is made every time a new connection establishes and causes a full roundtrip of #latency before any application data can be transferred
 	- ## TCP Header
-	  collapsed:: true
 		- ### Source Port (16 bits)
 		  collapsed:: true
 			- Specifies the port number of the sender
@@ -57,7 +56,9 @@
 		  collapsed:: true
 			- The TCP header padding is used to ensure that the TCP header ends, and data begins, on a 32-bit boundary. The padding is composed of zeros
 			-
-	- ## Congestion Avoidance and Control
+	- ## Congestion Control
+	-
+	- ## Congestion Avoidance
 	  id:: 644125f5-6bd7-427e-b73d-e1fa640d0d88
 		- When network traffic exceeds beyond the capacity of the network and causes increased delays, packet loss and decreased network performance it is called congestion. To address these issues, multiple mechanisms were implemented in TCP to govern the rate with which the data can be sent in both directions: flow control, congestion control, and congestion avoidance.
 		- ### Flow control
@@ -67,7 +68,7 @@
 		  id:: 64412696-09fb-49b5-b5de-f3d48f03232d
 			- Even though flow control prevents the sender from overwhelming the receiver, it does not consider that the underlying network might be overloaded. This is the reason the slow start was added to TCP.
 			- Slow start estimated the capacity of the network by exchanging data and start (what to expect) slowly. The maximum amount of data in flight (not ACKed) is the minimum of of the #[[RWND]] and #[[CWND]] variables. For every received **ACK**, the slow-start algorythm indicates that the server can increment its #[[CWND]] by one segment.
-			- This image is a representation of the #[[AIMA]] algorythm.
+			- This image is a representation of the #[[AIMD]] algorythm.
 			  ![ezgif.com-gif-maker.png](../assets/ezgif.com-gif-maker_1683710160754_0.png)
 			- Time to reach the cwnd size of size N
 			  ![ezgif.com-gif-maker.jpeg](../assets/ezgif.com-gif-maker_1683720204195_0.jpeg)
