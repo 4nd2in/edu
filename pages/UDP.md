@@ -1,5 +1,6 @@
 - # RFC 768 - User Datagram Protocol (UDP)
 	- Also referred to as *null protocol*
+	- In comparison to #TCP this protocol
 	- ## Header
 		- UDP encapulates user messages into its own packet structure which adds four fields
 		  ![udp-header.png](../assets/udp-header_1684163111100_0.png)
