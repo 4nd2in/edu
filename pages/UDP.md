@@ -5,10 +5,10 @@
 		- ordered delivery
 		- connection state tracking
 		- congestion control
-	- Because of that, this protocol gives t
+	- Because of that, this protocol gives applications above the freedom to handle protocol design decisions themselves.
 	- ## Header
 		- This protocol delivers user messages in #datagram which are different to packets as they are not meant to be reliable.
-		- UDP encapulates user messages into its own packet structure which adds four fields
+		- UDP encapsulates user messages into its own packet structure which adds four fields
 		  ![udp-header.png](../assets/udp-header_1684163111100_0.png)
 		- ### Source Port (optional)
 			- Indicates the port of the sending process and may be assumed to be the port to which a reply should be addressed in the absence of any other information. If unused, zero is inserted.
