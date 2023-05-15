@@ -10,7 +10,7 @@
 		- UDP encapulates user messages into its own packet structure which adds four fields
 		  ![udp-header.png](../assets/udp-header_1684163111100_0.png)
 		- ### Source Port (optional)
-			-
+			- Indicates the port of the sending process and may be assumed to be the port to which a reply should be addressed in the absence og
 		- ### Destination Port (optional)
 		- ### Length
 		- ### Checksum (optional)
