@@ -3,4 +3,9 @@
 	- ## Header
 		- UDP encapulates user messages into its own packet structure which adds four fields
 		  ![udp-header.png](../assets/udp-header_1684163111100_0.png)
+		- ### Source Port
 			-
+		- ### Destination Port
+		- ### Length
+		- ### Checksum
+		-
