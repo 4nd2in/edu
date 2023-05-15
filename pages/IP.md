@@ -4,7 +4,7 @@
 	- Each datagram is encapsulated within an IP packet which identifies the source and the destination addresses, as well as a number of other routing parameters.
 	- ## RFC 791 - IPv4
 		- 32 bit long addresses (maximum of 4.29 billion addresses)
-		- 255.255.255.255
+		- Each address consists of numbers
 		- #WIP
 	- ## RFC 2460 - IPv6
 		- #WIP
