@@ -3,6 +3,8 @@
 	- This layer provides no guarantee about message delivery or notification of failure and hence directly exposes the unreliability to the layer above.
 	- Each datagram is encapsulated within an IP packet which identifies the source and the destination addresses, as well as a number of other routing parameters.
 	- ## RFC 791 - IPv4
+		- 32 bit long addresses (maximum of 4.29 billion addresses)
+		- 255.255.255.255
 		- #WIP
 	- ## RFC 2460 - IPv6
 		- #WIP
