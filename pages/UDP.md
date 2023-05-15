@@ -14,6 +14,7 @@
 		- ### Destination Port (optional)
 			-
 		- ### Length
+			- Length  is the length  in octets  of this user datagram  including  this header  and the data. (This  means  the minimum value of the length is eight.)
 		- ### Checksum (optional)
 			- The #IP packet contains its own header checksum, and the application can choose to omit the UDP checksum, which means that all the error detection and error correction can be delegated to the applications above them.
 		-
