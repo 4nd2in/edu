@@ -8,5 +8,6 @@
 		- ### Destination Port (optional)
 		- ### Length
 		- ### Checksum (optional)
+			- An #IP packet has its own header checksum
 		-
 		-
