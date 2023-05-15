@@ -8,6 +8,6 @@
 		- ### Destination Port (optional)
 		- ### Length
 		- ### Checksum (optional)
-			- An #IP packet has its own header checksum
+			- The #IP packet contains its own header checksum, and the application can choose to omit the UDP checksum, which means that all the error detection and error correction can be delegated to the applications above them.
 		-
 		-
