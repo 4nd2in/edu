@@ -1,2 +1,2 @@
 - # RFC 768 - User Datagram Protocol (UDP)
-	- A protocol that delivers
+	- Also referred to as **null protocol*
