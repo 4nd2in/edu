@@ -1,1 +1,2 @@
-- A self-contained, independent entity of data carrying sufficient information to be routed from the source to the destination nodes without reliance on earlier exchanges between the nodes and the transporting network.
+- A self-contained, independent entity of data carrying sufficient information to be routed from the source to the destination nodes **without reliance** on earlier exchanges between the nodes and the transporting network.
+-
