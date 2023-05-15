@@ -4,7 +4,7 @@
 	- Each datagram is encapsulated within an IP packet which identifies the source and the destination addresses, as well as a number of other routing parameters.
 	- ## RFC 791 - IPv4
 		- #WIP
-	- ## IPv6
+	- ## RFC 2460 - IPv6
 		- #WIP
 	-
 - Source
