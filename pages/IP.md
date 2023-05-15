@@ -4,8 +4,9 @@
 	- Each datagram is encapsulated within an IP packet which identifies the source and the destination addresses, as well as a number of other routing parameters.
 	- ## RFC 791 - IPv4
 		- 32 bit long addresses (maximum of 4.29 billion addresses)
-		- Each address consists of numbers concatinated with dots
-		- #WIP
+		- Each address consists of numbers (0-255) concatenated with dots -> 192.168.1.1
+		- #### IP Ranges
+			- | IP address range
 	- ## RFC 2460 - IPv6
 		- #WIP
 	-
