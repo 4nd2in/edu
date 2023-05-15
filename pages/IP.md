@@ -1,5 +1,6 @@
 - # Internet Protocol (IP)
 	- Is a [network layer (layer 3)]( ((64412719-7dde-4652-ae30-ed9ed4768876)) ) communication protocol for relaying #datagram across network boundaries.
+	- The unreliability of data transmission must be handled by protocols above this.
 	- Each datagram is encapsulated within an IP packet which identifies the source and the destination addresses, as well as a number of other routing parameters.
 - Source
 	- https://hpbn.co/building-blocks-of-udp/
