@@ -5,7 +5,7 @@
 		- ordered delivery
 		- connection state tracking
 		- congestion control
-	- Because of that, this protocol
+	- Because of that, this protocol gives t
 	- ## Header
 		- This protocol delivers user messages in #datagram which are different to packets as they are not meant to be reliable.
 		- UDP encapulates user messages into its own packet structure which adds four fields
