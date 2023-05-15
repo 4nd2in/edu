@@ -5,9 +5,11 @@
 	- ## RFC 791 - IPv4
 		- 32 bit long addresses (maximum of 4.29 billion addresses)
 		- Each address consists of numbers (0-255) concatenated with dots -> 192.168.1.1
-		- #### IP Ranges
+		- #### Private network IP Ranges
 			- | IP address range | Number of addresses |
 			  |--------------------|-------------------------|
+			  | 10.0.0.0 - 10.255.255.255 | 16'777'216 |
+			  | 172.16.0.0 - 172.31.255.255 | 1'048'576 |
 			  | 10.0.0.0 - 10.255.255.255| 16'777'216 |
 			-
 	- ## RFC 2460 - IPv6
