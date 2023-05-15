@@ -1,6 +1,10 @@
 - # RFC 768 - User Datagram Protocol (UDP)
 	- Also referred to as *null protocol*
-	- In comparison to #TCP this protocol
+	- In comparison to #TCP this protocol does **not** provide
+		- guaranteed message delivery
+		- ordered delivery
+		- connection state tracking
+		- congestion control
 	- ## Header
 		- UDP encapulates user messages into its own packet structure which adds four fields
 		  ![udp-header.png](../assets/udp-header_1684163111100_0.png)
