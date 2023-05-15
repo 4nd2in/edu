@@ -5,4 +5,4 @@
 - Building Blocks of TCP
 	- [[TCP]] and [[IP]] are two protocols used to reliable connect two hosts
 - Building Blocks of UDP
-	- [[UDP]]
+	- [[UDP]] is a protocol that delivers data unreliably
