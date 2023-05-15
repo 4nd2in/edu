@@ -10,8 +10,9 @@
 		- UDP encapulates user messages into its own packet structure which adds four fields
 		  ![udp-header.png](../assets/udp-header_1684163111100_0.png)
 		- ### Source Port (optional)
-			- Indicates the port of the sending process and may be assumed to be the port to which a reply should be addressed in the absence og
+			- Indicates the port of the sending process and may be assumed to be the port to which a reply should be addressed in the absence of any other information. If unused, zero is inserted.
 		- ### Destination Port (optional)
+			-
 		- ### Length
 		- ### Checksum (optional)
 			- The #IP packet contains its own header checksum, and the application can choose to omit the UDP checksum, which means that all the error detection and error correction can be delegated to the applications above them.
