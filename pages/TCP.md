@@ -62,6 +62,7 @@
 	- ## Congestion handling
 	  id:: 644125f5-6bd7-427e-b73d-e1fa640d0d88
 		- When network traffic exceeds beyond the capacity of the network and causes increased delays, packet loss and decreased network performance it is called congestion. To address these issues, multiple mechanisms were implemented in TCP to govern the rate with which the data can be sent in both directions: flow control, congestion control, and congestion avoidance.
+		  id:: 64412719-7dde-4652-ae30-ed9ed4768876
 		- The maximum amount of unacknowledged, in-flight data between the sender and receiver is defined as the minimum of the receive and congestion window sizes: the current receive windows are communicated in every ACK, and the congestion window is dynamically adjusted by the sender based on the congestion control and avoidance algorithms.
 		- ### Flow control
 		  collapsed:: true
