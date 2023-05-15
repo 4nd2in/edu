@@ -12,7 +12,7 @@
 		- ### Source Port (optional)
 			- Indicates the port of the sending process and may be assumed to be the port to which a reply should be addressed in the absence of any other information. If unused, zero is inserted.
 		- ### Destination Port (optional)
-			-
+			- Indicates the port of the receiving process.
 		- ### Length
 			- Length  is the length  in octets  of this user datagram  including  this header  and the data. (This  means  the minimum value of the length is eight.)
 		- ### Checksum (optional)
