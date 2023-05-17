@@ -6,7 +6,7 @@
 	- ## One-to-many NAT
 		- The majority of network address translators map multiple private hosts to one publicly exposed IP address.
 		- Here the routing device has one public and one private address.
-		- As traffic passes from
+		- As traffic passes through the router, it translates the source address in each packet from a private address to the router's public address. The router tracks basic data about each active connection
 		-
 - Source
 	- https://hpbn.co/building-blocks-of-udp/
