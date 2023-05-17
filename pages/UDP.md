@@ -5,7 +5,6 @@
 		- ordered delivery
 		- connection state tracking
 		- congestion control
-	-
 	- Because of that, this protocol gives applications above the freedom to handle protocol design decisions themselves.
 	- ## Header
 		- This protocol delivers user messages in #datagram which are different to packets as they are not meant to be reliable.
