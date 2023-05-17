@@ -6,7 +6,7 @@
 		- connection state tracking
 		- congestion control
 	- Because of that, this protocol gives applications above the freedom to handle protocol design decisions themselves.
-	- One problem occurs
+	- One problem occurs when [[Network Address Translators (NAT)]] come into play as this protocol does not hold a connection state and thus the router does not know if the connection is closed or not.
 	- ## Header
 		- This protocol delivers user messages in #datagram which are different to packets as they are not meant to be reliable.
 		- UDP encapsulates user messages of the IP layer into its own packet structure which adds four fields
