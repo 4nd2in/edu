@@ -1,2 +1,2 @@
 - # RFC 2663 - basic NAT
-	-
+	- This is a method of mapping an IP address space into another by modifying network address information
