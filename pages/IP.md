@@ -5,7 +5,7 @@
 	- ## RFC 791 - IPv4
 		- 32 bit long addresses (maximum of 4.29 billion addresses). The problem here is that we run out of IP addresses if we want to give every device on the world a unique one. Because of that Network Address Translators (NAT) were introduced. The proposed IP reuse solution was to introduce NAT devices at the edge of the network, each of which would be responsible for maintaining a table mapping of local IP and port tuples to one or more globally unique (public) IP and port tuples The local IP address space behind the translator could then be reused among many different networks, thus solving the address depletion problem.
 		- Each address consists of numbers (0-255) concatenated with dots -> 192.168.1.1
-		- Instead of this dot-decimal representation
+		- Instead of this dot-decimal representation you could use the compact CIDR notation. This specifies an IP address, a slash character and a decimal number. The
 		- #### Private network IP Ranges
 			- | IP address range | Number of addresses |
 			  |--------------------|-------------------------|
