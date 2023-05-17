@@ -8,7 +8,7 @@
 	- Because of that, this protocol gives applications above the freedom to handle protocol design decisions themselves.
 	- ## NAT Traversal
 		- One problem occurs when [[Network Address Translators (NAT)]] come into play as this protocol does not hold a state and thus the router does not know if the connection is closed or not. Also the router has to hold states for IPs and ports for a protocol that does not.
-		- When a connection from the private net is made to the public, the router knows how to wrap
+		- When a connection from the private net is made to the public, the router knows how to wrap the IP header. If it is the other way around and a packet from the public net gets to the router, it does not know to which private address this packet should go.
 	- ## Header
 		- This protocol delivers user messages in #datagram which are different to packets as they are not meant to be reliable.
 		- UDP encapsulates user messages of the IP layer into its own packet structure which adds four fields
