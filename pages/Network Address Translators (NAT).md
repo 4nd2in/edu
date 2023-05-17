@@ -1,3 +1,3 @@
 - # RFC 2663 - basic NAT
 	- This is a method of mapping an IP address space into another by modifying network address information in the [IP header]( ((6464998d-c562-4cca-aa7f-f315c069593a)) ) of packets while they are in transit across a traffic routing device.
-	- This method was introduced to
+	- This method was introduced as a response to the global IPv4 address exhaustion.
