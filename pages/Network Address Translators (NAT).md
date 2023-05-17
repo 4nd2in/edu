@@ -5,7 +5,8 @@
 		- In its simplest version (RFC RFC 2663) called basic NAT or one-to-one NAT only the IP addresses, IP header checksum and any higher-level checksums that include the IP Address are changed.
 	- ## One-to-many NAT
 		- The majority of network address translators map multiple private hosts to one publicly exposed IP address.
-		-
+		- Here the routing device has one public and one private address.
+		- As traffic passes from
 		-
 - Source
 	- https://hpbn.co/building-blocks-of-udp/
