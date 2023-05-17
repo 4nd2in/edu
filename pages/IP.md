@@ -7,7 +7,8 @@
 		- Each address consists of numbers (0-255) concatenated with dots -> 192.168.1.1
 		- Instead of this dot-decimal representation you could use the compact CIDR notation. This specifies an IP address, a slash character and a decimal number. The decimal number is the count of consecutive leading 1-bits (from left to right) in the network mask.  The number can also be thought of as the width (in bits) of the network prefix.
 		- ### Header
-		- #### Private network IP Ranges
+		-
+		- ### Private network IP Ranges
 			- | IP address range | Number of addresses |
 			  |--------------------|-------------------------|
 			  | 10.0.0.0 - 10.255.255.255 | 16'777'216 |
