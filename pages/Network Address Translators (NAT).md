@@ -4,5 +4,5 @@
 	- ## Basic NAT
 		- In its simplest version (RFC RFC 2663) called basic NAT or one-to-one NAT only the IP addresses, IP header checksum and any higher-level checksums that include the IP Address are changed.
 	- ## One-to-many NAT
-		-
+		- The majority of network address translators map multiple private hosts to one publicly expo
 	-
