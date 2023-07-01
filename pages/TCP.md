@@ -8,6 +8,7 @@
 			- Server increments `x` by one, picks own random sequence number `y`, appends its own set of flags and options, and dispatches the response in a **SYN ACK** packet.
 			- Client increments both `x` and `y` by one and completes the handshake by dispatching the last **ACK** packet in the handshake.
 			- ![tcp-three-way-handshake.png](../assets/tcp-three-way-handshake_1683731643463_0.png)
+			  id:: 644123a6-9515-4ed3-86e8-158357bf3d9e
 			- It is important to understand that when using TCP this handshake is made every time a new connection establishes and causes a full roundtrip of #latency before any application data can be transferred
 	- ## TCP Header
 		- ### Source Port (16 bits)
