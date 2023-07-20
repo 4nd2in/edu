@@ -9,13 +9,13 @@
 		- Components
 			- `s` -> secret random number between 1 and `p`
 			- `g` -> generator [[primitive root modulo n]]
-			- `p` -> prime number that will be exponentiating g
+			- `p` -> prime number
 		- Both parties then calculates and exchange the result:
-			- ## $g^{s} mod(n)$
+			- ## $g^{s} mod(p)$
 		- With the result of the other party then calculate the shared secret:
-			- ## $g^{s_a * s_b} mod(n)$
+			- ## $g^{s_a * s_b} mod(p)$
 		- Example with small numbers
-			- Let `a = 15`, `b = 13`, `g = 3` and `n = 17`
+			- Let `a = 15`, `b = 13`, `g = 3` and `p = 17`
 			- Alice calculates:
 				- ## $3^{15} mod(17) = 6$
 			- Bob calculates:
