@@ -6,10 +6,10 @@
 		- ![diffie-hellman-color-example.png](../assets/diffie-hellman-color-example_1689860915833_0.png){:height 450, :width 300}
 	- Using this method it is essential for both parties to never share their secrets without mixing it to guarantee they are the only ones who are able to create the shared secret.
 	- ## Mathematics
-		- a -> secret
-		- b -> secret
+		- a -> secret number (between 1 and n)
+		- b -> secret number
 		- g -> small prime number
-		- n -> 4000 bit long number
+		- n -> 4096 bits long number
 	-
 - Source
 	- https://www.youtube.com/watch?v=NmM9HA2MQGI
