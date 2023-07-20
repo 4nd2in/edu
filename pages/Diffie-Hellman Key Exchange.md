@@ -12,7 +12,7 @@
 			- `n` -> 4096 bits long number
 		- Both parties then calculates and exchange the result:
 			- $g^s mod(n)$
-		-
+		- With the other party's result
 	-
 - Source
 	- https://www.youtube.com/watch?v=NmM9HA2MQGI
