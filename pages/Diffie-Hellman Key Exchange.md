@@ -4,8 +4,9 @@
 	- ## Description
 	- Given two parties, Alice and Bob, both of which have a secret component Alice -> a (orange), Bob -> b (cyan) and a public components p (yellow). For simplicity we use colours for this variables. Alice and Bob both create a mixture with their secret component and the public component and publish that mixture. Alice created the mixture `ap` and Bob created the mixture `bp`. They then exchange their mixture and add their secret to it to create the shared secret `abp`.
 		- ![diffie-hellman-color-example.png](../assets/diffie-hellman-color-example_1689860915833_0.png){:height 450, :width 300}
-	- Using this method it is essential for both parties to never share
+	- Using this method it is essential for both parties to never share their secrets without mixing it.
 	- ## Mathematics
+		-
 	-
 - Source
 	- https://www.youtube.com/watch?v=NmM9HA2MQGI
