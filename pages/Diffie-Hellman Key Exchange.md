@@ -2,7 +2,7 @@
 	- The Diffie-Hellman Key Exchange is a mathematical method of securely creating a shared secret (most often a symmetric encryption key) between two clients over an insecure/public channel by using public and private variables.
 	- This method is widely used such as in [[SSH]], [[TLS]], [[SSL]] and most end-to-end encryption protocols
 	- ## Description
-	- Given two parties, Alice and Bob, both of which have a secret component (Alice -> a, Bob -> b) and a public components (p). For simplicity we use colours for this variables. Alice and Bob both create a mixture with their secret component and the public component and publish that mixture. Alice created the mixture `ap` and Bob created the mixture . They then exchange their mixture and add their secret to it to create `abp`
+	- Given two parties, Alice and Bob, both of which have a secret component (Alice -> a (orange), Bob -> b (cyan)) and a public components p (yellow). For simplicity we use colours for this variables. Alice and Bob both create a mixture with their secret component and the public component and publish that mixture. Alice created the mixture `ap` and Bob created the mixture `bp`. They then exchange their mixture and add their secret to it to create the shared secret `abp`.
 		- ![diffie-hellman-color-example.png](../assets/diffie-hellman-color-example_1689860915833_0.png){:height 450, :width 300}
 	-
 	- ## Mathematics
