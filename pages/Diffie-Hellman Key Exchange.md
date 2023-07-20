@@ -4,4 +4,8 @@
 	-
 	- ## Mathematics
 	-
+- Source
+	- https://www.youtube.com/watch?v=NmM9HA2MQGI
+	- https://www.youtube.com/watch?v=Yjrfm_oRO0w
 	-
+-
