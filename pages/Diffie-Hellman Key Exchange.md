@@ -22,7 +22,7 @@
 				- ## $3^{13} mod(17) = 12$
 			- `6` and `3` are shared publicly
 			- Alice and Bob then can calculate:
-				- ## $3^{3*6} mod(17) = 10$
+				- ## $3^{6*12} mod(17) = 10$
 - Source
 	- https://www.youtube.com/watch?v=NmM9HA2MQGI
 	- https://www.youtube.com/watch?v=Yjrfm_oRO0w
