@@ -8,7 +8,7 @@
 	- ## Mathematics
 		- Components
 			- `s` -> secret random number between 1 and `n`
-			- `g` -> prime number
+			- `g` ->
 			- `n` -> 4096 bits long number
 		- Both parties then calculates and exchange the result:
 			- ## $g^{s} mod(n)$
