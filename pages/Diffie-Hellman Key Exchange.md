@@ -1,10 +1,10 @@
+- The Diffie-Hellman Key Exchange is a mathematical method of securely creating a shared secret (most often a symmetric encryption key) between two clients over an insecure/public channel by using public and private variables.
+- This method is widely used such as in [[SSH]], [[TLS]], [[SSL]] and most end-to-end encryption protocols
+- Using this method it is essential for both parties to never share their secrets without mixing it to guarantee they are the only ones who are able to create the shared secret.
+- # Description
+- Given two parties, Alice and Bob, both of which have a secret component Alice -> a (orange), Bob -> b (cyan) and a common component c (yellow). For simplicity we use colours for this variables. Alice and Bob both create a mixture with their secret component and the public component and publish that mixture. Alice created the mixture `ac` and Bob created the mixture `bc`. They then exchange their mixture and add their secret to it to create the shared secret `abc`.
+	- ![diffie-hellman-color-example.png](../assets/diffie-hellman-color-example_1689860915833_0.png){:height 450, :width 300}
 - # FFDH - Finite Field Diffie-Hellman
-	- The Diffie-Hellman Key Exchange is a mathematical method of securely creating a shared secret (most often a symmetric encryption key) between two clients over an insecure/public channel by using public and private variables.
-	- This method is widely used such as in [[SSH]], [[TLS]], [[SSL]] and most end-to-end encryption protocols
-	- ## Description
-	- Given two parties, Alice and Bob, both of which have a secret component Alice -> a (orange), Bob -> b (cyan) and a common component c (yellow). For simplicity we use colours for this variables. Alice and Bob both create a mixture with their secret component and the public component and publish that mixture. Alice created the mixture `ac` and Bob created the mixture `bc`. They then exchange their mixture and add their secret to it to create the shared secret `abc`.
-		- ![diffie-hellman-color-example.png](../assets/diffie-hellman-color-example_1689860915833_0.png){:height 450, :width 300}
-	- Using this method it is essential for both parties to never share their secrets without mixing it to guarantee they are the only ones who are able to create the shared secret.
 	- ## Mathematics
 		- Components
 			- `s` -> secret random number between 1 and `p`
@@ -29,6 +29,7 @@
 				- ## $3^{12*15} mod(17) = 10$
 			- Bob calculates their shared secre:
 				- ## $3^{6*13} mod(17) = 10$
+- # ECDH - Elliptic Curve Diffie-Hellman
 - Source
 	- https://www.redhat.com/en/blog/understanding-and-verifying-security-diffie-hellman-parameters
 	- https://www.youtube.com/watch?v=NmM9HA2MQGI
