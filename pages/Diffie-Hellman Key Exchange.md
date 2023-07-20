@@ -8,8 +8,8 @@
 	- ## Mathematics
 		- Components
 			- `s` -> secret random number between 1 and `n`
-			- `g` -> [[primitive root modulo n]]
-			- `p` -> 4096 bits long number
+			- `g` -> generator [[primitive root modulo n]]
+			- `p` -> exprime number
 		- Both parties then calculates and exchange the result:
 			- ## $g^{s} mod(n)$
 		- With the result of the other party then calculate the shared secret:
