@@ -17,7 +17,9 @@
 		- Example with small numbers
 			- Let `a = 15`, `b = 13`, `g = 3` and `n = 7`
 			- Alice calculates:
-				- ## $3^15$
+				- ## $3^{15} mod 7 = 6$
+			- Bob calculates:
+				- ## $3^{13} mod 7 = 3$
 - Source
 	- https://www.youtube.com/watch?v=NmM9HA2MQGI
 	- https://www.youtube.com/watch?v=Yjrfm_oRO0w
