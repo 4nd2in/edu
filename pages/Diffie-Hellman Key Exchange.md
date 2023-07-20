@@ -7,11 +7,11 @@
 	- Using this method it is essential for both parties to never share their secrets without mixing it to guarantee they are the only ones who are able to create the shared secret.
 	- ## Mathematics
 		- Components
-			- `a` -> Alices secret random number between 1 and `n`
-			- `b` -> Bobs secret random number between 1 and `n`
+			- `s` -> secret random number between 1 and `n`
 			- `g` -> small prime number
 			- `n` -> 4096 bits long number
-		- Both parties then calculate their secret `s` to the power of
+		- Both parties then calculates:
+			- /Math
 	-
 - Source
 	- https://www.youtube.com/watch?v=NmM9HA2MQGI
