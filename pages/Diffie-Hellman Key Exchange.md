@@ -15,14 +15,14 @@
 		- With the result of the other party then calculate the shared secret:
 			- ## $g^{s_a * s_b} mod(n)$
 		- Example with small numbers
-			- Let `a = 15`, `b = 13`, `g = 3` and `n = 7`
+			- Let `a = 15`, `b = 13`, `g = 3` and `n = 17`
 			- Alice calculates:
-				- ## $3^{15} mod 7 = 6$
+				- ## $3^{15} mod(17) = 6$
 			- Bob calculates:
-				- ## $3^{13} mod 7 = 3$
+				- ## $3^{13} mod(17) = 12$
 			- `6` and `3` are shared publicly
 			- Alice and Bob then can calculate:
-				- ## $3^{3*6} mod 7 = 1$
+				- ## $3^{3*6} mod(17) = 10$
 - Source
 	- https://www.youtube.com/watch?v=NmM9HA2MQGI
 	- https://www.youtube.com/watch?v=Yjrfm_oRO0w
