@@ -20,6 +20,9 @@
 				- ## $3^{15} mod 7 = 6$
 			- Bob calculates:
 				- ## $3^{13} mod 7 = 3$
+			- `6` and `3` are shared publicly
+			- Alice and Bob then can calculate:
+				- ## $$
 - Source
 	- https://www.youtube.com/watch?v=NmM9HA2MQGI
 	- https://www.youtube.com/watch?v=Yjrfm_oRO0w
