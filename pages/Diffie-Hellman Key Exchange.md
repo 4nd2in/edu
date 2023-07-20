@@ -14,10 +14,10 @@
 			- ## $g^{s} mod(n)$
 		- With the result of the other party then calculate the shared secret:
 			- ## $g^{s_a * s_b} mod(n)$
-		- Example
-			- Let `a` be `15`, `b` be `13`
+		- Example with small numbers
+			- Let `a = 15`, `b = 13`, `g = 3` and `n = 7`
 			- Alice calculates:
-				- ## $$
+				- ## $3^15$
 - Source
 	- https://www.youtube.com/watch?v=NmM9HA2MQGI
 	- https://www.youtube.com/watch?v=Yjrfm_oRO0w
