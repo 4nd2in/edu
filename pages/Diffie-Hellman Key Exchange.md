@@ -3,7 +3,8 @@
 	- This method is widely used such as in [[SSH]], [[TLS]], [[SSL]] and most end-to-end encryption protocols
 	- ## Description
 	- Given two parties, Alice and Bob, both of which have a secret component (Alice -> a, Bob -> b) and a public components (p). For simplicity we use colours for this variables.
-	-
+	- ![diffie-hellman-color-example.png](../assets/diffie-hellman-color-example_1689860915833_0.png)
+		-
 	- ## Mathematics
 	-
 - Source
