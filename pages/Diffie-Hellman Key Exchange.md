@@ -11,9 +11,10 @@
 			- `g` -> small prime number
 			- `n` -> 4096 bits long number
 		- Both parties then calculates and exchange the result:
-			- $g^s mod(n)$
+			- $g^{s} mod(n)$
 		- With the result of the other party then calculate:
-			- $(g^b)^a mod(n)$
+			- $g^{s_a * s_b} mod(n)$
+		-
 	-
 - Source
 	- https://www.youtube.com/watch?v=NmM9HA2MQGI
