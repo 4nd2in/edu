@@ -21,8 +21,10 @@
 			- Bob calculates:
 				- ## $3^{13} mod(17) = 12$
 			- `6` and `3` are shared publicly
-			- Alice then calculates:
-				- ## $3^{12*} mod(17) = 10$
+			- Alice calculates their shared secret:
+				- ## $3^{12*15} mod(17) = 10$
+			- Bob calculates their shared secre:
+				- ## $3^{6*13} mod(17)$
 - Source
 	- https://www.youtube.com/watch?v=NmM9HA2MQGI
 	- https://www.youtube.com/watch?v=Yjrfm_oRO0w
