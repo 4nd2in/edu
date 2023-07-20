@@ -1,2 +1,2 @@
 - # RFC 2631 Key Agreement Method
-	- This
+	- The Diffie-Hellman Key Exchange specifies an
