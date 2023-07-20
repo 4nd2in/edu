@@ -11,11 +11,11 @@
 			- `g` -> generator [[primitive root modulo n]]
 			- `p` -> prime number
 		- The key exchange will look something like this:
-			- Party A will select a random number a between 1 and *p*, calculate the value of base g to the power a modulo p, let’s call it *x*, and send it to party B.
+			- Party A will select a random number a between 1 and `p`, calculate the value of base g to the power a modulo p, let’s call it `x`, and send it to party B.
 				- ## $g^{a} mod(p)$
-			- Party B will do similar steps: select a random number *b* between 1 and *p*, calculate the value of base g to the power b modulo p, let’s call it y, and send the result to party A.
+			- Party B will do similar steps: select a random number `b` between 1 and `p`, calculate the value of base g to the power b modulo p, let’s call it `y`, and send the result to party A.
 				- ## $g^{b} mod(p)$
-			- Upon receiving the value from B, party A will take that number *y* and raise it to power *a* modulo *p*. Similarly party B will take the number *x* and raise it to power *b* modulo *p*.
+			- Upon receiving the value from B, party A will take that number `y` and raise it to power `a` modulo ``. Similarly party B will take the number *x* and raise it to power *b* modulo *p*.
 		- With the result of the other party then calculate the shared secret:
 			- ## $g^{s_a * s_b} mod(p)$
 		- Example with small numbers
