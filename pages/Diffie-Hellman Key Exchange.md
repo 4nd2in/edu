@@ -11,7 +11,7 @@
 			- `b` -> Bobs secret random number between 1 and `n`
 			- `g` -> small prime number
 			- `n` -> 4096 bits long number
-		- Both parties then calculate their
+		- Both parties then calculate their secret `s` to the power of
 	-
 - Source
 	- https://www.youtube.com/watch?v=NmM9HA2MQGI
