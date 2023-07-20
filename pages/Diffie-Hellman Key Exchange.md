@@ -11,7 +11,7 @@
 			- `g` -> small prime number
 			- `n` -> 4096 bits long number
 		- Both parties then calculates:
-			- $g^s mod n$
+			- $g^s mod(n)$
 	-
 - Source
 	- https://www.youtube.com/watch?v=NmM9HA2MQGI
