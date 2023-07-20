@@ -1,2 +1,1 @@
-- # RFC 2631 Key Agreement Method
-	- The Diffie-Hellman Key Exchange specifies an
+- The Diffie-Hellman Key Exchange is a mathematical method of securely exchanging a shared secret over an unsecire
