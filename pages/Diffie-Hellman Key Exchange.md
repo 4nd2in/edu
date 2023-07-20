@@ -7,9 +7,9 @@
 	- Using this method it is essential for both parties to never share their secrets without mixing it to guarantee they are the only ones who are able to create the shared secret.
 	- ## Mathematics
 		- Components
-			- `s` -> secret random number between 1 and `n`
+			- `s` -> secret random number between 1 and `p`
 			- `g` -> generator [[primitive root modulo n]]
-			- `p` -> exprime number
+			- `p` -> prime number that will be exponentiating g
 		- Both parties then calculates and exchange the result:
 			- ## $g^{s} mod(n)$
 		- With the result of the other party then calculate the shared secret:
@@ -26,6 +26,7 @@
 			- Bob calculates their shared secre:
 				- ## $3^{6*13} mod(17) = 10$
 - Source
+	- https://www.redhat.com/en/blog/understanding-and-verifying-security-diffie-hellman-parameters
 	- https://www.youtube.com/watch?v=NmM9HA2MQGI
 	- https://www.youtube.com/watch?v=Yjrfm_oRO0w
 	- https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange
