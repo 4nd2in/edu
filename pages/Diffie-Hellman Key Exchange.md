@@ -1,3 +1,4 @@
--
-- The Diffie-Hellman Key Exchange is a mathematical method of securely creating a shared secret (most often a symmetric encryption key) between two clients over an insecure/public channel by using public and private variables.
--
+- # Diffie-Hellman
+	- The Diffie-Hellman Key Exchange is a mathematical method of securely creating a shared secret (most often a symmetric encryption key) between two clients over an insecure/public channel by using public and private variables.
+	- ## How it works
+	-
