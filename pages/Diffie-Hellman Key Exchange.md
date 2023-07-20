@@ -2,7 +2,8 @@
 	- The Diffie-Hellman Key Exchange is a mathematical method of securely creating a shared secret (most often a symmetric encryption key) between two clients over an insecure/public channel by using public and private variables.
 	- This method is widely used such as in [[SSH]], [[TLS]], [[SSL]] and most end-to-end encryption protocols
 	- ## Description
-	- Given two parties, Alice and Bob, both of which have a secret component (Alice -> a, Bob -> b) and a public components (p). For simplicity we use colors
+	- Given two parties, Alice and Bob, both of which have a secret component (Alice -> a, Bob -> b) and a public components (p). For simplicity we use colours for this variables.
+	- [[draws/2023-07-20-15-32-22.excalidraw]]
 	- ## Mathematics
 	-
 - Source
