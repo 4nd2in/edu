@@ -177,8 +177,8 @@
     },
     {
       "type": "ellipse",
-      "version": 1024,
-      "versionNonce": 1946022932,
+      "version": 1031,
+      "versionNonce": 1277475372,
       "isDeleted": false,
       "id": "UC0BocRpF5k_QVRQP7Jou",
       "fillStyle": "solid",
@@ -189,7 +189,7 @@
       "angle": 0,
       "x": 380.12890625,
       "y": 371.8125,
-      "strokeColor": "#ff9900",
+      "strokeColor": "#ffcc00",
       "backgroundColor": "#ff9900",
       "width": 89.078125,
       "height": 89.078125,
@@ -197,7 +197,7 @@
       "groupIds": [],
       "strokeSharpness": "sharp",
       "boundElements": [],
-      "updated": 1689860280754,
+      "updated": 1689860335241,
       "link": null,
       "locked": false
     },
