@@ -18,7 +18,7 @@
 			- Upon receiving the value from B, party A will take that number `y` and raise it to power `a` modulo `p`. Similarly party B will take the number `x` and raise it to power `b` modulo `p`.
 				- ## $g^{y^{a}} mod(p) = g^{x^{b}} mod(p)$
 				- Since $x^b=g^{a^b}=g^{a·b}=g^{b·a}=g^{b^a}=y^a$ mod `p` both A and B get the same result without exchanging either `a` or `b` explicitly or a value that allows easy calculation of either `a` or `b`. This is because there is no efficient general algorithm to calculate [[discrete logarithms]]
-		- Example with small numbers
+		- Example with small numbers #WIP
 			- Let `a = 15`, `b = 13`, `g = 3` and `p = 17`
 			- Alice calculates:
 				- ## $3^{15} mod(17) = 6$
@@ -30,6 +30,7 @@
 			- Bob calculates their shared secre:
 				- ## $3^{6*13} mod(17) = 10$
 - # ECDH - Elliptic Curve Diffie-Hellman
+	- #WIP
 - Source
 	- https://www.redhat.com/en/blog/understanding-and-verifying-security-diffie-hellman-parameters
 	- https://www.youtube.com/watch?v=NmM9HA2MQGI
