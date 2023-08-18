@@ -11,7 +11,7 @@
 			- `p` -> prime number
 				-
 			- `g` -> generator
-				- The generator must be a co
+				- The generator must be a co-prime number with p.
 		- The key exchange will look something like this:
 			- Party A will select a random number `a` between 1 and `p`, calculate the value of base g to the power a modulo p, let’s call it `x`, and send it to party B.
 				- ## $x = g^{a} mod(p)$
