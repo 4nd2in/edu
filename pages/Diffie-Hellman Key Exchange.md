@@ -11,12 +11,12 @@
 			- `g` -> generator or base
 			- `p` -> modulus, safe prime number
 		- The key exchange will look something like this:
-			- Party A will select a random number a between 1 and `p`, calculate the value of base g to the power a modulo p, let’s call it `x`, and send it to party B.
+			- Party A will select a random number `a` between 1 and `p`, calculate the value of base g to the power a modulo p, let’s call it `x`, and send it to party B.
 				- ## $x = g^{a} mod(p)$
 			- Party B will do similar steps: select a random number `b` between 1 and `p`, calculate the value of base g to the power b modulo p, let’s call it `y`, and send the result to party A.
 				- ## $y = g^{b} mod(p)$
 			- Upon receiving the value from B, party A will take that number `y` and raise it to power `a` modulo `p`. Similarly party B will take the number `x` and raise it to power `b` modulo `p`.
-				- ## $x^{a} mod(p) = y^{b} mod(p)$
+				- ## $y^{a} mod(p) = x^{b} mod(p)$
 				- Since $x^b=g^{a^b}=g^{a·b}=g^{b·a}=g^{b^a}=y^a$ mod `p` both A and B get the same result without exchanging either `a` or `b` explicitly or a value that allows easy calculation of either `a` or `b`. This is because there is no efficient general algorithm to calculate [[discrete logarithms]]
 		- Example with small numbers #WIP
 			- Let `a = 15`, `b = 13`, `g = 3` and `p = 17`
