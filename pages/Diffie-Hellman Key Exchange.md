@@ -9,9 +9,10 @@
 		- Components
 			- `s` -> secret random number between 1 and `p`
 			- `p` -> prime number
+				-
 			- `g` -> generator or base
 		- The key exchange will look something like this:
-			- Party A will select a random number `a` between 1 and `p`, calculate the value of base g to the power a modulo p, let’s call it `x`, and send it to party B.
+			- Party A will select a random coprime number `a` between 1 and `p`, calculate the value of base g to the power a modulo p, let’s call it `x`, and send it to party B.
 				- ## $x = g^{a} mod(p)$
 			- Party B will do similar steps: select a random number `b` between 1 and `p`, calculate the value of base g to the power b modulo p, let’s call it `y`, and send the result to party A.
 				- ## $y = g^{b} mod(p)$
