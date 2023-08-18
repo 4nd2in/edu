@@ -8,9 +8,9 @@
 	- ## Mathematics
 		- Components
 			- `s` -> secret random number between 1 and `p`
-			- `p` -> prime number,
+			- `p` -> prime number (the modulus)
 				-
-			- `g` -> generator
+			- `g` -> generator (the base)
 				- For best security this should be a primitive root of  `p` modulo `p`
 		- The key exchange will look something like this:
 			- Party A will select a random number `a` between 1 and `p`, calculate the value of base g to the power a modulo p, let’s call it `x`, and send it to party B.
