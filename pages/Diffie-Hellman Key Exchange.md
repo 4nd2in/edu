@@ -28,9 +28,9 @@
 				- ## $y = 7^{4} mod(11) = 3$
 			- `x = 5` and `y = 3` are shared publicly
 			- Alice calculates their shared secret:
-				- ## $s = y^{15} mod(17) =  10$
+				- ## $s = y^{2} mod(11) =  9$
 			- Bob calculates their shared secre:
-				- ## $s = x^{13} mod(17) = 10$
+				- ## $s = x^{4} mod(11) = 9$
 - # ECDH - Elliptic Curve Diffie-Hellman
 	- #WIP
 - Source
