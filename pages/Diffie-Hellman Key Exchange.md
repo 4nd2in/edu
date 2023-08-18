@@ -23,10 +23,10 @@
 		- Example with small numbers
 			- Let `a = 2`, `b = 4`, `g = 7` and `p = 11`
 			- Alice calculates:
-				- ## $x = 3^{15} mod(17) = 6$
+				- ## $x = 7^{2} mod(11) = 5$
 			- Bob calculates:
-				- ## $y = 3^{13} mod(17) = 12$
-			- `6` and `12` are shared publicly
+				- ## $y = 7^{4} mod(11) = 3$
+			- `x = 5` and `y = 3` are shared publicly
 			- Alice calculates their shared secret:
 				- ## $s = y^{15} mod(17) =  10$
 			- Bob calculates their shared secre:
