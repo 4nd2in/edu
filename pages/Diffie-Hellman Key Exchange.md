@@ -9,7 +9,7 @@
 		- Components
 			- `s` -> secret random number between 1 and `p`
 			- `p` -> prime number (the modulus)
-				-
+				- For best se
 			- `g` -> generator (the base)
 				- For best security this should be a primitive root of  `p` modulo `p`
 		- The key exchange will look something like this:
