@@ -13,7 +13,7 @@
 			- `g` -> generator (the base)
 				- For best security this should be a primitive root of  `p` modulo `p`
 		- The key exchange will look something like this:
-			- Party A will select a random number `a` between 1 and `p`, calculate the value of base g to the power a modulo p, let’s call it `x`, and send it to party B.
+			- Party A will select a random number `a` (the exponent) between 1 and `p`, calculate the value of base g to the power a modulo p, let’s call it `x`, and send it to party B.
 				- ## $x = g^{a} mod(p)$
 			- Party B will do the same
 				- ## $y = g^{b} mod(p)$
