@@ -8,7 +8,7 @@
 	- ## Mathematics
 		- Components
 			- `s` -> secret random number between 1 and `p`
-			- `p` -> prime number
+			- `p` -> prime number,
 				-
 			- `g` -> generator
 				- For best security this should be a primitive root of  `p` modulo `p`
