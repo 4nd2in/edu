@@ -21,15 +21,14 @@
 		- Example with small numbers #WIP
 			- Let `a = 15`, `b = 13`, `g = 3` and `p = 17`
 			- Alice calculates:
-				- ## $x = 3^{15}mod(17)$
-				- ## $s = 3^{15} mod(17) = 6$
+				- ## $x = 3^{15} mod(17) = 6$
 			- Bob calculates:
-				- ## $s = 3^{13} mod(17) = 12$
+				- ## $y = 3^{13} mod(17) = 12$
 			- `6` and `12` are shared publicly
 			- Alice calculates their shared secret:
-				- ## $3^{12*15} mod(17) = 13$
+				- ## $s = y^{12*15} mod(17) = 13$
 			- Bob calculates their shared secre:
-				- ## $3^{6*13} mod(17) = 2$
+				- ## $s = 3^{6*13} mod(17) = 2$
 - # ECDH - Elliptic Curve Diffie-Hellman
 	- #WIP
 - Source
