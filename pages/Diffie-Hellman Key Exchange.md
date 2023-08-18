@@ -21,7 +21,7 @@
 		- Example with small numbers #WIP
 			- Let `a = 15`, `b = 13`, `g = 3` and `p = 17`
 			- Alice calculates:
-				- ## $3^{15} mod(17) = 6$
+				- ## $s = 3^{15} mod(17) = 6$
 			- Bob calculates:
 				- ## $3^{13} mod(17) = 12$
 			- `6` and `12` are shared publicly
