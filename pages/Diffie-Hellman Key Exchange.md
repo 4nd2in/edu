@@ -10,7 +10,8 @@
 			- `p` -> prime number (the modulus)
 				- For best security this should be a large, safe prime number. To achieve the prime number to be safe it must comform:
 					- must be an odd prime number
-					- $$p = 2q - 1$$ where `q
+					- $p = 2q - 1$ where `q` is also prime
+					-
 			- `g` -> generator (the base)
 				- For best security this should be a [[primitive root of  `n` modulo `n`]] of `p`
 		- The key exchange will look something like this:
