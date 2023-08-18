@@ -18,7 +18,7 @@
 			- Upon receiving the value from B, party A will take that number `y` and raise it to power `a` modulo `p`. Similarly party B will take the number `x` and raise it to power `b` modulo `p`.
 				- ## $y^{a} mod(p) = x^{b} mod(p)$
 				- Since $x^b=g^{a^b}=g^{a·b}=g^{b·a}=g^{b^a}=y^a$ mod `p` both A and B get the same result without exchanging either `a` or `b` explicitly or a value that allows easy calculation of either `a` or `b`. This is because there is no efficient general algorithm to calculate [[discrete logarithms]]
-		- Example with small numbers #WIP
+		- Example with small numbers
 			- Let `a = 15`, `b = 13`, `g = 3` and `p = 17`
 			- Alice calculates:
 				- ## $x = 3^{15} mod(17) = 6$
