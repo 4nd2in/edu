@@ -8,7 +8,7 @@
 	- ## Mathematics
 		- Components
 			- `p` -> prime number (the modulus)
-				- For best security this should be a large, safe prime number
+				- For best security this should be a large, safe prime number. To achieve the prime number to be safe its group of generators should be large.
 			- `g` -> generator (the base)
 				- For best security this should be a [[primitive root of  `n` modulo `n`]] of `p`
 		- The key exchange will look something like this:
