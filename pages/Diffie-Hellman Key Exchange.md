@@ -7,7 +7,6 @@
 - # FFDH - Finite Field Diffie-Hellman
 	- ## Mathematics
 		- Components
-			- `s` -> secret random number between 1 and `p`
 			- `p` -> prime number (the modulus)
 				- For best security this should be a large prime number
 			- `g` -> generator (the base)
@@ -21,7 +20,7 @@
 				- ## $y^{a} mod(p) = x^{b} mod(p)$
 				- Since $x^b=g^{a^b}=g^{a·b}=g^{b·a}=g^{b^a}=y^a$ mod `p` both A and B get the same result without exchanging either `a` or `b` explicitly or a value that allows easy calculation of either `a` or `b`. This is because there is no efficient general algorithm to calculate [[discrete logarithms]]
 		- Example with small numbers
-			- Let `a = 2`, `b = 4`, `g = 7` and `p = 11`
+			- Let  `p = 11`, `a = 2`, `b = 4`, `g = 7`
 				- `g`
 			- Alice calculates:
 				- ## $x = 7^{2} mod(11) = 5$
