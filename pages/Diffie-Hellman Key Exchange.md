@@ -26,9 +26,9 @@
 				- ## $y = 3^{13} mod(17) = 12$
 			- `6` and `12` are shared publicly
 			- Alice calculates their shared secret:
-				- ## $s = y^{15} mod(17) =  $
+				- ## $s = y^{15} mod(17) =  10$
 			- Bob calculates their shared secre:
-				- ## $s = x^{13} mod(17) = $
+				- ## $s = x^{13} mod(17) = 10$
 - # ECDH - Elliptic Curve Diffie-Hellman
 	- #WIP
 - Source
