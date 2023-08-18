@@ -8,7 +8,7 @@
 	- ## Mathematics
 		- Components
 			- `p` -> prime number (the modulus)
-				- For best security this should be a large, safe prime number. To achieve the prime number to be safe its group of generators should be large.
+				- For best security this should be a large, safe prime number. To achieve the prime number to be safe
 			- `g` -> generator (the base)
 				- For best security this should be a [[primitive root of  `n` modulo `n`]] of `p`
 		- The key exchange will look something like this:
@@ -39,5 +39,3 @@
 	- https://www.youtube.com/watch?v=NmM9HA2MQGI
 	- https://www.youtube.com/watch?v=Yjrfm_oRO0w
 	- https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange
--
--
