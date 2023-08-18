@@ -8,9 +8,9 @@
 	- ## Mathematics
 		- Components
 			- `p` -> prime number (the modulus)
-				- For best security this should be a large, safe prime number. To achieve the prime number to be safe it must comform:
+				- For best security this should be a large, safe prime number. To achieve the prime number to be safe it must conform:
 					- must be an odd prime number
-					- $p = 2q - 1$ where `q` is also prime
+					- $p = 2q - 1$ where `q` is also prime (Sophie Germain)
 					-
 			- `g` -> generator (the base)
 				- For best security this should be a [[primitive root of  `n` modulo `n`]] of `p`
