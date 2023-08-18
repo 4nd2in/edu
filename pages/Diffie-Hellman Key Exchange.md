@@ -21,7 +21,7 @@
 				- Since $x^b=g^{a^b}=g^{a·b}=g^{b·a}=g^{b^a}=y^a$ mod `p` both A and B get the same result without exchanging either `a` or `b` explicitly or a value that allows easy calculation of either `a` or `b`. This is because there is no efficient general algorithm to calculate [[discrete logarithms]]
 		- Example with small numbers
 			- Let  `p = 11`, `a = 2`, `b = 4`, `g = 7`
-				- Multiplicative group of integers modulo of 11 are: `[1, 2, 3, 4 ,5 ,6 ,7 ,8 ,9, 10]`.
+				- Multiplicative group of integers modulo of 11 are: `[1, 2, 3, 4 ,5 ,6 ,7 ,8 ,9, 10]` of which `[2, 6, 7, 8]` are generators, hence the group is cyclic.
 			- Alice calculates:
 				- ## $x = 7^{2} mod(11) = 5$
 			- Bob calculates:
