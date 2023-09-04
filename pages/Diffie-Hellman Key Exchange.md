@@ -13,7 +13,7 @@
 - # Vulnerabilities
 - Diffie-Hellman does not authenticate the identity of the parties involved in the key exchange ans thus is vulnerable to a man-in-the-middle attack. An attacker can intercept the initial key exchange messages and 
   establish two separate secure connections with the legitimate parties. The attacker can then relay messages between the two parties, effectively becoming a man in the middle without their knowledge.
-- Because of this vulnerability protocols
+- Because of this vulnerability, protocols using Diffie-Hellman additionally use authentication mechanism (e.g. [[RSA]])
 - # FFDH - Finite Field Diffie-Hellman
   collapsed:: true
 	- ## Mathematics
