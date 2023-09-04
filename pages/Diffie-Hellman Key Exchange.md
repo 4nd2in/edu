@@ -9,7 +9,7 @@
 		- Static Diffie-Hellman (DH) is a variant of the Diffie-Hellman key exchange protocol that uses static, fixed keys for encryption. Unlike the traditional Diffie-Hellman, where both parties generate ephemeral keys for each session, in Static DH, the keys remain constant over time.
 	- ## Ephemeral Diffie-Hellman (DHE)
 		- DHE differs from DH in the way that static Diffie-Hellman key exchanges always use the same Diffie-Hellman private keys. So, each time the same parties do a DH key exchange, they end up with the 
-		  same shared secret. This enables **Forward Secrecy** (FS), which means that if the long-term private key of the server gets leaked, past communication is still secure.
+		  same shared secret. This enables [[Forward Secrecy]], which means that if the long-term private key of the server gets leaked, past communication is still secure.
 - # Vulnerabilities
 - Diffie-Hellman does not authenticate the identity of the parties involved in the key exchange ans thus is vulnerable to a man-in-the-middle attack. An attacker can intercept the initial key exchange messages and 
   establish two separate secure connections with the legitimate parties. The attacker can then relay messages between the two parties, effectively becoming a man in the middle without their knowledge.
