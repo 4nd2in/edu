@@ -45,3 +45,4 @@
 	- https://www.youtube.com/watch?v=NmM9HA2MQGI
 	- https://www.youtube.com/watch?v=Yjrfm_oRO0w
 	- https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange
+	- https://mbed-tls.readthedocs.io/en/latest/kb/cryptography/ephemeral-diffie-hellman/
