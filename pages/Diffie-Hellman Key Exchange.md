@@ -1,9 +1,9 @@
 - The Diffie-Hellman Key Exchange is a mathematical method of securely creating a shared secret (most often a symmetric encryption key) between two clients over an insecure/public channel by using public and private variables.
-- This method is widely used such as in [[TLS]], [[SSL]] and most end-to-end encryption protocols
+- This method is widely used in [[TLS]] and [[SSL]] protocols as well as in most end-to-end encryption protocols.
 - Using this method it is essential for both parties to never share their secrets without mixing it to guarantee they are the only ones who are able to create the shared secret.
 - # Description
-- Given two parties, Alice and Bob, both of which have a secret component Alice -> a (orange), Bob -> b (cyan) and a common component c (yellow). For simplicity we use colours for this variables. Alice and Bob both create a mixture with their secret component and the public component and publish that mixture. Alice created the mixture `ac` and Bob created the mixture `bc`. They then exchange their mixture and add their secret to it to create the shared secret `abc`.
-	- ![diffie-hellman-color-example.png](../assets/diffie-hellman-color-example_1689860915833_0.png){:height 450, :width 300}
+	- Given two parties, Alice and Bob, both of which have a secret component Alice -> a (orange), Bob -> b (cyan) and a common component c (yellow). For simplicity we use colours for this variables. Alice and Bob both create a mixture with their secret component and the public component and publish that mixture. Alice created the mixture `ac` and Bob created the mixture `bc`. They then exchange their mixture and add their secret to it to create the shared secret `abc`.
+		- ![diffie-hellman-color-example.png](../assets/diffie-hellman-color-example_1689860915833_0.png){:height 450, :width 300}
 - # Usage
 	- ## Static Diffie-Hellman (DH)
 		- Static Diffie-Hellman (DH) is a variant of the Diffie-Hellman key exchange protocol that uses static, fixed keys for encryption. Unlike the traditional Diffie-Hellman, where both parties generate ephemeral keys for each session, in Static DH, the keys remain constant over time.
