@@ -5,7 +5,7 @@
 - Given two parties, Alice and Bob, both of which have a secret component Alice -> a (orange), Bob -> b (cyan) and a common component c (yellow). For simplicity we use colours for this variables. Alice and Bob both create a mixture with their secret component and the public component and publish that mixture. Alice created the mixture `ac` and Bob created the mixture `bc`. They then exchange their mixture and add their secret to it to create the shared secret `abc`.
 	- ![diffie-hellman-color-example.png](../assets/diffie-hellman-color-example_1689860915833_0.png){:height 450, :width 300}
 - # Problems
-- Diffie-Hellman does not include authentication and thus is vulnerable to man-in-the
+- Diffie-Hellman does not include authentication and thus is vulnerable to man-in-the-middle attacks. The man-in-the-middle just needs to perform a diffie-hellman
 - # FFDH - Finite Field Diffie-Hellman
   collapsed:: true
 	- ## Mathematics
