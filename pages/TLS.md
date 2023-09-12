@@ -7,7 +7,7 @@
 		- Authentication (verify validity of identification material)
 			- This verification is based on the established chain of trust
 		- Integrity (detect tampering and forgery)
-			- To each record the result of a cryptographic hash function is appended. The receiver of the record
+			- To each sent record, the result of a cryptographic hash function is appended (MAC). The receiver of the record is able to compute and verify the sent MAC value to ensure integrity and authenticity.
 	- ## Handshake
 		-
 -
