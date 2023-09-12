@@ -1,6 +1,6 @@
 # Open Systems Interconnection model (OSI model)
-title:: OSI-model
-	- Please Do Not Thro
+	- Please Do Not Throw Sausage Pizza Away
+	- Alle Priester Saufen Tequila Nach Der Predigt
 	- ## Application layer
 		- #WIP
 	- ## Presentation layer
