@@ -15,7 +15,6 @@
 	  establish two separate secure connections with the legitimate parties. The attacker can then relay messages between the two parties, effectively becoming a man in the middle without their knowledge.
 	- Because of this vulnerability, protocols using Diffie-Hellman additionally use authentication mechanism (e.g. #RSA ). The signed content of the key exchange implies that the public key is from the other party.
 - # FFDH - Finite Field Diffie-Hellman
-  collapsed:: true
 	- ## Mathematics
 		- Components
 			- `p` -> prime number (the modulus)
