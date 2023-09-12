@@ -1,4 +1,4 @@
-- # RFC 793 - Transmission Control Protocol (TCP)
+# RFC 793 - Transmission Control Protocol (TCP)
 	- TCP streams guarantee that all bytes sent will be identical with bytes received and that they will arrive in the same order to the client. TCP is optimised for accurate delivery rather than a timely one.
 	- TCP is specifically designed to use packet loss and delay as a feedback mechanism to help regulate its performance.
 	- TCP is a [transport layer (layer 4)]( ((645bb06d-51da-4253-a0b4-4aeade7bf72e)) ) protocol
@@ -118,3 +118,5 @@
 - Source
 	- https://hpbn.co/
 	- https://en.wikipedia.org/wiki/Transmission_Control_Protocol
+- Tags
+	- #computer-science
