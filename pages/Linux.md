@@ -1,3 +1,3 @@
-- #WIP
+- #wip
 - Tags
 	- #computer-science
