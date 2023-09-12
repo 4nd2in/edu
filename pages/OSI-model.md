@@ -1,5 +1,6 @@
-- # Open Systems Interconecction model (OSI model)
-  title:: OSI-model
+# Open Systems Interconnection model (OSI model)
+title:: OSI-model
+	- Please Do Not Thro
 	- ## Application layer
 		- #WIP
 	- ## Presentation layer
