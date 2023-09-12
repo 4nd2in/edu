@@ -7,3 +7,5 @@
 - Last-Mile latency describes the fact that not long distances causes significant latencies but the last mile does. The reason why this happens is because the thousands of other signals around the sender and/or receiver have to be aggregated and routed by a local routing node provided by a local ISP. This can take tens of milliseconds.
 - Source
 	- https://hpbn.co/
+- Tags
+	- #computer-science
