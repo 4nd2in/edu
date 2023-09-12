@@ -2,3 +2,5 @@
 - Compared to #Latency there are multiple ways to improve #bandwidth. We can add more fibers into our fiber-optic links, we can deploy more links across the congested routes, or we can improve the WDM (wavelength-division multiplexing) techniques to transfer more data through existing links.
 - Source
 	- https://hpbn.co/
+- Tags
+	- #computer-science

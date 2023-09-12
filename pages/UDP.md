@@ -1,4 +1,4 @@
-- # RFC 768 - User Datagram Protocol (UDP)
+# RFC 768 - User Datagram Protocol (UDP)
 	- Also referred to as *null protocol*
 	- In comparison to #TCP this protocol does **not** provide
 		- guaranteed message delivery
@@ -21,4 +21,5 @@
 		- ### Checksum (optional)
 			- The #IP packet contains its own header checksum, and the application can choose to omit the UDP checksum, which means that all the error detection and error correction can be delegated to the applications above them.
 		-
-		-
+- Tags
+	- #computer-science
