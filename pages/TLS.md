@@ -3,7 +3,7 @@
 	- TLS works on the [application layer]( ((645bb059-accb-4052-951b-6927d78a2919)) ), directly on top of [[TCP]]. This enables protocols above it (HTTP, email, ...) to operate unchanged.
 	- The protocol is designed to provide three essential services to all applications running above it:
 		- Encryption (obfuscate sent data)
-			- T
+			- Both parties must agree which cipher will be used and the keys used to encrypt the data. This happens during the TLS handshake.
 		- Authentication (verify validity of identification material)
 		- Integrity (detect tampering and forgery)
 	- ## Handshake
