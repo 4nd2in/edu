@@ -7,7 +7,7 @@
 		- Authentication (verify validity of identification material)
 			- This verification is based on the established chain of trust
 		- Integrity (detect tampering and forgery)
-			- To each record a cryptographic hash function
+			- To each record the result of a cryptographic hash function is appended. The receiver of the record
 	- ## Handshake
 		-
 -
