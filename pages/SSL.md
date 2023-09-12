@@ -1,3 +1,3 @@
 # Secure Socket Layer (SSL)
-	- Deprecated name for [[TLS]]
+	- Name for older Versions of [[TLS]]
 	- Originally developed at Netscape to enable secure transactions on the Web
