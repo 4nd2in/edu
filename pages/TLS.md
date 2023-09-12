@@ -5,6 +5,7 @@
 		- Encryption (obfuscate sent data)
 			- Both parties must agree which cipher will be used and the keys used to encrypt the data. This happens during the TLS handshake.
 		- Authentication (verify validity of identification material)
+			- This verification is based on the established chain of trust
 		- Integrity (detect tampering and forgery)
 	- ## Handshake
 		-
