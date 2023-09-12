@@ -2,6 +2,10 @@
 	- TLS (formerly known as [[SSL]]) uses a combination of [[symmetric and asymmetric cryptography]] to provide a good compromise between performance and security when transmitting data securely. Third-party observers can only infer the connection endpoints, type of encryption, as well as the frequency and an approximate amount of data sent. but cannot read or modify any of the actual data.
 	- TLS works on the [application layer]( ((645bb059-accb-4052-951b-6927d78a2919)) ), directly on top of [[TCP]]. This enables protocols above it (HTTP, email, ...) to operate unchanged.
 	- The protocol is designed to provide three essential services to all applications running above it:
+		- Encryption (obfuscate sent data)
+		- Authentication (verify identi)
+		- Integrity
+	-
 -
 - Source
 	- https://hpbn.co/transport-layer-security-tls/
