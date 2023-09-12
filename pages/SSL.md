@@ -1,3 +1,2 @@
 # Secure Socket Layer (SSL)
--
-- #WIP
+	- Deprecated name for [[TLS]]
