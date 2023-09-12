@@ -5,7 +5,8 @@
 		- Encryption (obfuscate sent data)
 		- Authentication (verify validity of identification material)
 		- Integrity (detect tampering and forgery)
-	-
+	- ## Handshake
+		- In order
 -
 - Source
 	- https://hpbn.co/transport-layer-security-tls/
