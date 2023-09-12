@@ -1,4 +1,5 @@
-- # Congestion Control Algorithms (CCA)
+# Congestion Control Algorithms (CCA)
+	- #wip
 	- ## TCP Tahoe and Reno
 		- Original implementations
 	- ## TCP New Reno
@@ -7,6 +8,7 @@
 	- ## TCP CUBIC
 		- Default on #Linux
 	- ## Compound TCP
-		- default on #Windows
+		- Default on #Windows
 	- ##
-	- ##
+- Tags
+	- #computer-science
