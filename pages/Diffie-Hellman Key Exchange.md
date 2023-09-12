@@ -1,5 +1,5 @@
 - The Diffie-Hellman Key Exchange is a mathematical method of securely creating a shared secret (most often a symmetric encryption key) between two clients over an insecure/public channel by using public and private variables.
-- This method is widely used in [[TLS]]/[[SSL]] protocol as well as in most end-to-end encryption protocols.
+- This method is widely used in #TLS / #SSL protocol as well as in most end-to-end encryption protocols.
 - Using this method it is essential for both parties to never share their secrets without mixing it to guarantee they are the only ones who are able to create the shared secret.
 - # Description
 	- Given two parties, Alice and Bob, both of which have a secret component Alice -> a (orange), Bob -> b (cyan) and a common component c (yellow). For simplicity we use colours for this variables. Alice and Bob both create a mixture with their secret component and the public component and publish that mixture. Alice created the mixture `ac` and Bob created the mixture `bc`. They then exchange their mixture and add their secret to it to create the shared secret `abc`.
@@ -13,7 +13,7 @@
 - # Vulnerabilities
 	- Diffie-Hellman does not authenticate the identity of the parties involved in the key exchange ans thus is vulnerable to a man-in-the-middle attack. An attacker can intercept the initial key exchange messages and 
 	  establish two separate secure connections with the legitimate parties. The attacker can then relay messages between the two parties, effectively becoming a man in the middle without their knowledge.
-	- Because of this vulnerability, protocols using Diffie-Hellman additionally use authentication mechanism (e.g. [[RSA]]). The signed content of the key exchange implies that the public key is from the other party.
+	- Because of this vulnerability, protocols using Diffie-Hellman additionally use authentication mechanism (e.g. #RSA). The signed content of the key exchange implies that the public key is from the other party.
 - # FFDH - Finite Field Diffie-Hellman
   collapsed:: true
 	- ## Mathematics
