@@ -6,6 +6,7 @@
 - Building Blocks of [[UDP]]
 	- [[UDP]] is a protocol that delivers data unreliably between two hosts and was invented right after TCP/IP were separated into two protocols
 - Transport Layer Security [[TLS]]
+	- [[TLS]] is used to secure the connection
 - Sources
 	- https://hpbn.co
 - Tags
