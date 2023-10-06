@@ -3,6 +3,7 @@
 	- TCP is specifically designed to use packet loss and delay as a feedback mechanism to help regulate its performance.
 	- TCP is a [transport layer (layer 4)]( ((645bb06d-51da-4253-a0b4-4aeade7bf72e)) ) protocol
 	- ## Handshake
+	  id:: 645b5d9e-0a16-4766-85b0-ac874fcea633
 		- TCP is using a three-way-handshake before sharing any application data
 			- Client picks a random sequence number `x` and sends a **SYN** packet, which may also include additional TCP flags and options.
 			- Server increments `x` by one, picks own random sequence number `y`, appends its own set of flags and options, and dispatches the response in a **SYN ACK** packet.
