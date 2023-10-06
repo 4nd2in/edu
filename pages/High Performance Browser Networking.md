@@ -1,4 +1,3 @@
-- https://hpbn.co
 - Primer on Latency and Bandwith
 	- [[Latency]] is the time from the source sending a packet to the destination receiving it
 	- [[Bandwidth]] is the maximum throughput of a logical or physical communication path
@@ -7,6 +6,7 @@
 - Building Blocks of [[UDP]]
 	- [[UDP]] is a protocol that delivers data unreliably between two hosts and was invented right after TCP/IP were separated into two protocols
 - Transport Layer Security [[TLS]]
--
+- Sources
+	- https://hpbn.co
 - Tags
 	- #books
