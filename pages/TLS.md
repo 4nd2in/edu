@@ -9,7 +9,8 @@
 		- Integrity (detect tampering and forgery)
 			- To each sent record, the result of a cryptographic hash function is appended (MAC). The receiver of the record is able to compute and verify the sent MAC value to ensure integrity and authenticity.
 	- ## Handshake
-		-
+		- ![tls-handshake.png](../assets/tls-handshake_1696606255405_0.png)
+			-
 -
 - Source
 	- https://hpbn.co/transport-layer-security-tls/
