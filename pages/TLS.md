@@ -11,8 +11,8 @@
 	- ## Handshake
 		- ![tls-handshake.png](../assets/tls-handshake_1696606255405_0.png)
 			-
-		- First, the [TCP Handshake]( ((645b5d9e-0a16-4766-85b0-ac874fcea633)) ) is completed to establish a reliable connection
-		-
+		- First, a [TCP three-way-handshake]( ((645b5d9e-0a16-4766-85b0-ac874fcea633)) ) is completed to establish a reliable connection
+		- After that, the client sends its TLS specifications in plain text such as its TLS version, supported
 - Source
 	- https://hpbn.co/transport-layer-security-tls/
 	- https://www.internetsociety.org/deploy360/tls/basics/
