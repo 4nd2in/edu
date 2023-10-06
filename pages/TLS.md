@@ -11,7 +11,7 @@
 	- ## Handshake
 		- ![tls-handshake.png](../assets/tls-handshake_1696606255405_0.png)
 			-
-		- First, the TLS
+		- First the
 - Source
 	- https://hpbn.co/transport-layer-security-tls/
 	- https://www.internetsociety.org/deploy360/tls/basics/
