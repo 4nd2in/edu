@@ -1,2 +1,1 @@
-- [[wip]]
-  exclude-from-graph-view::true
+exclude-from-graph-view:: true
