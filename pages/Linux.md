@@ -19,7 +19,8 @@
 				- _Group ID_: the numeric ID associated with this group
 				- _User list_: a comma-separated list of login names of users
 	- ## Directories and Files
-		-
+		- ### File Types
+			- _Data files_:
 - Source
 	- The Linux Programming Interface by Michael Kerrisk
 - Tags
