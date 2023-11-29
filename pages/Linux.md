@@ -5,8 +5,9 @@
 		- ### Users
 			- Every user has a unique username and a user ID (UID). For each user, these are defined by a line in the system file `/etc/passwd`:
 				- _Username_: the unique name of the user
-				- _Password_: was used to store the encrypted password.
-				- _Group ID_: the numeric ID of the users primary group
+				- _Password_: was used to store the encrypted password. Modern systems store `x` or `*` here, indicating the password is stored in the `/etc/shadow` file
+				- _User ID (UID)_: the numeric ID associated with this user
+				- _Group ID_ (GUI): the numeric ID of the users primary group
 				- _Home directory_: the initial directory into which the user is placed after logging in
 				- _Login shell_: the name of the program to be executed to interpret user commands
 			-
