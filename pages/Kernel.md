@@ -17,7 +17,7 @@
 		- ### Provision of a system call API
 			- Processes can request the kernel to perform various tasks using kernel entry points known as system calls.
 	- ## Kernel modes
-		-
+		- Processor architectures typically allow the CPU to operate in at least two modes:
 -
 - Source
 	- The Linux Programming Interface by Michael Kerrisk
