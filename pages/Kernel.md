@@ -17,7 +17,7 @@
 		- ### Provision of a system call API
 			- Processes can request the kernel to perform various tasks using kernel entry points known as system calls.
 	- ## Kernel modes
-		- Processor architectures typically allow the CPU to operate in at least two modes: _user mode_ and _kernel mode_. When running in _user mode_, the
+		- Processor architectures typically allow the CPU to operate in at least two modes: _user mode_ and _kernel mode_. When running in user mode, the CPU can  access only memory that is marked as being part of the user space; attempts to access memory in kernel space
 -
 - Source
 	- The Linux Programming Interface by Michael Kerrisk
