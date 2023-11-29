@@ -5,6 +5,7 @@
 		- ### Process scheduling
 			- In a preemptive #multitasking operating system the kernel determines which process receives the use of the CPU and for how long.
 		- ### Memory management
+			- Like the CPU, RAM is a limited resource that the kernel must share amon
 		- ### Provision of a [[file system]]
 		- ### Access to devices
 		- ### Networking
