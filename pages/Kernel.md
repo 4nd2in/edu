@@ -13,8 +13,9 @@
 		- ### Access to devices
 			- The kernel provides an interface that standardises and simplifies access to devices, while at the same time arbitrating access by multiple processes to each device.
 		- ### Networking
-			- The kernel trans
+			- The kernel transmits and receives network messages on behalf of user processes. This task includes routing of network packets to the target system.
 		- ### Provision of a system call API
+			-
 -
 - Source
 	- The Linux Programming Interface by Michael Kerrisk
