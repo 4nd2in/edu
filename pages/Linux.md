@@ -3,7 +3,10 @@
 	- The term Linux is commonly used to refer to the entire #UNIX like operating system of which the Linux #Kernel forms a part. However, this is something of a misnomer, since many of the key components contained within a typical commercial Linux distribution actually originate from a project that predates the inception of Linux by several years.
 	- ## Users and Groups
 		- ### Users
-			- Every user has a unique username and a user ID (UID).  For each user, these are defined by a line in the system file `/etc/passwd`.
+			- Every user has a unique username and a user ID (UID). For each user, these are defined by a line in the system file `/etc/passwd`:
+				- _Group ID_: the numeric ID of the first of the groups of which the user is a member
+				- _Home directory_: the initial directory into which the user is placed after logging in
+				- _Login shell_
 - Source
 	- The Linux Programming Interface by Michael Kerrisk
 - Tags
