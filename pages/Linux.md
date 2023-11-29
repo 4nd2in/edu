@@ -10,7 +10,8 @@
 		- ### Groups
 			- One user can be in multiple groups. Groups are made to easily administrate file access for multiple users. Each group is identified by a single line in the system group file `/etc/group`:
 				- _Group name_: the unique name of the group
-				- __
+				- _Group ID_: the numeric ID associated with this group
+				- _User list_: a comma-separated list of login names of users
 - Source
 	- The Linux Programming Interface by Michael Kerrisk
 - Tags
