@@ -1,9 +1,9 @@
 # What is a kernel
 	- The kernel is the central software that manages and allocates computer resources (i.e., the CPU, RAM, and devices). It manages the limited resources of a computer. Hardware does not require a kernel to run applications, however it simplifies the writing and use of other programs.
-	- Further information on this page refer mostly to #Linux and #UNIX
+	- Further information on this page refer mostly to #Linux and #UNIX kernels
 	- ## Tasks performed by the kernel
 		- ### Process scheduling
-			-
+			- In a preemptive multitasking operating system
 		- ### Memory management
 		- ### Provision of a [[file system]]
 		- ### Access to devices
