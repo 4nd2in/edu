@@ -16,7 +16,8 @@
 			- The kernel transmits and receives network messages on behalf of user processes. This task includes routing of network packets to the target system.
 		- ### Provision of a system call API
 			- Processes can request the kernel to perform various tasks using kernel entry points known as system calls.
-	- ## Kernel
+	- ## Kernel mode
+		-
 -
 - Source
 	- The Linux Programming Interface by Michael Kerrisk
