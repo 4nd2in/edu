@@ -29,7 +29,9 @@
 		- ### File ownership and permission
 			- Each file has an associated user ID and group ID that define the owner of the file and the group to which it belongs. The ownership of a file is used to determine the access rights available to users of the file.
 			- There are three categories of file access:
-				- _owner_: members of the goup owning the file
+				- _owner_: user
+				- _group_:  members of the group which owns the file
+				- _other_:
 - Source
 	- The Linux Programming Interface by Michael Kerrisk
 - Tags
