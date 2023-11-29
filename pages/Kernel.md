@@ -7,7 +7,7 @@
 		- ### Memory management
 			- Like the CPU, RAM is a limited resource that the kernel must share among processes in an equitable and efficient fashion.
 		- ### Provision of a [[file system]]
-			-
+			- The kernel provides a file system on disk, allowing files to be created, retrieved, updated, deleted and so on.
 		- ### Access to devices
 		- ### Networking
 		- ### Provision of a system call API
