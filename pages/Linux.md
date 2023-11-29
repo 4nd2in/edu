@@ -21,7 +21,7 @@
 	- ## Directories and Files
 		- ### File Types
 			- _Data files_: Regular or plain files to store data
-			- _Directories_: Table of filenames coupled with references to the corresponding file
+			- _Directories_: Table of filenames coupled with references to the corresponding file. Contains at least two entries `.` and `..`
 			- _Symbolic Links_:
 			- _Devices_:
 			- _Pipes_:
