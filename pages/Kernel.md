@@ -3,7 +3,7 @@
 	- Further information on this page refer mostly to #Linux and #UNIX kernels
 	- ## Tasks performed by the kernel
 		- ### Process scheduling
-			- In a preemptive multitasking operating system
+			- In a preemptive multitasking operating system the kernel determines which process receives the use of the CPU and for how long.
 		- ### Memory management
 		- ### Provision of a [[file system]]
 		- ### Access to devices
