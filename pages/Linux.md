@@ -21,7 +21,11 @@
 	- ## Directories and Files
 		- ### File Types
 			- _Data files_: Regular or plain files to store data
-			- _Directories_: Table of filenames
+			- _Directories_: Table of filenames coupled with references to the corresponding file
+			- _Symbolic Links_:
+			- _Devices_:
+			- _Pipes_:
+			- _Sockets_:
 - Source
 	- The Linux Programming Interface by Michael Kerrisk
 - Tags
