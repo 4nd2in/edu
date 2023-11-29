@@ -2,12 +2,13 @@
 	- First Version was written by Linus Torvalds in 1991.
 	- The term Linux is commonly used to refer to the entire #UNIX like operating system of which the Linux #Kernel forms a part. However, this is something of a misnomer, since many of the key components contained within a typical commercial Linux distribution actually originate from a project that predates the inception of Linux by several years.
 	- ## Users and Groups
+	  collapsed:: true
 		- ### Users
 			- Every user has a unique username and a user ID (UID). For each user, these are defined by a line in the system file `/etc/passwd`:
 				- _Username_: the unique name of the user
 				- _Password_: was used to store the encrypted password. Modern systems store `x` or `*` here, indicating the password is stored in the `/etc/shadow` file
 				- _User ID (UID)_: the numeric ID associated with this user
-				- _Group ID_ (GID): the numeric ID of the users primary group
+				- _Group ID_ (GID): the numeric ID of the users primary group. additional groups are stored in the system group file.
 				- _Home directory_: the initial directory into which the user is placed after logging in
 				- _Login shell_: the name of the program to be executed to interpret user commands
 			-
@@ -17,6 +18,7 @@
 				- _Group name_: the unique name of the group
 				- _Group ID_: the numeric ID associated with this group
 				- _User list_: a comma-separated list of login names of users
+	-
 - Source
 	- The Linux Programming Interface by Michael Kerrisk
 - Tags
