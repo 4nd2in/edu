@@ -25,8 +25,7 @@
 			- _Symbolic Links (hard link)_: Like a link but is a specially marked file containing the name of another file. If the target file of the symbolic link does not exist it is called a _dangling link_
 			- _Devices_: Represent device files such as hard drives, monitors, etc
 			- _Pipes_: If processes are executed under different user names and permissions, then standard pipes do not work. In such circumstances, pipe files are used. Pipe files are similar to the standard pipes except that they can be accessed as part of the filesystem.
-			- _Sockets_: Socket files are the special files that use a file name as their address
-			   instead of an IP address and port number. Socket files use the **sendmsg()** and **recvmsg()** system calls to enable inter-process communication between local applications
+			- _Sockets_: Socket files are the special files that use a file name as their address instead of an IP address and port number. Socket files use the **sendmsg()** and **recvmsg()** system calls to enable inter-process communication between local applications
 		- ### File ownership and permission
 			- Each file has an associated user ID and group ID that define the owner of the file and the group to which it belongs. The ownership of a file is used to determine the access rights available to users of the file.
 			- There are three categories of file access:
