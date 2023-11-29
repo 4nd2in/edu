@@ -9,7 +9,7 @@
 		- ### Provision of a [[file system]]
 			- The kernel provides a file system on disk, allowing files to be created, retrieved, updated, deleted and so on.
 		- ### Creation and termination of processes
-			- The kernel can load a new process into memory, providing it with the resources that it needs to run.
+			- The kernel can load a new process into memory, providing it with the resources that it needs to run. Once a process has completed execution, the kernel ensures that the resources it uses are freed up for new processes.
 		- ### Access to devices
 			-
 		- ### Networking
