@@ -26,6 +26,8 @@
 			- _Devices_:
 			- _Pipes_:
 			- _Sockets_:
+		- ### File ownership and permission
+			- Each file has an associated user ID and group ID that define the owner of the file and the group to which it belongs. The own
 - Source
 	- The Linux Programming Interface by Michael Kerrisk
 - Tags
