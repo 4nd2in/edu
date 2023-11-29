@@ -1,2 +1,2 @@
 # What is a kernel
-	- The term kernel is often referred to as the central softw
+	- The kernel is the central software that manages and allocates computer resources (i.e., the CPU, RAM, and devices).
