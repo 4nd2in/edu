@@ -22,7 +22,7 @@
 		- ### File Types
 			- _Data files_: Regular or plain files to store data
 			- _Directories_: Table of filenames coupled with references to the corresponding file. Contains at least two entries `.` and `..`. The table can contain _links_. Links are pointers to a file with an alternative name.
-			- _Symbolic Links_: Like a link but is a specially marked file containing the name of another file
+			- _Symbolic Links_: Like a link but is a specially marked file containing the name of another file. If the target file of the symbolic link does not exist it is called a _da_
 			- _Devices_:
 			- _Pipes_:
 			- _Sockets_:
