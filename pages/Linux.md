@@ -35,7 +35,8 @@
 			- Three permissions can be set for each of this categories: _read_, _write_, _execute_
 			- For directories the three permissions have slightly different meanings:
 				- _read_: allows the contents off the directory to be listed
-				-
+				- _write_: allows the contents of the directory to be changed (i.e. filenames)
+				- _execute_: allows access to files within the directory (permissions on the files themselves)
 - Source
 	- The Linux Programming Interface by Michael Kerrisk
 - Tags
