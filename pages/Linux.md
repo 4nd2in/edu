@@ -7,7 +7,7 @@
 				- _Group ID_: the numeric ID of the first of the groups of which the user is a member
 				- _Home directory_: the initial directory into which the user is placed after logging in
 				- _Login shell_: the name of the program to be executed to interpret user commands
-			- The superuser also known as _root_ has special privileges in the system. His account has the user ID of 0.
+			- The superuser has special privileges in the system. His account has the user ID of 0 and the user name _root_. The superuser bypasses all permission checks in the system.
 		- ### Groups
 			- One user can be in multiple groups. Groups are made to easily administrate file access for multiple users. Each group is identified by a single line in the system group file `/etc/group`:
 				- _Group name_: the unique name of the group
