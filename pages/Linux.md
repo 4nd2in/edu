@@ -20,7 +20,8 @@
 				- _User list_: a comma-separated list of login names of users
 	- ## Directories and Files
 		- ### File Types
-			- _Data files_:
+			- _Data files_: Regular or plain files to store data
+			- _Directories_: Table of filenames
 - Source
 	- The Linux Programming Interface by Michael Kerrisk
 - Tags
