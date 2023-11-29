@@ -32,6 +32,7 @@
 				- _owner_: user
 				- _group_:  users of the group which owns the file
 				- _other_: other users that do not match the previous two categories
+			- Three permissions can be set for each of this categories: _read_, _write_, _execute_
 			-
 - Source
 	- The Linux Programming Interface by Michael Kerrisk
