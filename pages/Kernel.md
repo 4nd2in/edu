@@ -11,8 +11,9 @@
 		- ### Creation and termination of processes
 			- The kernel can load a new process into memory, providing it with the resources that it needs to run. Once a process has completed execution, the kernel ensures that the resources it uses are freed up for new processes.
 		- ### Access to devices
-			-
+			- The kernel provides an interface that standardises and simplifies access to devices, while at the same time arbitrating access by multiple processes to each device.
 		- ### Networking
+			- The kernel trans
 		- ### Provision of a system call API
 -
 - Source
