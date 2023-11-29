@@ -24,8 +24,8 @@
 			- _Directories_: Table of filenames coupled with references to the corresponding file. Contains at least two entries `.` and `..`. The table can contain _links (soft link)_. Links are pointers to a file with an alternative name.
 			- _Symbolic Links (hard link)_: Like a link but is a specially marked file containing the name of another file. If the target file of the symbolic link does not exist it is called a _dangling link_
 			- _Devices_:
-			- _Pipes_:
-			- _Sockets_:
+			- _Pipes_: Allow processes to send data to other processes or receive data from other processes.
+			- _Sockets_: provide inter-process communication
 		- ### File ownership and permission
 			- Each file has an associated user ID and group ID that define the owner of the file and the group to which it belongs. The ownership of a file is used to determine the access rights available to users of the file.
 			- There are three categories of file access:
