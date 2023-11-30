@@ -23,7 +23,7 @@
 			- #### /bin
 				- Binary or executable programs (ps, ls, grep, etc)
 			- #### /boot
-				- Contains all the boot-related information files and folders such as conf, grub, etc
+				- Contains all the boot-related information files and folders (vmlinux, grub, etc)
 			- #### /etc
 				- System configuration files
 			- #### /home
