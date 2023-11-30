@@ -21,14 +21,18 @@
 	- ## Directories and Files
 		- ### Structure
 			- #### /bin
+				- Binary or executable programs
 			- #### /etc
+				- System configurations
 			- #### /dev
 			- #### /home
+				- Home directory
 			- #### /media
 			- #### /mnt
 			- #### /opt
 			- #### /sbin
 			- #### /tmp
+			- #### /usr
 			- #### /var
 			- ####
 		- ### File Types
