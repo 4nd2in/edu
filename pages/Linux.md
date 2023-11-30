@@ -22,18 +22,24 @@
 		- ### Structure
 			- #### /bin
 				- Binary or executable programs
+			- #### /boot
+				-
 			- #### /etc
 				- System configurations
 			- #### /dev
 			- #### /home
-				- Home directory
+				- Home directories for users
 			- #### /media
 			- #### /mnt
 			- #### /opt
+				- Optional third party software
 			- #### /sbin
 			- #### /tmp
+				- Temporary space, typically cleared on reboot
 			- #### /usr
+				- User related programs
 			- #### /var
+				- Log files
 			- ####
 		- ### File Types
 			- _Data files_: Regular or plain files to store data
