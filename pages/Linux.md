@@ -31,10 +31,13 @@
 			- #### /lib
 				- Contains kernel modules and a shared library
 			- #### /media
-				- Contains subdirecotries where removal media
+				- Contains subdirectories where removal media devices are inserted
 			- #### /mnt
+				- Contains temporary mount directories for mounting the file system
 			- #### /opt
 				- Optional third party software
+			- #### /proc
+				- It is a virtual pseudo-file system to contains
 			- #### /sbin
 			- #### /tmp
 				- Temporary space, typically cleared on reboot
