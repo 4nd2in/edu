@@ -21,7 +21,7 @@
 	- ## Directories and Files
 		- ### Structure
 			- #### /bin
-				- Binary or executable programs (ps, ls)
+				- Binary or executable programs (ps, ls, grep, etc)
 			- #### /boot
 				- Contains all the boot-related information files and folders such as conf, grub, etc
 			- #### /etc
@@ -49,7 +49,7 @@
 			- #### /usr
 				- User related programs
 			- #### /var
-				- Log files
+				- Variable files. Files that are expected to grow like log files.
 			- ####
 		- ### File Types
 			- _Data files_: Regular or plain files to store data
