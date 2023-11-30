@@ -21,18 +21,15 @@
 	- ## Directories and Files
 		- ### Structure
 			- #### /bin
-			- #### /boot
+			- #### /etc
 			- #### /dev
 			- #### /home
 			- #### /media
 			- #### /mnt
 			- #### /opt
-			- #### /proc
-			- #### /root
-			- #### /run
 			- #### /sbin
+			- #### /tmp
 			- #### /var
-			- #### /etc
 			- ####
 		- ### File Types
 			- _Data files_: Regular or plain files to store data
