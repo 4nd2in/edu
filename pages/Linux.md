@@ -21,7 +21,7 @@
 	- ## Directories and Files
 		- ### Structure
 			- #### /bin
-				- Binary or executable programs
+				- Binary or executable programs (ps, ls)
 			- #### /boot
 				- Contains all the boot-related information files and folders such as conf, grub, etc
 			- #### /etc
@@ -39,7 +39,7 @@
 			- #### /proc
 				- It is a virtual pseudo-file system to contains that contains information about the running processes with a specific process ID (PID)
 			- #### /sbin
-				- Binary executable programs of the system
+				- Binary executable programs of the system. Typically used by the superuser (iptables, reboot, etc)
 			- #### /srv
 				- Contains server-specific and server-related files
 			- #### / sys
