@@ -20,9 +20,17 @@
 				- _User list_: a comma-separated list of login names of users
 	- ## Directories and Files
 		- ### Structure
-			- ####
+			- #### /bin
 			- #### /boot
+			- #### /dev
 			- #### /home
+			- #### /media
+			- #### /mnt
+			- #### /opt
+			- #### /proc
+			- #### /root
+			- #### /run
+			-
 			- #### /var
 			- #### /etc
 			- ####
