@@ -41,7 +41,9 @@
 			- #### /sbin
 				- Binary executable programs for the superuser
 			- #### /srv
-				- Contains server-specific
+				- Contains server-specific and server-related files
+			- #### / sys
+				- It is a virtual file system for modern Linux distributions to store and allows modification of the devices connected to the system
 			- #### /tmp
 				- Temporary space, typically cleared on reboot
 			- #### /usr
