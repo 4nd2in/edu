@@ -29,7 +29,7 @@
 			- #### /home
 				- Home directories for users
 			- #### /lib
-				- Contains kernel modules and a shared library
+				- Contains kernel modules and a shared library files to support programs installed under _/bin_ and _/sbin_
 			- #### /media
 				- Contains subdirectories where removal media devices are inserted
 			- #### /mnt
