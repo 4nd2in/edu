@@ -37,8 +37,11 @@
 			- #### /opt
 				- Optional third party software
 			- #### /proc
-				- It is a virtual pseudo-file system to contains
+				- It is a virtual pseudo-file system to contains that contains information about the running processes with a specific process ID (PID)
 			- #### /sbin
+				- Binary executable programs for the superuser
+			- #### /srv
+				- Contains server-specific
 			- #### /tmp
 				- Temporary space, typically cleared on reboot
 			- #### /usr
