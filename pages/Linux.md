@@ -25,7 +25,7 @@
 			- #### /boot
 				- Contains all the boot-related information files and folders such as conf, grub, etc
 			- #### /etc
-				- System configurations
+				- System configuration files
 			- #### /home
 				- Home directories for users
 			- #### /lib
@@ -39,7 +39,7 @@
 			- #### /proc
 				- It is a virtual pseudo-file system to contains that contains information about the running processes with a specific process ID (PID)
 			- #### /sbin
-				- Binary executable programs for the superuser
+				- Binary executable programs of the system
 			- #### /srv
 				- Contains server-specific and server-related files
 			- #### / sys
