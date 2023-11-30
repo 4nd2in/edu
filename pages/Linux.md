@@ -23,13 +23,15 @@
 			- #### /bin
 				- Binary or executable programs
 			- #### /boot
-				-
+				- Contains all the boot-related information files and folders such as conf, grub, etc
 			- #### /etc
 				- System configurations
-			- #### /dev
 			- #### /home
 				- Home directories for users
+			- #### /lib
+				- Contains kernel modules and a shared library
 			- #### /media
+				- Contains subdirecotries where removal media
 			- #### /mnt
 			- #### /opt
 				- Optional third party software
