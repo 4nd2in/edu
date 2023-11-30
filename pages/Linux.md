@@ -41,7 +41,7 @@
 			- #### /sbin
 				- Binary executable programs of the system. Typically used by the superuser (iptables, reboot, etc)
 			- #### /srv
-				- Contains server-specific and server-related files
+				- Contains server-specific and server-related service (srv) files
 			- #### / sys
 				- It is a virtual file system for modern Linux distributions to store and allows modification of the devices connected to the system
 			- #### /tmp
