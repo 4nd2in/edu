@@ -19,6 +19,7 @@
 				- _Group ID_: the numeric ID associated with this group
 				- _User list_: a comma-separated list of login names of users
 	- ## Directories and Files
+	  collapsed:: true
 		- ### Structure
 		  collapsed:: true
 			- #### /bin
@@ -72,6 +73,8 @@
 				- _read_: allows the contents off the directory to be listed
 				- _write_: allows the contents of the directory to be changed (i.e. filenames)
 				- _execute_: allows access to files within the directory (permissions on the files themselves)
+	- ## Processes
+		-
 - Source
 	- The Linux Programming Interface by Michael Kerrisk
 - Tags
