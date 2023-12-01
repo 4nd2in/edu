@@ -20,6 +20,7 @@
 				- _User list_: a comma-separated list of login names of users
 	- ## Directories and Files
 		- ### Structure
+		  collapsed:: true
 			- #### /bin
 				- Binary or executable programs (ps, ls, grep, etc)
 			- #### /boot
