@@ -2,6 +2,7 @@
 	- The kernel is the central software that manages and allocates computer resources (i.e., the CPU, RAM, and devices). It manages the limited resources of a computer. Hardware does not require a kernel to run applications, however it simplifies the writing and use of other programs.
 	- Further information on this page refer mostly to #Linux and #UNIX kernels
 	- ## Tasks performed by the kernel
+	  collapsed:: true
 		- ### Process scheduling
 			- In a preemptive #multitasking operating system the kernel determines which process receives the use of the CPU and for how long.
 		- ### Memory management
@@ -17,6 +18,7 @@
 		- ### Provision of a system call API
 			- Processes can request the kernel to perform various tasks using kernel entry points known as system calls.
 	- ## Kernel modes
+	  collapsed:: true
 		- Processor architectures typically allow the CPU to operate in at least two modes: _user mode_ and _kernel mode_. When running in user mode, the CPU can  access only memory that is marked as being part of the user space; attempts to access memory in kernel space result in a hardware exception. When running in kernel mode, the CPU can access both user and kernel memory space.
 -
 - Source
