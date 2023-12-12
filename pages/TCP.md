@@ -83,7 +83,6 @@
 				-
 			- Slow start is not as big of an issue for large, streaming downloads, as the client and the server will arrive at their maximum window sizes after few hundred milliseconds. For short and burst connections such as #HTTP, it is not unusual for the data transfer to finish before reaching the maximum size. Here performance can be increase by reducing the #RTT between the server and the client.
 		- ### Slow-start Restart
-		  collapsed:: true
 			- This is a mechanism that will reset the #[[CWND]] size of a connection after it has been idle for a defined period of time. This is due to the fact that the condition of the underlying network might have changed while the connection has been idle.
 			- This mechanism is a "safe" default. However, disabling this can gain performance on long-lived #HTTP connections.
 		- ### Congestion Avoidance
