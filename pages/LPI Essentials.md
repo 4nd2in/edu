@@ -47,4 +47,5 @@ collapsed:: true
 		- Freedom to study and modify the software
 		- Freedom to distribute the software
 		- Freedom to distribute the modified software
-		-
+	- #### 2. You have written a web application and published it under a free license. How can you earn money with your product? Name three possibilities.
+		- _Software as a service_
