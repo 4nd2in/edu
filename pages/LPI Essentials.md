@@ -31,8 +31,7 @@ collapsed:: true
 	-
 - ## Major Open Source Applications
 	- #### 1. For each of the following commands, identify whether it is associated with the Debian packaging system or the Red Hat packaging system:
-	- dpkg -> debian
-	- rpm -> Red Hat
-	- apt-get -> debian
-	- yum
-	- dnf
+		- dpkg, apt-get -> Debian
+		- yum, dnf, rpm -> Red Hat
+	- #### 2. Which command could be used to install Blender on Ubuntu? After installation, how can the
+	  program be executed?
