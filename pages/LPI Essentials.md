@@ -30,4 +30,9 @@ collapsed:: true
 		  FreeBSD and Windows Servers.
 	-
 - ## Major Open Source Applications
-	-
+	- #### 1. For each of the following commands, identify whether it is associated with the Debian packaging system or the Red Hat packaging system:
+	  dpkg
+	  rpm
+	  apt-get
+	  yum
+	  dnf
