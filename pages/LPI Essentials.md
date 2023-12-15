@@ -1,7 +1,7 @@
 ### Questions
 	- #### 1. How is Debian GNU/Linux different from Ubuntu? Name two aspects.
-		- Debian was first developed in 1994 whereas Ubuntu startet in 2004
-		- Debian's main goal is reliability. The goal of Ubuntu is ease of use
+		-
+		- Debian's main goal is reliability. The goal of Ubuntu is ease of use and therefore is more recommended for beginners.
 	- #### 2. What are the most common environments/platforms Linux is used for? Name three different environments/platforms and name one distribution you can use for each.
 		- Servers -> Debian
 		- Embedded Systems -> Android
