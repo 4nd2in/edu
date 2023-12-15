@@ -1,4 +1,4 @@
-### Questions
+##  Linux Evolution and Popular Operating Systems
 	- #### 1. How is Debian GNU/Linux different from Ubuntu? Name two aspects.
 		- Debians main goal is stability and reliability. Therefore Debian receives fewer updates compared to Ubuntu.
 		- The goal of Ubuntu is ease of use which is why it is better for beginners. Debian is used by more advances users.
@@ -23,5 +23,10 @@
 	- #### 7. What are the major advantages of the Raspberry Pi and which functions can they take in business?
 		- In comparison with normal computers, a Raspberry Pi has very low costs. Its performance is good enough so that it can be used for simple desktop tasks. Because the Raspberry Pi is able to use GPIO businesses can use a Raspberry Pi to use it to test hardware or produce simple prototypes for embedded systems.
 	- #### 8. What range of distributions does Amazon Cloud Services and Google Cloud offer? Name at least three common ones and two different ones
-		- Debian, Ubuntu, CentOS
-		-
+		- The common distributions between Amazon and Google Cloud Services are Ubuntu, CentOS
+		  and Red Hat Enterprise Linux. Each cloud provider also offers specific distributions that the
+		  other one doesn’t. Amazon has Amazon Linux and Kali Linux, while Google offers the use of
+		  FreeBSD and Windows Servers.
+	-
+- ## Major Open Source Applications
+	-
