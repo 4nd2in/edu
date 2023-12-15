@@ -20,4 +20,4 @@
 	- #### 6. Considering cost and performance, which distributions are mostly suitable for a business that aims to reduce licensing costs, while keeping performance at its highest? Explain why.
 		- To reduce licensing costs, choosing an open license is most suitable as it does not cost anything to use the product. To keep up with performance the distribution should provide frequent updates and should be easy to use. Considering this points I suggest Ubuntu, Fedora and OpenSUSE.
 	- #### 7. What are the major advantages of the Raspberry Pi and which functions can they take in business?
-		- In comparison with normal computers, a Raspberry Pi has very low costs. Its performance is good enough so that it can be used for simple desktop tasks. Because the Raspberry Pi is able to
+		- In comparison with normal computers, a Raspberry Pi has very low costs. Its performance is good enough so that it can be used for simple desktop tasks. Because the Raspberry Pi is able to use GPIO businesses can use a Raspberry Pi
