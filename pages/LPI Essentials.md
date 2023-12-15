@@ -35,6 +35,11 @@ collapsed:: true
 		- yum, dnf, rpm -> Red Hat
 	- #### 2. Which command could be used to install Blender on Ubuntu? After installation, how can the program be executed?
 		- `apt-get install blender` after installation the program can be executed by typing `blender` to the command line.
-	- #### 3.
+	- #### 3. For each of the following file formats, write the name of an application able to open and edit the corresponding file:
+	- png -> Gimp
+	- doc -> LibreOffice Writer
+	- xls -> LibreOffice Calc
+	- ppt -> LibreOffice Impress
+	- wav -> Audacity
 - ## Open Source Software and Licensing
 	-
