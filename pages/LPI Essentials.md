@@ -7,9 +7,9 @@
 		- Embedded Systems -> Android
 		- Desktops -> Ubuntu
 	- #### 3. You are planning to install a Linux distribution in a new environment. Name four things that you should consider when choosing a distribution.
+		- Which environment/platform do I run?
 		- How reliable should it be?
 		- Must I support specific hardware?
 		- Do I need newest features?
-		- Which environment/platform do I run
 	- #### 4. Name three devices that the Android OS runs on, other than smartphones.
 	- #### 5. Explain three major advantages of cloud computing.
