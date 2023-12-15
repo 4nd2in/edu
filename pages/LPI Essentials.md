@@ -30,6 +30,7 @@ collapsed:: true
 		  FreeBSD and Windows Servers.
 	-
 - ## Major Open Source Applications
+  collapsed:: true
 	- #### 1. For each of the following commands, identify whether it is associated with the Debian packaging system or the Red Hat packaging system:
 		- dpkg, apt-get -> Debian
 		- yum, dnf, rpm -> Red Hat
@@ -42,6 +43,7 @@ collapsed:: true
 	- ppt -> LibreOffice Impress
 	- wav -> Audacity
 - ## Open Source Software and Licensing
+  collapsed:: true
 	- #### 1. What are — in a nutshell — the “four freedoms” as defined by Richard Stallman and the Free Software Foundation?
 		- Freedom to run the software
 		- Freedom to study and modify the software
@@ -52,5 +54,8 @@ collapsed:: true
 		- _Dual Licensing_: Provide a free tier (e.g for individuals) and a tier that enables advanced features (e.g for businesses) for a fee.
 		- _Crowdfunding_: Allow users to donate to you.
 - ## ICT Skills and Working in Linux
+  collapsed:: true
 	- Another way to secure your communication is to sign and encrypt your files folders and emails with GnuPG. dm-crypt and EncFS are two alternatives to encrypt whole disks or partitions that use respectively block and stack encryption methods.
 	- Finally, LibreOffice Impress is a very complete open source alternative to Microsoft Powerpoint but there are Beamer and RevealJS if you prefer to create presentations using code instead of GUIs. ProjectLibre and GanttProject can be the right choice if you need a Microsoft Project replacement.
+- ## Command Line Basics
+	-
