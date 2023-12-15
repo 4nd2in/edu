@@ -34,4 +34,4 @@ collapsed:: true
 		- dpkg, apt-get -> Debian
 		- yum, dnf, rpm -> Red Hat
 	- #### 2. Which command could be used to install Blender on Ubuntu? After installation, how can the program be executed?
-		- `apt-get install blender` after installation the
+		- `apt-get install blender` after installation the program can be executed by typing `blender` to the command line.
