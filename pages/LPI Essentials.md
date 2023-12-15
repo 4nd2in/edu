@@ -24,5 +24,4 @@
 		- In comparison with normal computers, a Raspberry Pi has very low costs. Its performance is good enough so that it can be used for simple desktop tasks. Because the Raspberry Pi is able to use GPIO businesses can use a Raspberry Pi to use it to test hardware or produce simple prototypes for embedded systems.
 	- #### 8. What range of distributions does Amazon Cloud Services and Google Cloud offer? Name at least three common ones and two different ones
 		- Debian, Ubuntu, CentOS
-		- Amazon Linux, Kali
 		-
