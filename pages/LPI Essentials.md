@@ -16,7 +16,8 @@
 		- Smartwatches
 	- #### 5. Explain three major advantages of cloud computing.
 		- The end user does not need a powerful machine and only pays what he actually needs.
-		- Cloud services can easily be scaled up and down
+		- Cloud services can easily be scaled up and down based on usage.
+		- Backup and recovery can be handled more easily becaus
 	- #### 6. Considering cost and performance, which distributions are mostly suitable for a business that aims to reduce licensing costs, while keeping performance at its highest? Explain why.
 		- To reduce licensing costs, choosing an open license is most suitable as it does not cost anything to use the product. To keep up with performance the distribution should provide frequent updates and should be easy to use. Considering this points I suggest Ubuntu, Fedora and OpenSUSE.
 	- #### 7. What are the major advantages of the Raspberry Pi and which functions can they take in business?
