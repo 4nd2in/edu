@@ -1,6 +1,6 @@
 ### Questions
 	- #### 1. How is Debian GNU/Linux different from Ubuntu? Name two aspects.
-		- Debians
+		- Debians main goal is stability and reliability. Therefore Debian receives fewer updates compared to Ubuntu.
 		- The goal of Ubuntu is ease of use which is why it is better for beginners. Debian is used by more advances users.
 	- #### 2. What are the most common environments/platforms Linux is used for? Name three different environments/platforms and name one distribution you can use for each.
 		- Servers -> Debian
