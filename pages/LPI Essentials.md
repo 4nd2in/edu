@@ -42,4 +42,5 @@ collapsed:: true
 	- ppt -> LibreOffice Impress
 	- wav -> Audacity
 - ## Open Source Software and Licensing
-	-
+	- #### 1. What are — in a nutshell — the “four freedoms” as defined by Richard Stallman and the Free Software Foundation?
+		- Freedom of
