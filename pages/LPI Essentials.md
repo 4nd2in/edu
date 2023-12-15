@@ -16,4 +16,4 @@
 		- Smart watches
 	- #### 5. Explain three major advantages of cloud computing.
 		- The end user does not need a powerful machine
-		-
+		- Maintenance by cloud provider
