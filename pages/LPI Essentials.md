@@ -12,4 +12,8 @@
 		- Must I support specific hardware?
 		- Do I need newest features?
 	- #### 4. Name three devices that the Android OS runs on, other than smartphones.
+		- TVs
+		- Smart watches
 	- #### 5. Explain three major advantages of cloud computing.
+		- The end user does not need a powerful machine
+		-
