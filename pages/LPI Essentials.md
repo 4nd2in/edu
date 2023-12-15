@@ -44,6 +44,7 @@ collapsed:: true
 - ## Open Source Software and Licensing
 	- #### 1. What are — in a nutshell — the “four freedoms” as defined by Richard Stallman and the Free Software Foundation?
 		- Freedom to run the software
-		- Freedom of redistribution (modified or not)
-		- Freedom to understand the software
+		- Freedom to study and modify the software
+		- Freedom to distribute the software
+		- Freedom to distribute the modified software
 		-
