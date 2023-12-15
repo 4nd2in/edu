@@ -51,3 +51,5 @@ collapsed:: true
 		- _Software as a Service_: Run the software on own servers and allow customers to use it by paying a fee.
 		- _Dual Licensing_: Provide a free tier (e.g for individuals) and a tier that enables advanced features (e.g for businesses) for a fee.
 		- _Crowdfunding_: Allow users to donate to you.
+- ## ICT Skills and Working in Linux
+	-
