@@ -48,7 +48,6 @@ collapsed:: true
 		- Freedom to distribute the software
 		- Freedom to distribute the modified software
 	- #### 2. You have written a web application and published it under a free license. How can you earn money with your product? Name three possibilities.
-		- _Software as a service_: Run the software on own servers and allow customers to use it by paying a fee.
+		- _Software as a Service_: Run the software on own servers and allow customers to use it by paying a fee.
 		- _Dual Licensing_: Provide a free tier (e.g for individuals) and a tier that enables advanced features (e.g for businesses) for a fee.
-		- _Crow_
-		-
+		- _Crowdfunding_: Allow users to donate to you.
