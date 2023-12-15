@@ -18,4 +18,4 @@
 		- The end user does not need a powerful machine
 		- Maintenance by cloud provider
 	- #### 6. Considering cost and performance, which distributions are mostly suitable for a business that aims to reduce licensing costs, while keeping performance at its highest? Explain why.
-		- To reduce licensing costs, choosing an
+		- To reduce licensing costs, choosing an open license is most suitable as it does not cost anything to use the product.
