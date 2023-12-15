@@ -57,5 +57,4 @@ collapsed:: true
   collapsed:: true
 	- Another way to secure your communication is to sign and encrypt your files folders and emails with GnuPG. dm-crypt and EncFS are two alternatives to encrypt whole disks or partitions that use respectively block and stack encryption methods.
 	- Finally, LibreOffice Impress is a very complete open source alternative to Microsoft Powerpoint but there are Beamer and RevealJS if you prefer to create presentations using code instead of GUIs. ProjectLibre and GanttProject can be the right choice if you need a Microsoft Project replacement.
-- ## Command Line Basics
-	-
+-
