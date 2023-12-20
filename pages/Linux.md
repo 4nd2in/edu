@@ -56,8 +56,8 @@
 		- ### File Types
 		  collapsed:: true
 			- _Data files_: Regular or plain files to store data
-			- _Directories_: Table of filenames coupled with references to the corresponding file. Contains at least two entries `.` and `..`. The table can contain _links (soft link)_. Links are pointers to a file with an alternative name.
-			- _Symbolic Links (hard link)_: Like a link but is a specially marked file containing the name of another file. If the target file of the symbolic link does not exist it is called a _dangling link_
+			- _Directories_: Table of filenames coupled with references to the corresponding file. Contains at least two entries `.` and `..`. The table can contain _links_. Links are pointers to a file with an alternative name.
+			- _Symbolic Links (soft link)_: Like a link but is a specially marked file containing the name of another file. If the target file of the symbolic link does not exist it is called a _dangling link_
 				-
 			- _Devices_: Represent device files such as hard drives, monitors, etc
 			- _Pipes_: If processes are executed under different user names and permissions, then standard pipes do not work. In such circumstances, pipe files are used. Pipe files are similar to the standard pipes except that they can be accessed as part of the filesystem.
