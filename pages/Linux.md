@@ -3,8 +3,8 @@
 	- The term Linux is commonly used to refer to the entire #UNIX like operating system of which the Linux #Kernel forms a part. However, this is something of a misnomer, since many of the key components contained within a typical commercial Linux distribution actually originate from a project that predates the inception of Linux by several years.
 	- ## Users and Groups
 		- ### Creation
-			- `adduser`: creates a user with a name, a password and a group with the same name. it creates the home directory
-			- `usermod`: modify a user. e.g its groups
+			- `adduser`: creates a user with a name, a password and a group with the same name. In comparison to the older `useradd` command this one will create the `/home/{username}` directory
+			- `usermod`: modify a user. e.g its groups (`usermod -a -G {groupname}`)
 		- ### Users
 			- Every user has a unique username and a user ID (UID). For each user, these are defined by a line in the system file `/etc/passwd`:
 				- _Username_: the unique name of the user
