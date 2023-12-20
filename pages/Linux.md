@@ -25,13 +25,9 @@
 				- _Group name_: the unique name of the group
 				- _Group ID_: the numeric ID associated with this group
 				- _User list_: a comma-separated list of login names of users
-		- ### Permissions
-			- `chmod`: change read, write and execute permissions of files for the owning group, owning user and others
-			- `chown`: change group and user ownership of files
-			-
 	- ## Directories and Files
-	  collapsed:: true
 		- ### Structure
+		  collapsed:: true
 			- #### /bin
 				- Binary or executable programs (ps, ls, grep, etc)
 			- #### /boot
@@ -73,7 +69,8 @@
 			- _Pipes_: If processes are executed under different user names and permissions, then standard pipes do not work. In such circumstances, pipe files are used. Pipe files are similar to the standard pipes except that they can be accessed as part of the filesystem.
 			- _Sockets_: Socket files are the special files that use a file name as their address instead of an IP address and port number. Socket files use the **sendmsg()** and **recvmsg()** system calls to enable inter-process communication between local applications
 		- ### File ownership and permission
-		  collapsed:: true
+			- `chmod`: change read, write and execute permissions of files for the owning group, owning user and others
+			- `chown`: change group and user ownership of files
 			- Each file has an associated user ID and group ID that define the owner of the file and the group to which it belongs. The ownership of a file is used to determine the access rights available to users of the file.
 			- There are three categories of file access:
 				- _owner_: user
