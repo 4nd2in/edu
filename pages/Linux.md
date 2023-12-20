@@ -81,12 +81,11 @@
 				- _read_: allows the contents off the directory to be listed
 				- _write_: allows the contents of the directory to be changed (i.e. filenames)
 				- _execute_: allows access to files within the directory (permissions on the files themselves)
-			- :
+			- Every file has 10 permission flags `drwxrwxrwx`:
 				- 1: _d_ if a directory, _-_ if not
 				- 2, 3, 4: user
 				- 5, 6, 7: group
 				- 8, 9, 10: others
-				-
 	- ## Processes
 - Source
 	- The Linux Programming Interface by Michael Kerrisk
