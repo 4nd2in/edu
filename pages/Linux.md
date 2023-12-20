@@ -5,8 +5,10 @@
 		- ### Creation
 			- `adduser`: creates a user with a name, a password and a group with the same name. In comparison to the older `useradd` command this one will create the `/home/{username}` directory
 			- `usermod`: modify a user. e.g its groups (`usermod -aG {groupname} {username}`)
+			- `gpasswd`
 			- `userdel`: deletes a user. To also delete the home directory use the `-r` argument
-			- `groupdel`: deletes a group
+			- `groupdel`: deletes a group that has no assigned users
+			-
 		- ### Users
 			- Every user has a unique username and a user ID (UID). For each user, these are defined by a line in the system file `/etc/passwd`:
 				- _Username_: the unique name of the user
