@@ -83,7 +83,7 @@
 				- _execute_: allows access to files within the directory (permissions on the files themselves)
 			- Every file has 10 permission flags `drwxrwxrwx`:
 				- 1: _d_ if a directory, _-_ if not
-				- 2, 3, 4: user
+				- 2, 3, 4: user permissions
 				- 5, 6, 7: group
 				- 8, 9, 10: others
 	- ## Processes
