@@ -3,13 +3,11 @@
 	- The term Linux is commonly used to refer to the entire #UNIX like operating system of which the Linux #Kernel forms a part. However, this is something of a misnomer, since many of the key components contained within a typical commercial Linux distribution actually originate from a project that predates the inception of Linux by several years.
 	- ## Users and Groups
 		- ### Commands
-			- `adduser`: creates a user with a name, a password and a group with the same name. In comparison to the older `useradd` command this one will create the `/home/{username}` directory
-			- `usermod`: modify a user. e.g its groups (`usermod -aG {groupname} {username}`)
-			- `gpasswd`: administer groups. e.g remove user from group (`gpasswd -d {username}`)
-			- `userdel`: deletes a user. To also delete the home directory use the `-r` argument
-			- `groupdel`: deletes a group that has no assigned users
 			-
 		- ### Users
+			- `adduser`: creates a user with a name, a password and a group with the same name. In comparison to the older `useradd` command this one will create the `/home/{username}` directory
+			- `usermod`: modify a user. e.g its groups (`usermod -aG {groupname} {username}`)
+			- `userdel`: deletes a user. To also delete the home directory use the `-r` argument
 			- Every user has a unique username and a user ID (UID). For each user, these are defined by a line in the system file `/etc/passwd`:
 				- _Username_: the unique name of the user
 				- _Password_: was used to store the encrypted password. Modern systems store `x` or `*` here, indicating the password is stored in the `/etc/shadow` file
@@ -20,10 +18,15 @@
 			-
 			- The superuser has special privileges in the system. His account has the user ID of 0 and the user name _root_. The superuser bypasses all permission checks in the system.
 		- ### Groups
+			- `groupadd`
+			- `groupdel`: deletes a group that has no assigned users
+			- `gpasswd`: administer groups. e.g remove user from group (`gpasswd -d {username}`)
 			- One user can be in multiple groups. Groups are made to easily administrate file access for multiple users. Each group is identified by a single line in the system group file `/etc/group`:
 				- _Group name_: the unique name of the group
 				- _Group ID_: the numeric ID associated with this group
 				- _User list_: a comma-separated list of login names of users
+		- ### Permissions
+			-
 	- ## Directories and Files
 	  collapsed:: true
 		- ### Structure
