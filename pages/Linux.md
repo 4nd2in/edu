@@ -2,7 +2,8 @@
 	- First Version was written by Linus Torvalds in 1991.
 	- The term Linux is commonly used to refer to the entire #UNIX like operating system of which the Linux #Kernel forms a part. However, this is something of a misnomer, since many of the key components contained within a typical commercial Linux distribution actually originate from a project that predates the inception of Linux by several years.
 	- ## Users and Groups
-		- ### Creation
+	  collapsed:: true
+		- ### Commands
 			- `adduser`: creates a user with a name, a password and a group with the same name. In comparison to the older `useradd` command this one will create the `/home/{username}` directory
 			- `usermod`: modify a user. e.g its groups (`usermod -aG {groupname} {username}`)
 			- `gpasswd`: administer groups. e.g remove user from group (`gpasswd -d {username}`)
