@@ -88,7 +88,7 @@
 				- 8, 9, 10: other permissions
 			- Sticky bits:
 				- `s`: when set on a file (in the executable permission) it allows the program to run with the effective user ID of the file owner rather than the user who is running the program (`-rwsr-xr-x`). When set on a directory it allows files created within that directory to inherit the group ownership of the parent directory instead of the group ownership of the user creating the file (`drwxr-sr-x`)
-				- `t`: When set on a directory it allow
+				- `t`: When set on a directory only the owner of a file in that directory can delete or rename the file even if other users have write permissions (`drwxrwxrwt`)
 	- ## Processes
 - Source
 	- The Linux Programming Interface by Michael Kerrisk
