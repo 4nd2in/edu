@@ -86,6 +86,8 @@
 				- 2, 3, 4: user permissions
 				- 5, 6, 7: group permissions
 				- 8, 9, 10: other permissions
+			- Sticky bits:
+				- _s_: when set on a file (in the executable permission) it allows the program to run with the effective user ID of the file owner rather the
 	- ## Processes
 - Source
 	- The Linux Programming Interface by Michael Kerrisk
