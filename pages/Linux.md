@@ -26,8 +26,9 @@
 				- _Group ID_: the numeric ID associated with this group
 				- _User list_: a comma-separated list of login names of users
 		- ### Permissions
-			- `chmod`: modify read, write and execute permissions for files
-			- ``
+			- `chmod`: change read, write and execute permissions of files for the owning group, owning user and others
+			- `chown`: change group and user ownership of files
+			-
 	- ## Directories and Files
 	  collapsed:: true
 		- ### Structure
