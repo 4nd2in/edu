@@ -86,6 +86,7 @@
 				- 2, 3, 4: user permissions
 				- 5, 6, 7: group permissions
 				- 8, 9, 10: other permissions
+			-
 	- ## Processes
 - Source
 	- The Linux Programming Interface by Michael Kerrisk
