@@ -1,8 +1,10 @@
 # Open Systems Interconnection model (OSI model)
-	- #wip
-	- Please Do Not Throw Sausage Pizza Away
-	- Alle Priester Saufen Tequila Nach Der Predigt
-	- Every
+	- ## How to remember
+	  collapsed:: true
+		- Please Do Not Throw Sausage Pizza Away
+		- Alle Priester Saufen Tequila Nach Der Predigt
+	- ##
+	- A single layer N
 	- ## Application layer
 	  id:: 645bb059-accb-4052-951b-6927d78a2919
 	- ## Presentation layer
