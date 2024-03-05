@@ -12,7 +12,7 @@
 	- ## Network layer (3)
 	- ## Data link layer (2)
 	- ## Physical layer (1)
-		-
+		- This layer is responsible to transmit
 	- ### How to remember
 	  collapsed:: true
 		- Please Do Not Throw Sausage Pizza Away
