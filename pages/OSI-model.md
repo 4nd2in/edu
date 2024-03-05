@@ -1,9 +1,6 @@
 # Open Systems Interconnection model (OSI model)
 	- A single layer N uses services of layer N-1 (and only of that layer) to complete its job and provides an interface to layer N+1 so that N+1 can use services of N.
-	- A layer N on one client communicates with layer N on the other client via a defined protocoll
-		- ### How to remember
-			- Please Do Not Throw Sausage Pizza Away
-			- Alle Priester Saufen Tequila Nach Der Predigt
+	- A layer N on one client communicates with layer N on the other client via a defined protocol
 	- ## Application layer
 	  id:: 645bb059-accb-4052-951b-6927d78a2919
 	- ## Presentation layer
@@ -13,5 +10,9 @@
 	- ## Network layer
 	- ## Data link layer
 	- ## Physical layer
+	- ### How to remember
+	  collapsed:: true
+		- Please Do Not Throw Sausage Pizza Away
+		- Alle Priester Saufen Tequila Nach Der Predigt
 - Tags
 	- #computer-science
