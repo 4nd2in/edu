@@ -1,10 +1,8 @@
 # Open Systems Interconnection model (OSI model)
-	- ## How to remember
-	  collapsed:: true
-		- Please Do Not Throw Sausage Pizza Away
-		- Alle Priester Saufen Tequila Nach Der Predigt
-	- ##
-	- A single layer N
+	- A single layer N uses the information of layer N-1
+		- ### How to remember
+			- Please Do Not Throw Sausage Pizza Away
+			- Alle Priester Saufen Tequila Nach Der Predigt
 	- ## Application layer
 	  id:: 645bb059-accb-4052-951b-6927d78a2919
 	- ## Presentation layer
