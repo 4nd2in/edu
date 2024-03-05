@@ -1,5 +1,5 @@
 # Open Systems Interconnection model (OSI model)
-	- A single layer N uses the information of layer N-1
+	- A single layer N uses the information of layer N-1 (and only of that layer) to complete
 		- ### How to remember
 			- Please Do Not Throw Sausage Pizza Away
 			- Alle Priester Saufen Tequila Nach Der Predigt
