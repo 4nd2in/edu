@@ -8,8 +8,8 @@
 	- ## Transport layer
 	  id:: 645bb06d-51da-4253-a0b4-4aeade7bf72e
 	- ## Network layer
-	- ## Data link layer
-	- ## Physical layer
+	- ## Data link layer (2)
+	- ## Physical layer (1)
 	- ### How to remember
 	  collapsed:: true
 		- Please Do Not Throw Sausage Pizza Away
