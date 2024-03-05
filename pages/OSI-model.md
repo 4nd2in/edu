@@ -1,5 +1,5 @@
 # Open Systems Interconnection model (OSI model)
-	- A single layer N uses services of layer N-1 (and only of that layer) to complete its job and provide its own services to layer N+1.
+	- A single layer N uses services of layer N-1 (and only of that layer) to complete its job and provides an interface to layer N+1 so that N+1 can use services of N.
 		- ### How to remember
 			- Please Do Not Throw Sausage Pizza Away
 			- Alle Priester Saufen Tequila Nach Der Predigt
