@@ -11,11 +11,13 @@
 	  id:: 645bb06d-51da-4253-a0b4-4aeade7bf72e
 	- ## Network layer (3)
 	- ## Data link layer (2)
+		-
 	- ## Physical layer (1)
+	  collapsed:: true
 		- This layer provides an interface between the device (eg. computers) and the transmission medium
 		- It provides modulation, which is the process of converting the data into radio waves by adding the information to an electrical or optical nerve signal.
 		- It is responsible for decisions regarding [[Transmission Modes]]
-		- Typically a combination of hardware and software pro
+		- Typically a combination of hardware and software programming makes up the physical layer. Bluetooth is an example protocol of the physical layer
 	- ### How to remember
 	  collapsed:: true
 		- Please Do Not Throw Sausage Pizza Away
