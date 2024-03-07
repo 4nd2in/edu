@@ -13,8 +13,8 @@
 	- ## Data link layer (2)
 	- ## Physical layer (1)
 		- This layer provides an interface between the device (eg. computers) and the transmission medium
-		-
-		- Examples that implement this layer are network interface cards, hubs, ethernet, etc.
+		- It provides modulation, which is the process of converting the data into radio waves by adding the i
+		- Examples that implement this layer are network interface cards, hubs, ethernet device, etc.
 	- ### How to remember
 	  collapsed:: true
 		- Please Do Not Throw Sausage Pizza Away
