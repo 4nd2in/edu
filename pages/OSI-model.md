@@ -12,7 +12,7 @@
 	- ## Network layer (3)
 	- ## Data link layer (2)
 	- ## Physical layer (1)
-		- This layer is responsible to transmit single bits over a given medium. It defines the electrical and mechanical properties (Signal type, Pins) and the encoding of the data to electric signals.
+		- This layer is responsible to transmit single bits to a given medium (). It defines the electrical and mechanical properties (Signal type, Pins) and the encoding of the data to electric signals.
 		-
 	- ### How to remember
 	  collapsed:: true
