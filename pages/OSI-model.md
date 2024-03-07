@@ -11,7 +11,8 @@
 	  id:: 645bb06d-51da-4253-a0b4-4aeade7bf72e
 	- ## Network layer (3)
 	- ## Data link layer (2)
-		-
+		- Known as the most complex layer of the OS model as it hides all the underlying complexities of the hardware from the above layers
+		- IT is responsible for the node
 	- ## Physical layer (1)
 	  collapsed:: true
 		- This layer provides an interface between the device (eg. computers) and the transmission medium
