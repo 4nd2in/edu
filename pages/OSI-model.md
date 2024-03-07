@@ -14,9 +14,9 @@
 		- Known as the most complex layer of the OS model as it hides all the underlying complexities of the hardware from the above layers
 		- IT is responsible for the node-to-node delivery of data. Its major role is to ensure error-free transmission of information
 		- This layer fulfils the following tasks:
-			- **Framing**: Packets received from the network layer are divided into small frames which then are sent bit-by-bit to the physical layer. Each frame has some bits attached for error control and addressing
-			- **Addressing**: This layer ecnapsulates the source and destination's [[MAC address]]
-			- **Error Control**:
+			- **Framing**: Packets received from the network layer are divided into small frames which then are sent bit-by-bit to the physical layer
+			- **Addressing**: This layer encapsulates the source and destination's [[MAC address]] in the header of each frame
+			- **Error Control**: With error detection and correction techniques this layer
 			- **Flow Control**:
 			- **Access Control**:
 	- ## Physical layer (1)
