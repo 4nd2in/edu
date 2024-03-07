@@ -15,7 +15,7 @@
 		- This layer provides an interface between the device (eg. computers) and the transmission medium
 		- It provides modulation, which is the process of converting the data into radio waves by adding the information to an electrical or optical nerve signal.
 		- It is responsible for decisions regarding [[Transmission Modes]]
-		- Examples that implement this layer are network interface cards, hubs, ethernet device, etc.
+		- Typically a combination of hardware and software pro
 	- ### How to remember
 	  collapsed:: true
 		- Please Do Not Throw Sausage Pizza Away
