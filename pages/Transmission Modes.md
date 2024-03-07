@@ -10,3 +10,5 @@
 	- Communication happens in both directions at the same time
 	- One example of a full-duplex mode is a telephone network
 	- The capacity of the transmission medium must be shared
+- Tags
+	- #computer-science
