@@ -12,7 +12,7 @@
 	- ## Network layer (3)
 	- ## Data link layer (2)
 	- ## Physical layer (1)
-		-
+		- This layer provides an interface between the device (eg. computers) and the transmission medium
 		- Examples that implement this layer are network interface cards, cables, etc.
 	- ### How to remember
 	  collapsed:: true
