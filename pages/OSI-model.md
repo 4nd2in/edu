@@ -15,7 +15,7 @@
 		- IT is responsible for the node-to-node delivery of data. Its major role is to ensure error-free transmission of information
 		- This layer fulfils the following tasks:
 			- **Framing**: Packets received from the network layer are divided into small frames which then are sent bit-by-bit to the physical layer. Each frame has some bits attached for error control and addressing
-			- **Addressing**:
+			- **Addressing**: This layer ecnapsulates the source and destination's [[MAC address]]
 			- **Error Control**:
 			- **Flow Control**:
 			- **Access Control**:
