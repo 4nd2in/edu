@@ -1,3 +1,4 @@
 - The way in which data is transmitted from one device to another device is known as transmission mode
 - ## Simplex
-- ## H
+- ## Half-duplex
+- ## Full-duplex
