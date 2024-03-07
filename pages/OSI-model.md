@@ -20,3 +20,7 @@
 		- Alle Priester Saufen Tequila Nach Der Predigt
 - Tags
 	- #computer-science
+- Sources
+	- https://www.geeksforgeeks.org/physical-layer-in-osi-model/
+	- https://www.youtube.com/watch?v=LiyA3mEedYM
+	-
