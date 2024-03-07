@@ -1,8 +1,8 @@
 - The way in which data is transmitted from one device to another device is known as transmission mode
 - ## Simplex
 	- Communication is only possible in one direction. One device is the sender, the other the receiver and that never changes
-	- One advantage of using s
-	- One example of a simplex channel is a radio station
+	- The advantage of using simplex mode is that the sender can use the transmission mediums full capacity
+	- One example of a simplex mode is a radio station
 - ## Half-duplex
 	- Communication can happen in both directions but not simultaneously.
 - ## Full-duplex
