@@ -12,7 +12,7 @@
 	- ## Network layer (3)
 	- ## Data link layer (2)
 		- Known as the most complex layer of the OS model as it hides all the underlying complexities of the hardware from the above layers
-		- IT is responsible for the node-tonode delivery of data. Its major role is to ensure error-free transmission of information
+		- IT is responsible for the node-to-node delivery of data. Its major role is to ensure error-free transmission of information
 	- ## Physical layer (1)
 	  collapsed:: true
 		- This layer provides an interface between the device (eg. computers) and the transmission medium
