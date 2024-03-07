@@ -13,7 +13,7 @@
 	- ## Data link layer (2)
 		- Known as the most complex layer of the OS model as it hides all the underlying complexities of the hardware from the above layers
 		- IT is responsible for the node-to-node delivery of data. Its major role is to ensure error-free transmission of information
-		- Packets received from the network layer are divided into small frames which then are sent bit-by-bit to the physical layer.
+		- Packets received from the network layer are divided into small frames which then are sent bit-by-bit to the physical layer. Each frame has some bits attached for error control and addressing
 	- ## Physical layer (1)
 	  collapsed:: true
 		- This layer provides an interface between the device (eg. computers) and the transmission medium
