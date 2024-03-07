@@ -14,6 +14,8 @@
 	- ## Physical layer (1)
 		- This layer provides an interface between the device (eg. computers) and the transmission medium
 		- It provides modulation, which is the process of converting the data into radio waves by adding the information to an electrical or optical nerve signal.
+		- It decides the mode of transmission medium
+			-
 		- Examples that implement this layer are network interface cards, hubs, ethernet device, etc.
 	- ### How to remember
 	  collapsed:: true
