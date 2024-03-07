@@ -4,6 +4,8 @@
 	- The advantage of using simplex mode is that the sender can use the transmission mediums full capacity
 	- One example of a simplex mode is a radio station
 - ## Half-duplex
-	- Communication can happen in both directions but not simultaneously. It is like simplex but
+	- Communication can happen in both directions but not simultaneously. It is like simplex but both ends can toggle between sender and receiver.
 	- One example of a simplex mode is a walkie-talkie
 - ## Full-duplex
+	- Communication happens in both directions at the same time
+	-
