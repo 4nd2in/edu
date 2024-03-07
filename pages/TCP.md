@@ -68,7 +68,6 @@
 		  id:: 64412719-7dde-4652-ae30-ed9ed4768876
 		- The maximum amount of unacknowledged, in-flight data between the sender and receiver is defined as the minimum of the receive and congestion window sizes: the current receive windows are communicated in every ACK, and the congestion window is dynamically adjusted by the sender based on the congestion control and avoidance algorithms.
 		- ### Flow control
-		  collapsed:: true
 			- A mechanism to prevent the sender from overwhelming the receiver with data it may not be able to process as the receiver may be busy, under heavy load or may only allocate a fixed amount of buffer space. For this the Window segment is used when the first connection is established for both sender and receiver.
 			- Each ACK packet carries the latest WND value for each side, allowing both sides to dynamically adjust the data flow rate to the capacity and processing speed of the sender and receiver.
 		- ### Slow-start
