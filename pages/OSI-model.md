@@ -12,15 +12,14 @@
 	- ## Network layer (3)
 	- ## Data link layer (2)
 	- ## Physical layer (1)
-		- This layer is responsible to transmit single bits to a given medium. It defines the electrical and mechanical properties (Signal type, Pins) and the encoding of the data to electric signals.
+		-
 		- Examples that implement this layer are network interface cards, cables, etc.
 	- ### How to remember
 	  collapsed:: true
 		- Please Do Not Throw Sausage Pizza Away
 		- Alle Priester Saufen Tequila Nach Der Predigt
-- Tags
-	- #computer-science
 - Sources
 	- https://www.geeksforgeeks.org/physical-layer-in-osi-model/
 	- https://www.youtube.com/watch?v=LiyA3mEedYM
-	-
+- Tags
+	- #computer-science
