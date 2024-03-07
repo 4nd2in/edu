@@ -1,5 +1,6 @@
 - The way in which data is transmitted from one device to another device is known as transmission mode
 - ## Simplex
-	- Communication is only possiv
+	- Communication is only possible in one direction. One device is the sender, the other the receiver and that never changes.
+	- One example of a simplex channel is a radio station which
 - ## Half-duplex
 - ## Full-duplex
