@@ -16,7 +16,7 @@
 		- This layer fulfils the following tasks:
 			- **Framing**: Packets received from the network layer are divided into small frames which then are sent bit-by-bit to the physical layer
 			- **Addressing**: This layer encapsulates the source and destination's [[MAC address]] in the header of each frame
-			- **Error Control**: With error detection and correction techniques this layer
+			- **Error Control**: With error detection and correction techniques this layer handles corrupted data. Each frame has some bits attached for error control and addressing
 			- **Flow Control**:
 			- **Access Control**:
 	- ## Physical layer (1)
