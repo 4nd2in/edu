@@ -14,7 +14,7 @@
 		- Known as the most complex layer of the OS model as it hides all the underlying complexities of the hardware from the above layers
 		- IT is responsible for the node-to-node delivery of data. Its major role is to ensure error-free transmission of information
 		- This layer can be split up into two sub layers:
-			- Media Access Control (MAC) which provides flow control and multiplexing for device transmissions over a network. This especially comes to play with multipoint-
+			- Media Access Control (MAC) which provides flow control and multiplexing for device transmissions over a network.
 			- Logical Link Control (LLC) which provides flow and error control over the physical medium as well as identifies line protocols
 		- Responsibilities:
 			- **Framing**: Packets received from the network layer are divided into small frames which then are sent bit-by-bit to the physical layer
