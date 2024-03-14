@@ -15,7 +15,6 @@
 	  id:: 645bb06d-51da-4253-a0b4-4aeade7bf72e
 		- This layer strongly works together with the network layer. Instead of addressing and routing, this layer is responsible for segmenting and ordering the data. Some protocols of this layer also handle quality of service, congestion avoidance, reliability and packet retransmission.
 		- Protocols in this layer are either connection-oriented like [[TCP]] or connectionless like [[UDP]]
-		-
 	- ## Network layer (3)
 	  id:: 645bb072-6c02-4323-bbdb-4e7115196663
 	  collapsed:: true
