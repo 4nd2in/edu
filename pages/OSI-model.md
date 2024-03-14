@@ -17,6 +17,8 @@
 	  id:: 645bb072-6c02-4323-bbdb-4e7115196663
 		- This layer is responsible to route and send packets over different networks to its correct destination. This allows communication between non-adjacent networks.
 		- The most crucial protocol of this layer is [[IP]]
+		-
+		- The router is an example of a layer three device even though it might also implement some higher layer functions
 	- ## Data link layer (2)
 	  id:: 645bb078-6af4-4bd5-9afa-99f9ba197b07
 	  collapsed:: true
