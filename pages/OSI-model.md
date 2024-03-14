@@ -10,6 +10,7 @@
 	- ## Application layer (7)
 	  id:: 645bb059-accb-4052-951b-6927d78a2919
 	- ## Presentation layer (6)
+		-
 	- ## Session layer (5)
 		- handles the negotiation of the connection and closes it when no longer required. The session layer often manages user authentication during the  establishment phase. Sometimes the session layer provides a way to suspend, restart, or resume a session. Network sockets operate at this layer, and protocols including [[FTP]] and [DNS]([[Domain Name Server (DNS)]])make substantial use of session layer functionality. It is also heavily used by streaming services, and web/video conferencing. For some services, session layer protocols use flow control for proper synchronisation.
 	- ## Transport layer (4)
