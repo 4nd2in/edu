@@ -28,11 +28,12 @@
 				- **Error Control**: With error detection and correction techniques this layer handles corrupted data. Each frame has some bits attached for error control and addressing
 				- **Flow Control**: Synchronise the sender's and receiver's speed so that overflows and packet loss are under control
 				- **Access Control**: Check which device has control over the channel when multiple devices are using the same one.
+		- A typical protocol for this layer is ethernet.
 	- ## Physical layer (1)
 		- This layer provides an interface between the device (eg. computers) and the transmission medium
 		- It provides modulation, which is the process of converting the data into radio waves by adding the information to an electrical or optical nerve signal.
 		- It is responsible for decisions regarding [[Transmission Modes]]
-		- A typical protocol for this layer is ethernet. In the physical layer ethernet speci
+		- A typical protocol for this layer is ethernet. In the physical layer ethernet specifies the characteristics of the physical medium, such as cable types, connectors and signalling methods
 	- ### How to remember
 	  collapsed:: true
 		- Please Do Not Throw Sausage Pizza Away
