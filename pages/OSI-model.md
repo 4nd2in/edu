@@ -45,8 +45,8 @@
 		- Alle Priester Saufen Tequila Nach Der Predigt
 - Sources
 	- https://www.linode.com/docs/guides/introduction-to-osi-networking-model/
-	- https://www.youtube.com/watch?v=LiyA3mEedYM
 	- https://www.cloudflare.com/learning/network-layer/what-is-the-network-layer/
+	- https://www.youtube.com/watch?v=LiyA3mEedYM
 	- https://www.geeksforgeeks.org/physical-layer-in-osi-model/
 - Tags
 	- #computer-science
