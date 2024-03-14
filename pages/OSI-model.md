@@ -11,6 +11,7 @@
 	  id:: 645bb059-accb-4052-951b-6927d78a2919
 	- ## Presentation layer (6)
 	- ## Session layer (5)
+		-
 	- ## Transport layer (4)
 	  id:: 645bb06d-51da-4253-a0b4-4aeade7bf72e
 		- This layer strongly works together with the network layer. Instead of addressing and routing, this layer is responsible for segmenting and ordering the data. Some protocols of this layer also handle quality of service, congestion avoidance, reliability and packet retransmission.
