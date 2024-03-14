@@ -7,13 +7,21 @@
 		- PDU of transport layer is called [[Segment]]
 		- PDUs of network layer are [[Packet]] and [[Datagram]]
 		- PDU of data link layer is called [[Frame]]
+	- The OSI Model is useful as a tool for understanding networks. However, it has a number of drawbacks.
+		- OSI is very complex, with too many layers. Some of the layers are much more significant and important than others.
+	- There are too many OSI standards documents and recommendations.
+	- The
+	  model does not reflect the real world network structure. In many cases,
+	  actual network models span multiple layers and do not align with the 
+	  boundaries of the OSI layers.
+	- The OSI protocols were not widely implemented and the model does not map very well to the protocols in use today.
 	- ## Application layer (7)
 	  id:: 645bb059-accb-4052-951b-6927d78a2919
 		- The application layer is the highest layer and the one that is closest to the end user of most software applications. There is a tendency to think of this layer as being equivalent to the application, but the user applications actually directly interact with this layer. Many application layer protocols tend to be closely bound to the client software. They manage tasks including message handling, printer access, and database access. Some examples of application layer protocols include the following
 			- [[HTTP]]
 			- [[SSH]]
 			- [[FTP]]
-			-
+			- [[Domain Name Server (DNS)]]
 	- ## Presentation layer (6)
 		- The presentation layer is responsible for translating content between the application layer and the lower layers. It handles data formatting and translation, including data compression/decompression, encoding, and  encryption. For some higher layer applications, the presentation layer might also handle graphics and operating system specific tasks. In most 
 		  modern applications, the presentation and application layers are tightly integrated.
