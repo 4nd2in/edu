@@ -19,6 +19,7 @@
 		- The most crucial protocol of this layer is [[IP]]
 	- ## Data link layer (2)
 	  id:: 645bb078-6af4-4bd5-9afa-99f9ba197b07
+	  collapsed:: true
 		- Known as the most complex layer of the OS model as it hides all the underlying complexities of the hardware from the above layers
 		- It is responsible for the node-to-node delivery of data. Its major role is to ensure error-free transmission of information
 		- This layer can be split up into two sub layers:
@@ -30,7 +31,7 @@
 			- Media Access Control (MAC)
 				- The MAC layer is closely entwined with the physical layer. The MAC layer controls network access, frame synchronisation, byte/bit stuffing, and link addressing. It encapsulates data from the LLC layer into the appropriate format for the link layer protocol. It also adds and removes a frame checksum to help identify erroneous frames and implements collision detection
 				- **Framing**: This involves dividing data into smaller, manageable  units called [[Frame]] before transmission.
-				- **Addressing**: This involves including the MAC addresses of both the sender and the receiver within the frame header. This allows network devices to determine whether they are the intended recipients of incoming frames and process the data accordingly
+				- **Addressing**: This involves including the [[MAC address]] of both the sender and the receiver within the frame header. This allows network devices to determine whether they are the intended recipients of incoming frames and process the data accordingly
 		- A typical protocol for this layer is Ethernet. Compared to the physical layer, Ethernet in this layer defines the frame structure, such as addressing schemes.
 	- ## Physical layer (1)
 	  collapsed:: true
@@ -44,8 +45,8 @@
 		- Alle Priester Saufen Tequila Nach Der Predigt
 - Sources
 	- https://www.linode.com/docs/guides/introduction-to-osi-networking-model/
-	- https://www.geeksforgeeks.org/physical-layer-in-osi-model/
 	- https://www.youtube.com/watch?v=LiyA3mEedYM
 	- https://www.cloudflare.com/learning/network-layer/what-is-the-network-layer/
+	- https://www.geeksforgeeks.org/physical-layer-in-osi-model/
 - Tags
 	- #computer-science
