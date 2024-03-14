@@ -43,6 +43,6 @@
 - Sources
 	- https://www.geeksforgeeks.org/physical-layer-in-osi-model/
 	- https://www.youtube.com/watch?v=LiyA3mEedYM
-	- https://www.baeldung.com/cs/networking-packet-fragment-frame-datagram-segment
+	- https://www.cloudflare.com/learning/network-layer/what-is-the-network-layer/
 - Tags
 	- #computer-science
