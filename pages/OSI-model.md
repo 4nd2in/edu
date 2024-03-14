@@ -18,7 +18,7 @@
 	  id:: 645bb078-6af4-4bd5-9afa-99f9ba197b07
 		- Known as the most complex layer of the OS model as it hides all the underlying complexities of the hardware from the above layers
 		- IT is responsible for the node-to-node delivery of data. Its major role is to ensure error-free transmission of information
-		- This layer uses segments as PDUs. A segment is
+		- This layer uses frames as PDUs.
 		- This layer can be split up into two sub layers:
 			- Media Access Control (MAC) which provides flow control and multiplexing for device transmissions over a network.
 				- **Framing**: Packets received from the network layer are divided into small frames which then are sent bit-by-bit to the physical layer
@@ -39,5 +39,6 @@
 - Sources
 	- https://www.geeksforgeeks.org/physical-layer-in-osi-model/
 	- https://www.youtube.com/watch?v=LiyA3mEedYM
+	- https://www.baeldung.com/cs/networking-packet-fragment-frame-datagram-segment
 - Tags
 	- #computer-science
