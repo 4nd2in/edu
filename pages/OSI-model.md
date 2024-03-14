@@ -27,7 +27,6 @@
 				- **Flow Control**: Synchronise the sender's and receiver's speed so that overflows and packet loss are under control
 				- **Access Control**: Check which device has control over the channel when multiple devices are using the same one.
 	- ## Physical layer (1)
-	  collapsed:: true
 		- This layer provides an interface between the device (eg. computers) and the transmission medium
 		- It provides modulation, which is the process of converting the data into radio waves by adding the information to an electrical or optical nerve signal.
 		- It is responsible for decisions regarding [[Transmission Modes]]
