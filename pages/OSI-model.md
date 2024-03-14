@@ -9,7 +9,11 @@
 		- PDU of data link layer is called [[Frame]]
 	- ## Application layer (7)
 	  id:: 645bb059-accb-4052-951b-6927d78a2919
-		-
+		- The application layer is the highest layer and the one that is closest to the end user of most software applications. There is a tendency to think of this layer as being equivalent to the application, but the user applications actually directly interact with this layer. Many application layer protocols tend to be closely bound to the client software. They manage tasks including message handling, printer access, and database access. Some examples of application layer protocols include the following
+			- [[HTTP]]
+			- [[SSH]]
+			- [[FTP]]
+			-
 	- ## Presentation layer (6)
 		- The presentation layer is responsible for translating content between the application layer and the lower layers. It handles data formatting and translation, including data compression/decompression, encoding, and  encryption. For some higher layer applications, the presentation layer might also handle graphics and operating system specific tasks. In most 
 		  modern applications, the presentation and application layers are tightly integrated.
