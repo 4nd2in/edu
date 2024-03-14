@@ -22,7 +22,6 @@
 		- The router is an example of a layer three device even though it might also implement some higher layer functions
 	- ## Data link layer (2)
 	  id:: 645bb078-6af4-4bd5-9afa-99f9ba197b07
-	  collapsed:: true
 		- Known as the most complex layer of the OS model as it hides all the underlying complexities of the hardware from the above layers
 		- It is responsible for the node-to-node delivery of data. Its major role is to ensure error-free transmission of information
 		- This layer can be split up into two sub layers:
