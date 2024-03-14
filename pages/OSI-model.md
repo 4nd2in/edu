@@ -32,7 +32,7 @@
 		- This layer provides an interface between the device (eg. computers) and the transmission medium
 		- It provides modulation, which is the process of converting the data into radio waves by adding the information to an electrical or optical nerve signal.
 		- It is responsible for decisions regarding [[Transmission Modes]]
-		- Typically a combination of hardware and software programming makes up the physical layer. Bluetooth is an example protocol of the physical layer
+		- A typical protocol for this layer is ethernet. In the physical layer ethernet speci
 	- ### How to remember
 	  collapsed:: true
 		- Please Do Not Throw Sausage Pizza Away
