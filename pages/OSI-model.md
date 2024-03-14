@@ -3,6 +3,7 @@
 	- A layer N on one client communicates with layer N on the other client via a defined protocol
 	- Layer 1-4 (Media Layers) are responsible for the physical transmission of data and some basic data manipulation. This layers are implemented in the operating systems and drivers
 	- Layer 5-7 (Host Layers) are responsible for end-user services and application functionality
+	- Different layers of the OSI model use different kinds of protocol data units (PDU).
 	- ## Application layer (7)
 	  id:: 645bb059-accb-4052-951b-6927d78a2919
 	- ## Presentation layer (6)
