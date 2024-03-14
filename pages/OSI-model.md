@@ -4,8 +4,8 @@
 	- Layer 1-4 (Media Layers) are responsible for the physical transmission of data and some basic data manipulation. This layers are implemented in the operating systems and drivers
 	- Layer 5-7 (Host Layers) are responsible for end-user services and application functionality
 	- Different layers of the OSI model use different kinds of protocol data units (PDU)
-		- PDU of transport layer is called segment
-		- PDU of network layer is called packet
+		- PDU of transport layer is called [[Segment]]
+		- PDU of network layer is called [[Packet]]
 		- PDU of data link layer is called [[Frame]]
 	- ## Application layer (7)
 	  id:: 645bb059-accb-4052-951b-6927d78a2919
