@@ -1,2 +1,2 @@
 - A self-contained, independent entity of data carrying sufficient information to be routed from the source to the destination nodes **without reliance** on earlier exchanges between the nodes and the transporting network.
-- It is similar to a [[Packet]] and is used in connectionless communication protocols like [[UDp]]. Datagram transmission is best-effort, meaning that there is no guarantee of delivery or order of delivery. Datagram headers include IP addresses and other routing information.
+- It is similar to a [[Packet]] and is used in connectionless communication protocols like [[IP]] . Datagram transmission is best-effort, meaning that there is no guarantee of delivery or order of delivery. Datagram headers include IP addresses and other routing information.
