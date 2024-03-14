@@ -22,15 +22,15 @@
 		- Known as the most complex layer of the OS model as it hides all the underlying complexities of the hardware from the above layers
 		- It is responsible for the node-to-node delivery of data. Its major role is to ensure error-free transmission of information
 		- This layer can be split up into two sub layers:
-			- Media Access Control (MAC) which provides flow control and multiplexing for device transmissions over a network.
-				- **Framing**: Packets received from the network layer are divided into small frames which then are sent bit-by-bit to the physical layer
-				- **Addressing**: This layer encapsulates the source and destination's [[MAC address]] in the header of each frame
 			- Logical Link Control (LLC)
-			  collapsed:: true
-				- This is the higher of the two layers. It acts as an interface between the network layer and the MAC layer.
+				- This is the higher of the two layers. It acts as an interface between the network layer and the MAC layer
 				- **Error Control**: With error detection and correction techniques this layer handles corrupted data. Each frame has some bits attached for error control and addressing
 				- **Flow Control**: Synchronise the sender's and receiver's speed so that overflows and packet loss are under control
 				- **Access Control**: Check which device has control over the channel when multiple devices are using the same one. This is also known as multiplexing
+			- Media Access Control (MAC)
+				- The MAC layer is closely entwined with the physical layer. The MAC layer controls network access, frame synchronization, byte/bit stuffing, and link addressing. It encapsulates data from the LLC layer into the appropriate format for the link layer protocol. It also adds and removes a frame checksum to help identify erroneous frames and implements collision detection
+				- **Framing**: Packets received from the network layer are divided into small frames which then are sent bit-by-bit to the physical layer
+				- **Addressing**: This layer encapsulates the source and destination's [[MAC address]] in the header of each frame
 		- A typical protocol for this layer is Ethernet. Compared to the physical layer, Ethernet in this layer defines the frame structure, such as addressing schemes.
 	- ## Physical layer (1)
 	  collapsed:: true
