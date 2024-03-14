@@ -29,8 +29,8 @@
 				- **Access Control**: Check which device has control over the channel when multiple devices are using the same one. This is also known as multiplexing
 			- Media Access Control (MAC)
 				- The MAC layer is closely entwined with the physical layer. The MAC layer controls network access, frame synchronisation, byte/bit stuffing, and link addressing. It encapsulates data from the LLC layer into the appropriate format for the link layer protocol. It also adds and removes a frame checksum to help identify erroneous frames and implements collision detection
-				- **Framing**: Framing in the MAC layer involves dividing data into smaller, manageable  units called frames before transmission.
-				- **Addressing**: This layer encapsulates the source and destination's [[MAC address]] in the header of each frame
+				- **Framing**: This involves dividing data into smaller, manageable  units called [[Frame]] before transmission.
+				- **Addressing**: This involves encapsulation of the source and destination [[MAC address]] in the header of each frame
 		- A typical protocol for this layer is Ethernet. Compared to the physical layer, Ethernet in this layer defines the frame structure, such as addressing schemes.
 	- ## Physical layer (1)
 	  collapsed:: true
