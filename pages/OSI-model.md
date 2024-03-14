@@ -17,7 +17,7 @@
 	  id:: 645bb072-6c02-4323-bbdb-4e7115196663
 		- This layer is responsible to route and send packets over different networks to its correct destination. This allows communication between non-adjacent networks.
 			- **Routing**: Each network device a packet transits through is known as a hop. At each hop, the network layer processes the packet. If the packet has reached its final destination, the data is sent to the transport layer. Otherwise, the packet receives a new header and footer and is sent back to the data link layer for forwarding to the next hop.
-			- **Fragmantation**: This layer is responsible for breaking down packets that are too large for the lower layer.
+			- **Fragmantation**: This layer is responsible for breaking down packets into smaller pieces that are too large for the lower layer links. At the destination this
 		- The most crucial protocol of this layer is [[IP]]
 		- The router is an example of a layer three device even though it might also implement some higher layer functions
 	- ## Data link layer (2)
