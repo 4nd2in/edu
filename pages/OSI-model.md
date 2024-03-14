@@ -15,8 +15,10 @@
 	  id:: 645bb06d-51da-4253-a0b4-4aeade7bf72e
 	- ## Network layer (3)
 	  id:: 645bb072-6c02-4323-bbdb-4e7115196663
+		-
 	- ## Data link layer (2)
 	  id:: 645bb078-6af4-4bd5-9afa-99f9ba197b07
+	  collapsed:: true
 		- Known as the most complex layer of the OS model as it hides all the underlying complexities of the hardware from the above layers
 		- IT is responsible for the node-to-node delivery of data. Its major role is to ensure error-free transmission of information
 		- This layer can be split up into two sub layers:
@@ -28,6 +30,7 @@
 				- **Flow Control**: Synchronise the sender's and receiver's speed so that overflows and packet loss are under control
 				- **Access Control**: Check which device has control over the channel when multiple devices are using the same one.
 	- ## Physical layer (1)
+	  collapsed:: true
 		- This layer provides an interface between the device (eg. computers) and the transmission medium
 		- It provides modulation, which is the process of converting the data into radio waves by adding the information to an electrical or optical nerve signal.
 		- It is responsible for decisions regarding [[Transmission Modes]]
