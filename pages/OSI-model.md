@@ -27,7 +27,7 @@
 		- This layer can be split up into two sub layers:
 			- Logical Link Control (LLC)
 				- This is the higher of the two layers. It acts as an interface between the network layer and the MAC layer
-				- **Error Control**: With error detection and correction techniques this layer handles corrupted data. Each frame has some bits attached for error control and addressing
+				- **Error Control**: With error detection and correction techniques (like bit correction algorithms) this layer handles corrupted data. Each frame has some bits attached for error control and addressing
 				- **Flow Control**: Synchronise the sender's and receiver's speed so that overflows and packet loss are under control
 				- **Access Control**: Check which device has control over the channel when multiple devices are using the same one. This is also known as multiplexing
 			- Media Access Control (MAC)
@@ -35,6 +35,7 @@
 				- **Framing**: This involves dividing data into smaller, manageable  units called [[Frame]] before transmission.
 				- **Addressing**: This involves including the [[MAC address]] of both the sender and the receiver within the frame header. This allows network devices to determine whether they are the intended recipients of incoming frames and process the data accordingly
 		- A typical protocol for this layer is Ethernet. Compared to the physical layer, Ethernet in this layer defines the frame structure, such as addressing schemes.
+		- A network switch is an example of a data link layer device
 	- ## Physical layer (1)
 		- This layer provides an interface between the device (eg. computers) and the transmission medium
 		- It provides modulation, which is the process of converting the data into radio waves by adding the information to an electrical or optical nerve signal.
