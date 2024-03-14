@@ -15,12 +15,11 @@
 	  id:: 645bb06d-51da-4253-a0b4-4aeade7bf72e
 	- ## Network layer (3)
 	  id:: 645bb072-6c02-4323-bbdb-4e7115196663
-		- This layer is responsible to route pac
+		- This layer is responsible to route packets over the network so that it arrives at its destination.
 	- ## Data link layer (2)
 	  id:: 645bb078-6af4-4bd5-9afa-99f9ba197b07
-	  collapsed:: true
 		- Known as the most complex layer of the OS model as it hides all the underlying complexities of the hardware from the above layers
-		- IT is responsible for the node-to-node delivery of data. Its major role is to ensure error-free transmission of information
+		- It is responsible for the node-to-node delivery of data. Its major role is to ensure error-free transmission of information
 		- This layer can be split up into two sub layers:
 			- Media Access Control (MAC) which provides flow control and multiplexing for device transmissions over a network.
 				- **Framing**: Packets received from the network layer are divided into small frames which then are sent bit-by-bit to the physical layer
