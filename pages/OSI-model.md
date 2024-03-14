@@ -16,6 +16,7 @@
 	- ## Network layer (3)
 	  id:: 645bb072-6c02-4323-bbdb-4e7115196663
 		- This layer is responsible to route packets over different networks so that it arrives at its correct destination.
+		- The most crucial protocol of this layer is [[IP]]
 	- ## Data link layer (2)
 	  id:: 645bb078-6af4-4bd5-9afa-99f9ba197b07
 		- Known as the most complex layer of the OS model as it hides all the underlying complexities of the hardware from the above layers
