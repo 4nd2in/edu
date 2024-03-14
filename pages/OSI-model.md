@@ -6,7 +6,7 @@
 	- Different layers of the OSI model use different kinds of protocol data units (PDU)
 		- PDU of transport layer is called segment
 		- PDU of network layer is called packet
-		- PDU of data link layer is called frame
+		- PDU of data link layer is called [[Frame]]
 	- ## Application layer (7)
 	  id:: 645bb059-accb-4052-951b-6927d78a2919
 	- ## Presentation layer (6)
@@ -18,7 +18,6 @@
 	  id:: 645bb078-6af4-4bd5-9afa-99f9ba197b07
 		- Known as the most complex layer of the OS model as it hides all the underlying complexities of the hardware from the above layers
 		- IT is responsible for the node-to-node delivery of data. Its major role is to ensure error-free transmission of information
-		- This layer uses frames as PDUs.
 		- This layer can be split up into two sub layers:
 			- Media Access Control (MAC) which provides flow control and multiplexing for device transmissions over a network.
 				- **Framing**: Packets received from the network layer are divided into small frames which then are sent bit-by-bit to the physical layer
