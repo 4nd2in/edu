@@ -5,8 +5,6 @@
 	- **Device Access Control**: Zero Trust requires strict controls on device access. Zero Trust systems need to monitor how many different devices are trying to access their network, ensure that every device is authorised, and assess all devices to make sure they have not been compromised
 	- **Microsegmentation**: Zero Trust utilises microsegmentation to keep different scopes or zones of the network separate. A person or program with access to one of those zones will not be able to access any of the other zones without separate authorisation
 	- **Multi-factor authentication**: This also is a core value of Zero Trust security to make sure attackers can not just enter a (stolen or brute forced) password.
-	-
-	-
 -
 - Sources
 	- https://www.cloudflare.com/learning/security/glossary/what-is-zero-trust/
