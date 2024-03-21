@@ -1,4 +1,4 @@
-- This is a security model that requires strict identirty
+- This is a security model that requires strict identity verification for every user and device trying to access resources on a private network. Compared to a traditional network, which trusts everyone in the network
 - Sources
 	- https://www.cloudflare.com/learning/security/glossary/what-is-zero-trust/
 - Tags
