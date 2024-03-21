@@ -1,4 +1,5 @@
 -
 - Sources
+	- https://www.cloudflare.com/learning/security/glossary/what-is-zero-trust/
 - Tags
--
+	- #computer-science
