@@ -1,5 +1,6 @@
 - This is a security model that requires strict identity verification for every user and device trying to access resources on a private network. Compared to a traditional network, which trusts everyone in the network, this architecture trusts no one and nothing.
-- This architecture prevents data breaches. Even thought it is easy to access the network from outside, it is not possible to gain re
+- This architecture prevents data breaches. Even thought it is easy to access the network from outside, it is not possible to gain resources from the network without valid identification.
+- The main technology used for this architecture is
 - Sources
 	- https://www.cloudflare.com/learning/security/glossary/what-is-zero-trust/
 - Tags
