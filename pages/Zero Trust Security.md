@@ -1,4 +1,4 @@
--
+- This is a security model that requires strict identirty
 - Sources
 	- https://www.cloudflare.com/learning/security/glossary/what-is-zero-trust/
 - Tags
