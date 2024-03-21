@@ -1,6 +1,8 @@
 - This is a security model that requires strict identity verification for every user and device trying to access resources on a private network. Compared to a traditional network, which trusts everyone in the network, this architecture trusts no one and nothing
-- Zero Trust verifies user identity and privileges as well as device identity and security. Logins and connections time out periodically once established, forcing users and devices to be continuously re-verified. This added layer of security has been shown to prevent data breaches
 - The main technology used for this architecture is [[ZTNA]]
+- Here are the main priciples:
+	- Zero Trust verifies user identity and privileges as well as device identity and security. Logins and connections time out periodically once established, forcing users and devices to be continuously re-verified. This added layer of security has been shown to prevent data breaches
+	- Zero Trust uses the least-privilege
 -
 - Sources
 	- https://www.cloudflare.com/learning/security/glossary/what-is-zero-trust/
