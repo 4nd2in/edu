@@ -1,3 +1,3 @@
 # Domain Name System
-	- This is a worldwide dictionary of the Internet. Humans access the internet
+	- This is a worldwide dictionary of the internet that maps domain names to addresses and vice verca.
 	-
