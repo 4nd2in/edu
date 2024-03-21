@@ -18,13 +18,13 @@
 			- [[HTTP]]
 			- [[SSH]]
 			- [[FTP]]
-			- [[Domain Name Server (DNS)]]
+			- [[Domain Name System (DNS)]]
 	- ## Presentation layer (6)
 		- The presentation layer is responsible for translating content between the application layer and the lower layers. It handles data formatting and translation, including data compression/decompression, encoding, and  encryption. For some higher layer applications, the presentation layer might also handle graphics and operating system specific tasks. In most 
 		  modern applications, the presentation and application layers are tightly integrated.
 		- One example of a layer six application is [[TLS]]
 	- ## Session layer (5)
-		- handles the negotiation of the connection and closes it when no longer required. The session layer often manages user authentication during the  establishment phase. Sometimes the session layer provides a way to suspend, restart, or resume a session. Network sockets operate at this layer, and protocols including [[FTP]] and [DNS]([[Domain Name Server (DNS)]])make substantial use of session layer functionality. It is also heavily used by streaming services, and web/video conferencing. For some services, session layer protocols use flow control for proper synchronisation.
+		- handles the negotiation of the connection and closes it when no longer required. The session layer often manages user authentication during the  establishment phase. Sometimes the session layer provides a way to suspend, restart, or resume a session. Network sockets operate at this layer, and protocols including [[FTP]] and [DNS]([[Domain Name System (DNS)]])make substantial use of session layer functionality. It is also heavily used by streaming services, and web/video conferencing. For some services, session layer protocols use flow control for proper synchronisation.
 	- ## Transport layer (4)
 	  id:: 645bb06d-51da-4253-a0b4-4aeade7bf72e
 		- This layer strongly works together with the network layer. Instead of addressing and routing, this layer is responsible for segmenting and ordering the data. Some protocols of this layer also handle quality of service, congestion avoidance, reliability and packet retransmission.
