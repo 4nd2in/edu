@@ -2,9 +2,10 @@
 - The main technology used for this architecture is [[ZTNA]]
 - Here are the main priciples:
 	- Zero Trust verifies user identity and privileges as well as device identity and security. Logins and connections time out periodically once established, forcing users and devices to be continuously re-verified. This added layer of security has been shown to prevent data breaches
-	- Zero Trust uses the least-privilege principle. This means giving users only as much access as they need
-	- Zero Trust requires strict controls on device access. Zero Trust systems need to monitor how many different devices are trying to access their network, ensure that every device is authorised, and assess all devices to make sure they have not been compromised
-	- Zero Trust utilises microsegmentation to keep different scopes of the network separate. When having access to one zone, access to a second zone without additional authorisation is
+	- **Least Privillege**: Zero Trust uses the least-privilege principle. This means giving users only as much access as they need
+	- **Device Access Control**: Zero Trust requires strict controls on device access. Zero Trust systems need to monitor how many different devices are trying to access their network, ensure that every device is authorised, and assess all devices to make sure they have not been compromised
+	- Zero Trust utilises microsegmentation to keep different scopes of the network separate. A person or program with access to one of those zones will not be able to access any of the other zones without separate authorization
+	-
 	-
 -
 - Sources
