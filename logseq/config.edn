@@ -344,8 +344,8 @@
  :file/name-format :triple-lowbar
  :graph/settings {:journal? false
  :builtin-pages? false
- :excluded-pages? false
- :orphan-pages? false}
+ :excluded-pages? true
+ :orphan-pages? true}
 
  ;; specify the format of the filename for journal files
  ;; :journal/file-name-format "yyyy_MM_dd"
