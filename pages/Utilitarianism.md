@@ -1,2 +1,3 @@
+- [[Jeremy Bentham]]
 - Tags
 	- #philosophy
