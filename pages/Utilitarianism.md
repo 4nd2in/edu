@@ -1,3 +1,2 @@
-- [[Immanuel Kant]]
 - Tags
 	- #philosophy
