@@ -19,7 +19,7 @@
 	- ## RFC 4291 - IPv6
 		- Uses 128-bit addresses, allowing approximately 3.4×10E38 total addresses. This solves the problem of the IPv4 address shortage
 		- Each address is represented by eight groups of four hexadecimal digits, separated by colons. If one groups consists of only zeros, it gets shortened -> 2001:0db8:0000:0000:0000:8a2e:0370:7334 becomes 2001:db8::8a2e:370:7334
-		- One address consists of two parts, the network prefix and the interface identifier
+		- One address consists of two parts, the network prefix and the interface identifier. The network prefix identifies the subnet/address range.
 		- IPv6 and IPv4 are running in a dual stack until IPv4 gets obsolete
 		- IPv6 implements some features that are not present in IPv4
 			- Simplified IP configuration
