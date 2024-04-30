@@ -20,6 +20,7 @@
 		- Uses 128-bit addresses, allowing approximately 3.4×10E38 total addresses. This solves the problem of the IPv4 address shortage
 		- Each address is represented by eight groups of four hexadecimal digits, separated by colons. If one groups consists of only zeros, it gets shortened -> 2001:0db8:0000:0000:0000:8a2e:0370:7334 becomes 2001:db8::8a2e:370:7334
 		- IPv6 implements some features that are not present in IPv4
+			- Simplified IP configuration
 			-
 	-
 - Source
