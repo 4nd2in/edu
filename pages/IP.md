@@ -18,7 +18,7 @@
 			  | 172.16.0.0 - 172.31.255.255 | 1'048'576 |
 			  | 192.168.0.0 - 192.168.255.255 | 65'536 |
 	- ## RFC 2460 - IPv6
-		-
+		- Uses 128-bit addresses
 	-
 - Source
 	- https://hpbn.co/building-blocks-of-udp/
