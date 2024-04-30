@@ -18,7 +18,7 @@
 			  | 192.168.0.0 - 192.168.255.255 | 65'536 |
 	- ## RFC 2460 - IPv6
 		- Uses 128-bit addresses, allowing approximately 3.4×10E38 total addresses. This solves the problem of the IPv4 address shortage
-		-
+		- Each address is represented by eight groups of four hexadecimal digits, separated by colons
 	-
 - Source
 	- https://hpbn.co/building-blocks-of-udp/
