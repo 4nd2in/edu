@@ -16,7 +16,7 @@
 			  | 10.0.0.0 - 10.255.255.255 | 16'777'216 |
 			  | 172.16.0.0 - 172.31.255.255 | 1'048'576 |
 			  | 192.168.0.0 - 192.168.255.255 | 65'536 |
-	- ## RFC 2460 - IPv6
+	- ## RFC 4291 - IPv6
 		- Uses 128-bit addresses, allowing approximately 3.4×10E38 total addresses. This solves the problem of the IPv4 address shortage
 		- Each address is represented by eight groups of four hexadecimal digits, separated by colons. If one groups consists of only zeros, it gets shortened -> 2001:0db8:0000:0000:0000:8a2e:0370:7334 becomes 2001:db8::8a2e:370:7334
 		-
