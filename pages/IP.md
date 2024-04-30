@@ -23,7 +23,8 @@
 		- IPv6 implements some features that are not present in IPv4
 			- Simplified IP configuration
 			- Multicast addresses
-			-
+			- Address scopes
+			- Faster routing
 	-
 - Source
 	- https://hpbn.co/building-blocks-of-udp/
