@@ -12,7 +12,6 @@
 			  id:: 644123a6-9515-4ed3-86e8-158357bf3d9e
 			- It is important to understand that when using TCP this handshake is made every time a new connection establishes and causes a full roundtrip of #latency before any application data can be transferred
 	- ## TCP Header
-	  collapsed:: true
 		- ### Source Port (16 bits)
 			- Specifies the port number of the sender
 		- ### Destination Port (16 bits)
