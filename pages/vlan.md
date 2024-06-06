@@ -1,1 +1,3 @@
-- A virtual LAN is a logical overlay network to subdivide a group of devices into a separate network which share
+- A virtual LAN is a logical overlay network to subdivide a group of devices into a separate network which share a physical LAN. The traffic of VLANs is isolated. A VLAN
+- # Usage
+-
