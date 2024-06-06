@@ -1,1 +1,1 @@
-- A
+- A virtual LAN is a logical overlay network to subdivide a group of devices into a separate network which share
