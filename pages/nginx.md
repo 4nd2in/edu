@@ -25,20 +25,23 @@
 		- This `location` block specifies the `/` prefix compared with the URI from the request. For matching requests, the URI will be added to the path specified in the root directive, that is , to `/var/www`, to form the path to the requested file on the local file system.
 		- > If there are several matching `location` blocks nginx selects the one with the longest prefix.
 	- ## Proxy
-		- One of the frequent uses of nginx is setting it up as a proxy server, which means a server that receives requests, passes them to the proxied servers, retrieves responses from them, and sends them to the clients.
-		- ```nginx
-		  server {
-		    location / {
-		        proxy_pass http://localhost:8080
-		    }
-		    
-		    location ~ \.(gif|jpg|png)$ {
-		      root /data/images;
-		    }
-		  }
-		  ```
-		- This server (separate from the one above) will filter requests ending with `.gif`, `.jpg` or `.png` and map them to the `/data/images` directory and pass all other requests to the proxied server configured in ((66f2b38b-a8e3-4b85-9b15-090efab67ea4)).
-		-
+		- ### Basic
+		  collapsed:: true
+			- One of the frequent uses of nginx is setting it up as a proxy server, which means a server that receives requests, passes them to the proxied servers, retrieves responses from them, and sends them to the clients.
+			- ```nginx
+			  server {
+			    location / {
+			        proxy_pass http://localhost:8080
+			    }
+			    
+			    location ~ \.(gif|jpg|png)$ {
+			      root /data/images;
+			    }
+			  }
+			  ```
+			- This server (separate from the one above) will filter requests ending with `.gif`, `.jpg` or `.png` and map them to the `/data/images` directory and pass all other requests to the proxied server configured in ((66f2b38b-a8e3-4b85-9b15-090efab67ea4)).
+		- ### Headers
+			- By default, nginx redefines two header fields in procied requests, `Host` and `Connection` and eliminates
 	-
 - Source
 	- https://nginx.org/en/docs
