@@ -6,7 +6,7 @@
 		- A directive can also be a block (surrounded by braces)
 		- If a block directive can have other directives inside braces, it is called a context (like `server`)
 		- Directives placed outside any contexts are considered to be in the `main` context
-	- ## Serving file content
+	- ## Core Module
 	  id:: 66f2b38b-a8e3-4b85-9b15-090efab67ea4
 		- Whenever a request is made, nginx decides which `server` processes a request- It tests the specified URI against the parameters of the `location` directives defined inside the `server` block.
 		- ```nginx
@@ -24,7 +24,7 @@
 		  ```
 		- This `location` block specifies the `/` prefix compared with the URI from the request. For matching requests, the URI will be added to the path specified in the root directive, that is , to `/var/www`, to form the path to the requested file on the local file system.
 		- > If there are several matching `location` blocks nginx selects the one with the longest prefix.
-	- ## Proxy
+	- ## Proxy module
 		- ### Basic
 		  collapsed:: true
 			- One of the frequent uses of nginx is setting it up as a proxy server, which means a server that receives requests, passes them to the proxied servers, retrieves responses from them, and sends them to the clients.
