@@ -51,6 +51,8 @@
 			- By default only `text/html` responses are compressed. To add more MIME types, use `gzip_types <MIME type> <MIME type>`.
 			- To specify the minimum length of the response to compress, use the `gzip_min_length` directive. The default is 20 bytes.
 			-
+	- ### HTTP map module
+	-
 	-
 - Source
 	- https://nginx.org/en/docs
