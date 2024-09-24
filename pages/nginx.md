@@ -28,11 +28,15 @@
 		- ```nginx
 		  server {
 		    location / {
-		        proxy_pass http://localhost:80
+		        proxy_pass http://localhost:8080
+		    }
+		    
+		    location ~ \.(gif|jpg|png)$ {
+		      root /data/images;
 		    }
 		  }
 		  ```
-		-
+		- This server (separate from the one above) will filter requests ending with `.gif`, `.jpg`
 	-
 - Source
 	- https://nginx.org/en/docs
