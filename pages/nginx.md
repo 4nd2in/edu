@@ -43,6 +43,7 @@
 		- ### Headers
 			- By default, nginx redefines two header fields in procied requests, `Host (set to $proxy_host)` and `Connection (set to close)` and eliminates the header fields whose values are empty strings.
 			- To change these setting, as well as modify other header fields, `proxy_set_header` directive can be used.
+		- ### Compression
 			-
 	-
 - Source
