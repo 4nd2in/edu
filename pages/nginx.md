@@ -44,7 +44,9 @@
 			- By default, nginx redefines two header fields in procied requests, `Host (set to $proxy_host)` and `Connection (set to close)` and eliminates the header fields whose values are empty strings.
 			- To change these setting, as well as modify other header fields, `proxy_set_header` directive can be used.
 		- ### Compression
-			-
+			- Compressing responses often significantly reduces the size of transmitted data. However, since compression happens at runtime it can also add considerable processing overhead which can negatively affect performance. NGINX performs compression before sending responses to clients, but does not “double compress” responses that are already compressed (for example, by a proxied server).
+			- Compression can be enabled with `gzip on;`
+			- By default only `text`
 	-
 - Source
 	- https://nginx.org/en/docs
