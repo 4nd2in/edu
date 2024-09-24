@@ -4,8 +4,9 @@
 		- nginx consists of modules which are controlled by directives (name and parameters separeted by spaces and ends with a semicolon) specified in the configuration file (`/etc/nginx/nginx.conf`).
 		- A directive can also be a block (surrounded by braces)
 		- If a block directive can have other directives inside braces, it is called a context (like `http`)
-	- ## serving file content
-	-
+		- Directives placed outside any contexts are considered to be in the ``
+	- ## Serving file content
+		-
 	-
 - Source
 	- https://nginx.org/en/docs
