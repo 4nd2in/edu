@@ -7,6 +7,7 @@
 		- If a block directive can have other directives inside braces, it is called a context (like `server`)
 		- Directives placed outside any contexts are considered to be in the `main` context
 	- ## Serving file content
+	  id:: 66f2b38b-a8e3-4b85-9b15-090efab67ea4
 		- Whenever a request is made, nginx decides which `server` processes a request- It tests the specified URI against the parameters of the `location` directives defined inside the `server` block.
 		- ```nginx
 		  server {
@@ -36,7 +37,8 @@
 		    }
 		  }
 		  ```
-		- This server (separate from the one above) will filter requests ending with `.gif`, `.jpg`
+		- This server (separate from the one above) will filter requests ending with `.gif`, `.jpg` or `.png` and map them to the `/data/images` directory and pass all other requests to the proxied server configured in ((66f2b38b-a8e3-4b85-9b15-090efab67ea4)).
+		-
 	-
 - Source
 	- https://nginx.org/en/docs
