@@ -41,7 +41,9 @@
 			  ```
 			- This server (separate from the one above) will filter requests ending with `.gif`, `.jpg` or `.png` and map them to the `/data/images` directory and pass all other requests to the proxied server configured in ((66f2b38b-a8e3-4b85-9b15-090efab67ea4)).
 		- ### Headers
-			- By default, nginx redefines two header fields in procied requests, `Host (set to $proxy_host)` and `Connection ()` and eliminates the header fields whose values are empty strings.
+			- By default, nginx redefines two header fields in procied requests, `Host (set to $proxy_host)` and `Connection (set to close)` and eliminates the header fields whose values are empty strings.
+			- To change these setting, as well as modify other header fields, `proxy_set_header` directive can be used.
+			-
 	-
 - Source
 	- https://nginx.org/en/docs
