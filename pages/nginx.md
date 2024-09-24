@@ -55,7 +55,8 @@
 		- The `map` creates a new variable whose value depends on values of one or more of the source variables specified in the first parameter.
 		- The `default` parameter sets the resulting value if the source value matches none of the specified variants. When default is not specified, the default resulting value will be an empty string.
 	- ### Stream module
-		- This is a core NGINX module that provides essential features for handling and proxying [[TCP]] and [[UDP]] traffic. It was introduced to extend nginx's ability to proxy not just HTTP traffic, but also raw stre
+		- This is a core NGINX module that provides essential features for handling and proxying [[TCP]] and [[UDP]] traffic. It was introduced to extend nginx's ability to proxy not just HTTP traffic, but also raw streams such as database connections, email protocols and custom TCP/UDP applications.
+		-
 - Source
 	- https://nginx.org/en/docs
 - Tags
