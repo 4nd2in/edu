@@ -17,6 +17,8 @@
 			- Supported ciphersuites
 			- TLS options
 		- The receiver picks the TLS Version and the ciphersuite to continue, attaches its [[Digital certificate]]
+		- ### SNI (Server Name Indication)
+		-
 - Source
 	- https://hpbn.co/transport-layer-security-tls/
 	- https://www.internetsociety.org/deploy360/tls/basics/
