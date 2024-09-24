@@ -21,6 +21,14 @@
 	- ## Proxy
 		- One of the frequent uses of nginx is setting it up as a proxy server, which means a server that receives requests, passes them to the proxied servers, retrieves responses from them, and sends them to the clients.
 		- ```nginx
+		  server {
+		    listen 8080
+		    root /var/www
+		    
+		    location / {
+		        
+		    }
+		  }
 		  ```
 		-
 	-
