@@ -58,7 +58,6 @@
 		- This is a core NGINX module that provides essential features for handling and proxying [[TCP]] and [[UDP]] traffic. It was introduced to extend nginx's ability to proxy not just HTTP traffic, but also raw streams such as database connections, email protocols and custom TCP/UDP applications.
 		- With this nginx can proxy [[SSL]]/ [[TLS]] connections for stream protocols, allowing it to terminate SSL for applications like VPNs or secure database connections.
 		- This adds support for [[SSL]]/[[TLS]] preread, which enabled nginx to inspect the initial `ClientHello` message of a TLS handshake without terminating the SSL session. This is useful for directing encrypted traffic based on the [SNI]( ((66f2bf22-3fb6-47aa-adbe-9edfa362ce6b)) ) field in TLS, allowing for functionalities like SNI-based routing.
-		-
 - Source
 	- https://nginx.org/en/docs
 - Tags
