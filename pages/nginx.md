@@ -7,7 +7,14 @@
 		- Directives placed outside any contexts are considered to be in the `main` context
 	- ## Serving file content
 		- Whenever a request is made, nginx decides which `server` processes a request- It tests the specified URI against the parameters of the `location` directives defined inside the `server` block.
-		- This `location` block specifies the `/` prefix compared with the URI from the request. For matching requests, the URI will be added to the path specified in the root directive, that is , to `/var/www`, to form the path to the requested
+		- ```conf
+		  location / {
+		      root /data/www;
+		  }
+		  ```
+		- This `location` block specifies the `/` prefix compared with the URI from the request. For matching requests, the URI will be added to the path specified in the root directive, that is , to `/var/www`, to form the path to the requested file on the local file system.
+		- > If there are several matching `location`
+		-
 	-
 - Source
 	- https://nginx.org/en/docs
