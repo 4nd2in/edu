@@ -1,7 +1,9 @@
 # nginx (engine x)
 	- NGINX is an HTTP web server, reverse proxy, content cache, load balancer, [[TCP]]/[[UDP]] proxy server and mail proxy server.
 	- ## Structure
-		- nginx consists of modules which are controlled by directives (name and parameters ) specified in the configuration file (`/etc/nginx/nginx.conf`).
+		- nginx consists of modules which are controlled by directives (name and parameters separeted by spaces and ends with a semicolon) specified in the configuration file (`/etc/nginx/nginx.conf`).
+		- A directive can also be a block (surrounded by braces)
+		- If a block directive can have other directives inside braces, it is called a context (`events`, `http`, etc.)
 		-
 	-
 - Source
