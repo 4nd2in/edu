@@ -56,7 +56,8 @@
 		- The `default` parameter sets the resulting value if the source value matches none of the specified variants. When default is not specified, the default resulting value will be an empty string.
 	- ### Stream module
 		- This is a core NGINX module that provides essential features for handling and proxying [[TCP]] and [[UDP]] traffic. It was introduced to extend nginx's ability to proxy not just HTTP traffic, but also raw streams such as database connections, email protocols and custom TCP/UDP applications.
-		- nginx can proxy [[SSL]]/ [[TLS]] connections for stream protocols, allowing it to termintate SSL for applications like VPNs or secure database connections.
+		- With this nginx can proxy [[SSL]]/ [[TLS]] connections for stream protocols, allowing it to terminate SSL for applications like VPNs or secure database connections.
+		- This adds support for [[SSL]]/[[TLS]] preread, which enabled nginx to inspect the initial `ClientHello`
 - Source
 	- https://nginx.org/en/docs
 - Tags
