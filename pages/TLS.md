@@ -19,8 +19,7 @@
 		- The receiver picks the TLS Version and the ciphersuite to continue, attaches its [[Digital certificate]]
 		- ### SNI (Server Name Indication in RFC 6066 TLS Extensions)
 			- TLS does not provide a mechanism for a client to tell a server the name of the server it is contacting. It. may be desirable for clients to provide this information to facilitate secure connections to servers that host multiple _virtual_ servers (e.g. [[nginx]] ) at a single underlying network address.
-			-
-		-
+			- In order to provide any of the server names, clients MAY include an extension of type `server_name` in the (extended) client hello.
 - Source
 	- https://hpbn.co/transport-layer-security-tls/
 	- https://www.internetsociety.org/deploy360/tls/basics/
