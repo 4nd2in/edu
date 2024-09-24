@@ -47,6 +47,7 @@
 			- Compressing responses often significantly reduces the size of transmitted data. However, since compression happens at runtime it can also add considerable processing overhead which can negatively affect performance. NGINX performs compression before sending responses to clients, but does not “double compress” responses that are already compressed (for example, by a proxied server).
 			- Compression can be enabled with `gzip on;`
 			- By default only `text/html` responses are compressed. To add more MIME types, use `gzip_types <MIME type> <MIME type>`.
+			- To specify the minimum length of the response to compress, use the `gzip_min_length` directive. The default is 20 bytes.
 			-
 	-
 - Source
