@@ -52,7 +52,7 @@
 			- To specify the minimum length of the response to compress, use the `gzip_min_length` directive. The default is 20 bytes.
 			-
 	- ### HTTP map module
-	-
+		- The creates variables whose values depend on values of other variables
 	-
 - Source
 	- https://nginx.org/en/docs
