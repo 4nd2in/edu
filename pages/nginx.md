@@ -6,7 +6,7 @@
 		- If a block directive can have other directives inside braces, it is called a context (like `server`)
 		- Directives placed outside any contexts are considered to be in the `main` context
 	- ## Serving file content
-		- Whenever a request
+		- Whenever a request is made, nginx decides which `server` processes a request- It tests the specified URI against the parameters of the `location` directive
 	-
 - Source
 	- https://nginx.org/en/docs
