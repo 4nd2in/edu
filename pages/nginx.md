@@ -13,7 +13,8 @@
 		  }
 		  ```
 		- This `location` block specifies the `/` prefix compared with the URI from the request. For matching requests, the URI will be added to the path specified in the root directive, that is , to `/var/www`, to form the path to the requested file on the local file system.
-		- > If there are several matching `location`
+		- > If there are several matching `location` blocks nginx selects the one with the longest prefix.
+		-
 		-
 	-
 - Source
