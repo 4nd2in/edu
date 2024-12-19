@@ -31,5 +31,6 @@
 - Source
 	- https://hpbn.co/building-blocks-of-udp/
 	- https://en.wikipedia.org/wiki/Internet_Protocol
+	- https://www.smartit.ch/blog/ipv6-die-unterschaetzte-revolution
 - Tags
 	- #computer-science
