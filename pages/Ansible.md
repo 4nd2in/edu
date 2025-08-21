@@ -4,4 +4,4 @@
 		- Ansible controls managed nodes from by connecting to them and execute modules via SSH. These modules are idempotent.
 		- For Ansible to execute, it needs an inventory to store all managed nodes as well as their login data.
 		- If needed Ansible can store username and passwords as variables in the encrypted Ansible Vault
-		-
+-
