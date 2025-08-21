@@ -1,8 +1,8 @@
 # Ansible
 	- Ansible is an open source, command-line IT automation software application written in Python. It can configure systems, deploy software, and orchestrate advanced workflows to support application deployment, system updates, and more.
 	- ## How it works
-		- Ansible controls managed nodes from by connecting to them and execute modules via SSH. These modules are idempotent.
-		- For Ansible to execute, it needs an inventory to store all managed nodes as well as their login data.
+		- Ansible controls managed nodes by connecting to them from a control node and executing modules via SSH. These modules are idempotent.
+		- For Ansible to execute, it needs an inventory (likely a file) to store all managed nodes as well as their login data.
 		- If needed Ansible can store username and passwords as variables in the encrypted Ansible Vault
 -
 - Sources
