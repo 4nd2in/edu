@@ -5,3 +5,7 @@
 		- For Ansible to execute, it needs an inventory to store all managed nodes as well as their login data.
 		- If needed Ansible can store username and passwords as variables in the encrypted Ansible Vault
 -
+- Sources
+	- https://www.redhat.com/en/ansible-collaborative/how-ansible-works
+- Tags
+	- #it-infrastructure
