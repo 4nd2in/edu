@@ -65,4 +65,4 @@
 - Source
 	- https://nginx.org/en/docs
 - Tags
-	- #computer-science
+	- #it-infrastructure
