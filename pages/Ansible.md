@@ -6,6 +6,7 @@
 		- If needed Ansible can store username and passwords as variables in the encrypted Ansible Vault
 -
 - Sources
+	- https://docs.ansible.com
 	- https://www.redhat.com/en/ansible-collaborative/how-ansible-works
 - Tags
 	- #it-infrastructure
