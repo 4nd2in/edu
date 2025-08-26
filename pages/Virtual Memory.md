@@ -4,6 +4,10 @@
 	- Virtual Memory is also needed to protect memory of one application to be accessed by others.  This is not only a security issue but also leads to the crash of an application if another application overwrites their memory.
 	- Virtual memory creates the illusion of a large memory, even if the actual memory (RAM) is small.
 	- It uses both RAM and disk storage to manage memory, loading only parts of programs into RAM as needed.
+	- ## How it works
+		- Virtual memory uses both hardware and software to manage memory.
+		- When a program runs, it uses virtual addresses (not real memory locations).
+		- The computer system converts these virtual addresses into physical addresses (actual locations in RAM) while the program runs.
 	- There are two main types of virtual memory
 		- ## Paging
 			-
