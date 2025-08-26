@@ -5,6 +5,12 @@
 	- Virtual memory creates the illusion of a large memory, even if the actual memory (RAM) is small.
 	- It uses both RAM and disk storage to manage memory, loading only parts of programs into RAM as needed.
 	- There are two main types of virtual memory
-		-
-		- Segmentation
--
+		- ## Paging
+			-
+		- ## Segmentation
+			-
+- Tags
+	- #computer-science
+- Sources
+	- https://www.geeksforgeeks.org/operating-systems/virtual-memory-in-operating-system/
+	- {{video https://www.youtube.com/watch?v=fGP6VHxqkIM&list=PL38NNHQLqJqZoDp4CrAueD1aBin7OebEL}}
