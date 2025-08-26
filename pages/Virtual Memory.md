@@ -13,4 +13,4 @@
 	- #computer-science
 - Sources
 	- https://www.geeksforgeeks.org/operating-systems/virtual-memory-in-operating-system/
-	- {{video https://www.youtube.com/watch?v=fGP6VHxqkIM&list=PL38NNHQLqJqZoDp4CrAueD1aBin7OebEL}}
+	- https://www.youtube.com/watch?v=fGP6VHxqkIM&list=PL38NNHQLqJqZoDp4CrAueD1aBin7OebEL
