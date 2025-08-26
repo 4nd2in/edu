@@ -4,3 +4,7 @@
 	- Virtual Memory is also needed to protect memory of one application to be accessed by others.  This is not only a security issue but also leads to the crash of an application if another application overwrites their memory.
 	- Virtual memory creates the illusion of a large memory, even if the actual memory (RAM) is small.
 	- It uses both RAM and disk storage to manage memory, loading only parts of programs into RAM as needed.
+	- There are two main types of virtual memory
+		-
+		- Segmentation
+-
